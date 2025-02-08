@@ -31,13 +31,13 @@
     <nav>
         <div class="logo">
             <h1>OEM ACCOUNT STATEMENT</h1>
-        </div>
+       </div>
         <ul id="menuList">
-		<button class="btn btn-primary" onclick="oemled.html" type="button">
+		<button class="btn btn-primary" onclick="roled.html" type="button">
 		<li><a href="roled.html">R/O</a></li>
 		
 		<button class="btn btn-primary" onclick="baled.html" type="button">
-		<li><a href="baled.html">Bazaar</a></li>
+		<li><a href="oemled.html">OEM</a></li>
 		
 		<button class="btn btn-primary" onclick="portal.html" type="button">
             <li><a href="portal.html">Home</a></li>
@@ -47,6 +47,7 @@
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
     </nav>
+
 
 
     <script>
@@ -63,48 +64,163 @@
             }
         }
         
+    </script><script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
     </script>
 
+	<style>
+table, th, td {
+  border: 1px solid black; /* Sets border for table, headers, and data cells */
+  border-collapse: collapse; /* Collapses borders to avoid double borders */
+  padding: 5px; /* Adds padding inside cells */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.header-row th { /* Style header row cells differently */
+  background-color: #f2f2f2;
+  font-weight: bold;
+} 
+
+table {
+  width: 60%; /* Or a specific width like 300px */
+  margin: 0 auto; /* Centers the table horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 4px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+ #ForSearchTable {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Set font size */
+  }
+
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+
+  #myTable tr {
+    /* Add a bottom border to each table row */
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myTable tr:hover {
+    /* Add a hover effect to the table rows */
+    background-color: #FFB6C1;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon */
+    width: 100%; /* Full-width input */
+    font-size: 16px; /* Set font size */
+    padding: 12px 20px 12px 40px; /* Add padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+  }
+
+.search-container {
+    /* Container for better layout control */
+    width: 620px; /* Example width */
+    margin: 20px auto; /* Center the container */
+  }
+
+  .search-input {
+    width: 100%; /* Occupy full width of container */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+</style>
 
 
-<table>
-  <thead>
-    <tr>
-      <td>Customer Name </td>
-      <td>View / Download</td>
+
+<div class="search-container">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..." >
+</div>
+
+ <table id="myTable">
+ <thead>  
+<tr>
+	  <th>SL No </th>
+      <th>Customer Name </th>
+      <th>View/Download</th>
     </tr>
-  </thead>
+</thead>
   <tbody>
   
-<tr> <td>Abigail Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Abigail Service Station.pdf">Download</a></td></tr>
-<tr> <td>Alta Filling Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Alta Filling Station.pdf">Download</a></td></tr>
-<tr> <td>Arkiwan Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Arkiwan Service Station.pdf">Download</a></td></tr>
-<tr> <td>Ashok Auto Service (B) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Ashok Auto Service (B).pdf">Download</a></td></tr>
-<tr> <td>Petrol and Auto Diesel Filling Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Petrol and Auto Diesel Filling Station.pdf">Download</a></td></tr>
-<tr> <td>Pnar Service Station L_R &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Pnar Service Station L_R.pdf">Download</a></td></tr>
-<tr> <td>Pnar Service Station M_K &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Pnar Service Station M_K.pdf">Download</a></td></tr>
-<tr> <td>PNAR SERVICE STATION MUKHLA (AD HOC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="PNAR SERVICE STATION MUKHLA (AD HOC.pdf">Download</a></td></tr>
-<tr> <td>Polo Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Polo Service Station.pdf">Download</a></td></tr>
-<tr> <td>Pynbianglang Refilling Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Pynbianglang Refilling Station.pdf">Download</a></td></tr>
-<tr> <td>Pyngrope Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Pyngrope Service Station.pdf">Download</a></td></tr>
-<tr> <td>Raj Filling Centre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Raj Filling Centre.pdf">Download</a></td></tr>
-<tr> <td>Raja Fuel Service &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Raja Fuel Service.pdf">Download</a></td></tr>
-<tr> <td>Raliang Fuels &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Raliang Fuels.pdf">Download</a></td></tr>
-<tr> <td>Rani Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Rani Service Station.pdf">Download</a></td></tr>
-<tr> <td>Ri Lyngngam Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Ri Lyngngam Service Station.pdf">Download</a></td></tr>
-<tr> <td>Rida Langrin Filling Centre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Rida Langrin Filling Centre.pdf">Download</a></td></tr>
-<tr> <td>River Kynshi BKS Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="River Kynshi BKS Service Station.pdf">Download</a></td></tr>
-<tr> <td>River Umtrew Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="River Umtrew Service Station.pdf">Download</a></td></tr>
-<tr> <td>Roibha Fuel Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Roibha Fuel Station.pdf">Download</a></td></tr>
-<tr> <td>Shallam Syngkon Jowai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Shallam Syngkon Jowai.pdf">Download</a></td></tr>
-<tr> <td>Shallam Syngkon Wapung &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Shallam Syngkon Wapung.pdf">Download</a></td></tr>
+<tr> <td>1</td><td>BANALARI WORLD CAR</td><td><a href="report/ledgers/BANALARI WORLD CAR.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>2</td><td>BY ZERO FUTURA</td><td><a href="report/ledgers/BY ZERO FUTURA.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>3</td><td>GOENKA ENG WORK MAWBLEI</td><td><a href="report/ledgers/GOENKA ENG WORK MAWBLEI.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>4</td><td>GOENKA ENGINEERING WORK</td><td><a href="report/ledgers/GOENKA ENGINEERING WORK.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>5</td><td>GOENKA ENGINEERING WORK</td><td><a href="report/ledgers/GOENKA ENGINEERING WORK.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>6</td><td>RANI MOTOR GARIKHANA</td><td><a href="report/ledgers/RANI MOTOR GARIKHANA.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>7</td><td>RANI MOTOR MAWBLEI</td><td><a href="report/ledgers/RANI MOTOR MAWBLEI.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>8</td><td>RANI MOTOR NONGPOH</td><td><a href="report/ledgers/RANI MOTOR NONGPOH.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>9</td><td>RANI MOTOR NONGSTOIN</td><td><a href="report/ledgers/RANI MOTOR NONGSTOIN.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>10</td><td>RANI SPARES PARTS</td><td><a href="report/ledgers/RANI SPARES PARTS.pdf">Download&nbsp;Here</a></td></tr>
+<tr> <td>11</td><td>SHILLONG HYUNDAI</td><td><a href="report/ledgers/SHILLONG HYUNDAI.pdf">Download&nbsp;Here</a></td></tr>
 
-    
-      
-    </tbody>
-</table>
+
+</tbody>
+</table> 
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td");
+    let rowMatchesFilter = false; // Flag to track if any cell in the row matches
+    for (let j = 0; j < td.length; j++) { // Iterate through all columns in the row
+      if (td[j]) {
+        txtValue = td[j].textContent || td[j].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          rowMatchesFilter = true; // Set flag to true if a cell matches
+          break; // No need to check other cells in this row if one matches
+        }
+      }
+    }
+    if (rowMatchesFilter) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+</script>
 
 </body>
 </head>
 </html>
-	  
