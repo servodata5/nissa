@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+.login-page {
+  width: 36%;
+  padding: 3% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 15px;
+  padding: 20px 45px;
+  text-align: center;
+  border: 1px solid #95989a;
+}
+.form_Header{
+  font-size: 22px;
+  color: #00164e;
+  font-weight: 400;
+}
+.form_HeaderOTP{
+	font-size: 18px;
+	color: #00164e;
+	font-weight: 400;
+}
+.dyColor{color: #f37021;}
+.otpPass{display: block;
+    text-align: left;
+    font-size: 14px; margin-bottom: 15px;}
+.form .resendotp a{float: right; color: #3777bc;}
+.form label{
+   font-size: 14px;
+   color: #000;
+   font-weight:500;
+   float: left;
+   padding: 10px 0px;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  width: 100%;
+  border: 1px solid #D5D4D3;
+  margin: 0 0 15px;
+  padding: 15px 15px 15px 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+/*.form input[type='text'], .form input[type='number'], .form input[type='email'] {
+    background-image: url(user_Icon.png);
+    background-position: 7px 9px;
+    background-repeat: no-repeat;
+}*/
+.form input[type='password'] {
+    background-image: url(user_Password.png);
+    background-position: 13px 9px;
+    background-repeat: no-repeat;
+}
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+
+
+.form button {
+ width: 100%;
+  padding: 0px;
+    white-space: nowrap;
+    min-height: 19px;
+    border-top: 1px solid #95B6D4;
+    border-right: 1px solid #95B6D4;
+    border-bottom: 1px solid #92B3D1;
+    border-left: 1px solid #95B6D4;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid #f37021;
+    border-color: #f37021;
+    background-color: #f37021;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    color: #f2f0f0;
+    font-weight: 400;
+    padding-top: 8px;
+    outline: none;
+    text-shadow: none;
+    cursor: pointer;
+    height: 60px;
+    display: block;
+}
+.form button:hover,.form button:active,.form button:focus {
+  border-color: #f59718;
+    background-color: #f59718;
+}
+.form p.social_LoginHeader{
+   font-weight: 300;
+    font-size: 14px;
+    color: #95989a;
+	padding: 10% 0% 2% 0%;
+}
+.form .message {
+ background-color: #f5f5f5;
+    border: 1px solid #f2f0f0;
+    padding: 20px 25px;
+}
+.form .message a {
+  font-size: 20px; color: #f37021; font-weight: 500;padding-left: 5%;
+  text-decoration: none;
+}
+.form .daccount_Class{font-size: 16px; color: #000; font-weight: 300;}
+.policyterms{text-align: center; font-size: 13px;}
+.policyterms a{color: #3777bc; padding:0 20px;}
+.forgotPassword{display: block;
+    float: right;
+    color: #3777bc;}
+.form input.otpinput{width: 17%;
+    background-image: none;
+    padding: 12px 18px;
+    margin-right: 25px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 300;}
+p.otpLabel{    font-size: 14px;
+    color: #000;
+    font-weight: 500;text-align: left;}
+	.passInfo{font-size: 14px; color: #5f6162; font-weight: 300; text-align: left; display: block;}
+	.changeLink a{font-size: 14PX;
+    color: #3777bc;}
+	.useremailDetails{font-size: 22px; color: #f37021; font-weight: 400;}
+	.displayBlock{display: block;}
+		p.successBox{border: 2px solid #19D568;
+    padding: 60px;}
+	span.successText{font-size: 30px;
+    font-weight: 400;
+    color: #19d568;}
+	span.confirmationtext{font-size: 20px; font-weight: 300; color: #000;}
+	p.back2login{margin-top: 20%;}
+	p.back2login a{font-size: 14px; color: #3777bc;}
+         .iconStyleClass {
+       float: left;
+    margin-right: 6px;
+    margin-top: -64px;
+    position: relative;
+    z-index: 2;
+    color: #00164e;
+    padding: 16px 11px;
+    background-color: #f1e9e9;
+    }
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+@media only screen and (max-width: 1023px){.login-page{width: 100%;}.form{padding: 20px;}}

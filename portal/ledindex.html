@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)E:\Server\xampp\htdocs\nissa\portal.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+  <link href="./portal_files/css2" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+  <link href="./portal_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./portal_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="./portal_files/glightbox.min.css" rel="stylesheet">
+  <link href="./portal_files/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Main CSS File -->
+    <link href="./portal_files/style.css" rel="stylesheet">
+
+
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+	<title>Ledgers</title>
+   <link rel="stylesheet" href="style.css">  
+<link rel="stylesheet" href="styledr.css">      
+</head>
+	
+ <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+    <nav>
+        <div class="logo">
+            <h1>ACCOUNT LEDGERS</h1>
+        </div>
+        <ul id="menuList">
+
+        
+		<li><a href="roled.html">R/O</a></li>
+
+		<li><a href="oemled.html">OEM</a></li>
+
+		<li><a href="baled.html">Bazaar</a></li>
+		
+
+		 <button class="btn btn-primary" onclick="portal.html" type="button">
+           <li><a href="portal.html" class="">Home</a></li>
+</ul>
+		  
+         <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+  
+  <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+	 <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+	<section id="hero" class="hero section background-size: 100% ; 100%;">
+	
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center aos-init aos-animate" data-aos="zoom-out">
+            <h1>Account Ledgers</h1>
+            <p>Retai Outlet, OEM, Bazaar </p>
+            <div class="d-flex">
+              
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+            <img src="./portal_files/team.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+  </main>
+</body></html>

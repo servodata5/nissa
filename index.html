@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./obrareq_files/login_Css.css">
+<link rel="stylesheet" href="./obrareq_files/all.css">
+<script>
+      function validateForm() {
+  var username = document.forms["loginForm"]["username"].value;
+  var password = document.forms["loginForm"]["password"].value;
+
+  // Basic client-side validation (improve this for production)
+  if (username == "" || password == "") {
+    alert("Username and password must be filled out");
+    return false;  // Prevent form submission
+  }
+
+  // Simulate server-side validation (replace with actual server-side check)
+  if (username == "324046" && password == "NISSA") {
+    // Redirect to portal.html if credentials are correct
+    window.location.href = "portal/portal.html";  // Or a relative path like "./html2.html" if in the same directory
+    return false; // Prevent default form submission
+  } else {
+    alert("Incorrect username or password");
+    return false; // Prevent form submission
+  }
+}
+    </script>
+
+</head>
+
+<body style="font-family:Verdana;">
+<form name="loginForm" action="#" onsubmit="return validateForm()" method="post"> 
+    <div class="login-page">
+	  <div class="form">
+		
+		  <img src="./obrareq_files/ico_new_logo-final.gif" alt="Iocl">
+		  <p class="form_Header">Nangkiew Irat Login<span style="color:#fc0303;"></span></p>
+                   <p> </p>
+		          <label>Login ID<span style="color:#fc0303;">*</span></label>
+		          <input Username: <input type="text" name="username">
+  
+                  <i class="fa fa-user iconStyleClass" aria-hidden="true"></i>
+                  <input Password: <input type="password" name="password">
+                  <i class="fa fa-user iconStyleClass" aria-hidden="true"></i>
+                  
+		  <!--<input type="password" placeholder="password"/>-->
+		  <button id="submitid" onsubmit="return validateForm()";">Continue</button>
+		<!--  <p class="social_LoginHeader">Or use your social accounts to login:</p> -->
+		<!--  <p>Social icons Box</p> -->
+                <p>     </p>
+                <p>    </p>
+		
+		
+	  
+</div></form>
+
+
+
+
+</body></html>

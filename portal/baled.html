@@ -1,0 +1,207 @@
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+  <link href="./portal_files/css2" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+ <link href="./portal_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./portal_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="./portal_files/glightbox.min.css" rel="stylesheet">
+  <link href="./portal_files/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Main CSS File -->
+    <link href="./portal_files/style1.css" rel="stylesheet">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baled</title>
+    <link rel="stylesheet" href="style.css">    
+
+
+<body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+    <nav>
+        <div class="logo">
+            <h1>BAZAAR ACCOUNT STATEMENT</h1>
+        </div>
+        <ul id="menuList">
+		<button class="btn btn-primary" onclick="roled.html" type="button">
+		<li><a href="roled.html">R/O</a></li>
+		
+		<button class="btn btn-primary" onclick="baled.html" type="button">
+		<li><a href="oemled.html">OEM</a></li>
+		
+		<button class="btn btn-primary" onclick="portal.html" type="button">
+            <li><a href="portal.html">Home</a></li>
+            
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+
+	<style>
+table, th, td {
+  border: 1px solid black; /* Sets border for table, headers, and data cells */
+  border-collapse: collapse; /* Collapses borders to avoid double borders */
+  padding: 5px; /* Adds padding inside cells */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.header-row th { /* Style header row cells differently */
+  background-color: #f2f2f2;
+  font-weight: bold;
+} 
+
+table {
+  width: 60%; /* Or a specific width like 300px */
+  margin: 0 auto; /* Centers the table horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 4px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+ #ForSearchTable {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Set font size */
+  }
+
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+
+  #myTable tr {
+    /* Add a bottom border to each table row */
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myTable tr:hover {
+    /* Add a hover effect to the table rows */
+    background-color: #FFB6C1;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon */
+    width: 100%; /* Full-width input */
+    font-size: 16px; /* Set font size */
+    padding: 12px 20px 12px 40px; /* Add padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+  }
+
+.search-container {
+    /* Container for better layout control */
+    width: 620px; /* Example width */
+    margin: 20px auto; /* Center the container */
+  }
+
+  .search-input {
+    width: 100%; /* Occupy full width of container */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+</style>
+
+<div class="search-container">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..." >
+</div>
+
+ <table id="myTable">
+ <thead>  
+<tr>
+	  <th>SL No </th>
+      <th>Customer Name </th>
+      <th>View/Download</th>
+    </tr>
+</thead>
+
+  <tbody>
+  <tr> <td>Abigail Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Abigail Service Station.pdf">Download</a></td></tr>
+<tr> <td>Alta Filling Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Alta Filling Station.pdf">Download</a></td></tr>
+<tr> <td>Arkiwan Service Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Arkiwan Service Station.pdf">Download</a></td></tr>
+<tr> <td>Ashok Auto Service (B) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Ashok Auto Service (B).pdf">Download</a></td></tr>
+<tr> <td>Ashok Auto Service (S) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="Ashok Auto Service (S).pdf">Download</a></td></tr>
+<tr> <td>WEST JAINTIA FILLING POINT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="WEST JAINTIA FILLING POINT.pdf">Download</a></td></tr>
+<tr> <td>RI BHOI SERVICE STATION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="RI BHOI SERVICE STATION.pdf">Download</a></td></tr>
+<tr> <td>More Energy Station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a href="More Energy Station.pdf">Download</a></td></tr>
+    
+</tbody>
+</table> 
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td");
+    let rowMatchesFilter = false; // Flag to track if any cell in the row matches
+    for (let j = 0; j < td.length; j++) { // Iterate through all columns in the row
+      if (td[j]) {
+        txtValue = td[j].textContent || td[j].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          rowMatchesFilter = true; // Set flag to true if a cell matches
+          break; // No need to check other cells in this row if one matches
+        }
+      }
+    }
+    if (rowMatchesFilter) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</head>
+</html>
+	  

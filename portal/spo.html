@@ -1,0 +1,828 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+  <link href="./portal_files/css2" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+  <link href="./portal_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./portal_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="./portal_files/glightbox.min.css" rel="stylesheet">
+  <link href="./portal_files/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Main CSS File -->
+    <link href="./portal_files/style.css" rel="stylesheet">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spo</title>
+    <link rel="stylesheet" href="style.css">    
+
+
+<body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+    <nav>
+        <div class="logo">
+            <h1>Better Solution For Business</h1>
+        </div>
+        <ul id="menuList">
+		<button class="btn btn-primary" onclick="portal.html" type="button">
+            <li><a href="portal.html">Home</a></li>
+            
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+
+	
+</body>
+
+ <div><a href="" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em; text-align: center;"><img border="0" data-original-height="360" data-original-width="360" height="117" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhU_CyryOArx17NNVMTP44018DPgEAdkA6JpdA9Yey1_x3fPNkXrjQsU6lxxqDwIyHzNakRxTmQq61UTcaAkdLM32LHaiP53Z2acI_jr5c_vV8RtibVlwETiRTKv0oH2FgEzW1bbMxeWar_8jPNY-Iq-X5GMPKn3lwHMnQ7r8FkxfwNqpmAzVYnK2Kcklo/w95-h117/" width="95" /></a><h2 style="text-align: left;"><b>&nbsp;&nbsp;</b></h2></div><div><b>Download Pdf click Here&nbsp; &nbsp; &nbsp;</b><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_srI2c5Bpzg8osuUY9mWA1mWOo4uKWthLbDdywnSTEBDjhQpmrRrBPKpC8IQxTxcJgcD4wm4CdNmO/pub?output=pdf" style="clear: left; margin-bottom: 1em; margin-right: 1em; text-align: center;" target="_blank"><img border="0" data-original-height="216" data-original-width="234" height="31" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD1336_WlSXvKP1zcLuNEmvzogmU38GPxolUBfSwf92eEeLU27GNUxaDf4fk_4qKYwT_evZMllLTmCk1sdogz3PVI1JBaYoAJ0l6nMEpdxCDGI1A_gJjLnr79f9dVejUaklzPDo1PWhfMf6yjoMvIwRuawDaASigzMWtWdsJA3Lc3EWuSmXWpMWmgG4u4/w57-h31/download.png" width="57" /></a></div><div><br /></div><div style="text-align: left;">
+  
+    <meta charset="utf-8"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+    <title>SPO</title>
+    <!-- For Bootstrap-->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet"></link>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet"></link>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/i18n/zh-TW.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"></link>
+         
+    <!-- CSS For Print Format -->
+    <link href="invoiceprint.css" media="print" rel="stylesheet"></link>
+    
+    <!-- CSS For Invoice -->
+    <link href="invoice.css" rel="stylesheet"></link>
+
+    <!-- jQuery CDN -->
+    <script crossorigin="anonymous" integrity="sha256-OflJKW8Z8amEUuCaflBZJ4GOg4+JnNh9JdVfoV+6biw=" src="https://code.jquery.com/jquery-3.6.2.slim.js"></script>
+    
+    <!-- For Invoice  -->
+    <script src="invoice.js"></script>
+	</div>
+	
+	
+	
+
+ 
+    <body>
+
+       <div class="container ">
+        <h4></h4>
+       <!-- Change action -->
+        <form action="https://script.google.com/macros/s/AKfycbz4BM5aiXFyfOoNMaZWRR70glx-LKdHlLdm3hpBFcFCa8HNJcG6WGHoHYTXPa5Iez13/exec" autocomplete="off" method="POST">
+
+                   <div class="row">
+                      <div class="col-8">
+                        <div class="input-group mb-3">
+                            <span class="input-group mb-3">Customer Name</span>
+
+            <input class="form-control text-start" list="cust_nm" name="cust_nm" required="" width="300px" />
+            <datalist id="cust_nm">
+<option>A B Motors Jaintia 8th Miles</option>
+<option>A B Motors Lumshnong</option>
+<option>A L Automobile Laitkor</option>
+<option>A M Store Jowai</option>
+<option>A S Auto Khliehriat</option>
+<option>Ashish Automobile Jowai</option>
+<option>A D Automobile Amlarem</option>
+<option>A Thongni</option>
+<option>Aiom Auto Lumshnong</option>
+<option>Ali Motor Jowai</option>
+<option>Ali Workshop Furlong Polo</option>
+<option>Alomj Auto Lumshnong </option>
+<option>Aman Automobile Ladrymbai</option>
+<option>Anwar Automobile Mookhu</option>
+<option>ArbanKitbok Mawlong Automobile Banuin</option>
+<option>Assam Motor Motphran</option>
+<option>Atul Auto Wapung</option>
+<option>Atul Auto Ladrymbai</option>
+<option>Auto Parts Company Iewduh</option>
+<option>B K Auto Jowai</option>
+<option>B Kurbah Mawngap</option>
+<option>B M Auto Accessories Mih Myntdu</option>
+<option>B M S Automobile Nongpoh</option>
+<option>B P S Automobile Sutnga</option>            
+<option>Bahlung Ri Bhoi</option>
+<option>Bajrang Automobile Khliehriat Jaintia</option>
+<option>Balaji Automobile Demthring</option>
+<option>Balaji Motor Bara Bazaar</option>
+<option>Bamon Tyre Auto Miw Hill</option>
+<option>Barley Auto Khliehriat</option>
+<option>Batlee Automobile Keating Road</option>
+<option>Bharat Automobile Company Iewduh</option>
+<option>Brimca Enterprice Mawlai Nonglum</option>
+<option>BSF</option>              
+<option>C M Auto Parts Nongthymmai</option>
+<option>C M W Automobile Laststop</option>
+<option>C P Automobiles Dkhiah</option>
+<option>Chachan Traders Iewduh</option>
+<option>Chalang Auto Wapung</option>
+<option>Chalcedony Automative Soomer</option>
+<option>Choudhury Auto Spares Keating Road</option>
+<option>D Automobile Nongpoh</option>
+<option>D D Motor Mawlai</option>
+<option>D S Automobile Laimer</option>
+<option>Dabisharsuklang Nongsiej Mairang</option>
+<option>Daminot Auto Centre Demseiniong</option>
+<option>Daplang Centre Mawlai</option>
+<option>Debojit Dev Pynthor Umkhrah</option>
+<option>Deendayal Automobile Sutnga</option>
+<option>Dkhar workshop Mih Myntdu</option>
+<option>Eechloy Gas Agency</option>
+<option>E Lyngdoh Auto Khliehriat</option>
+<option>E P MawlongMawlai</option>
+<option>Eastern Auto Khliehriat</option>
+<option>Emi Passah Jowai</option>
+<option>Endrina Motor Parts West Jaintia</option>
+<option>F K Accessories Mawlai</option>
+<option>Freky Biker Keating Road</option>
+<option>G D Automobile (7th Mile)Laimer</option>
+<option>G D Automobile Rynjah</option>
+<option>G M Auto Spare Shop Demthring</option>
+<option>G P Motor Nongstoin</option>
+<option>G S Motor Khliehriat</option>
+<option>Gaurav Automobile Ladrymbai</option>
+<option>Genesis Maruti Spare Part Mawlai</option>
+<option>Great Automobile Mawlai</option>
+<option>Hanuman Automobile Demthring</option>                            
+<option>H T Auto Jellyshop</option>
+<option>I Marbaniang Mawlai</option>
+<option>I R Accessories Mawlai</option>
+<option>I Rani Mawlai</option>
+<option>Ivahaka Spare Part Ummulong</option>
+<option>J D Automobile Jowai</option>
+<option>Jaintia Automobiles Engineering Khliehriat</option>
+<option>Jaintia Industrial Mawlai</option>
+<option>Jaiswal Automobile Ladrymbai</option>
+<option>Jowai Automobiles Jowai</option>
+<option>K B R Automobile Mawlai</option>
+<option>K B S Automobile Ladrymbai</option>
+<option>K D Automobile Polo</option>
+<option>K J Auto Mawlai</option>
+<option>K P Automobile Nongstoin</option>
+<option>K S Spare Parts And Accessories Mawlai</option>
+<option>K Thabah Laitpynter</option>
+<option>Karni Automobiles Keating Road</option>
+<option>Karow Traders Nongpoh</option>
+<option>Khan Motor Keating Road</option>
+<option>Khan Motor Parts (D_J)Dkhai</option>
+<option>Kordor Warjri Mawlai</option>
+<option>Kupardorlang</option>
+<option>L M Automobile Madan Riting</option>
+<option>L M Automobile Umsning</option>
+<option>L M Automobile Jowai</option>
+<option>L T Automobile Spare Umlong</option>
+<option>L Phawa Automobiles Mih Myntdu</option>
+<option>Labet Automobile Upper Shillong</option>
+<option>Lalit Automobiles Demthring</option>
+<option>Laloo Automobile Ummulong</option>
+<option>Lam Auto Spares Mawblei</option>
+<option>Lamare Automobile Jowai</option>
+<option>Lamin Auto Spare Laitkor</option>
+<option>Lyngdoh Automobile Umsning</option>
+<option>Lytan Automobiles Gas </option>
+<option>Lytan Automobiles Lad Thalaboh</option>
+<option>M D Motor Jowai</option>
+<option>M H Auto Demseiniong</option>
+<option>M K Automobile Demthring</option>
+<option>M Kharkrang Automobile Mawlai</option>
+<option>M R Automobile Laitkor</option>
+<option>M R Automobile Polo</option>
+<option>M Sympli Automobile Jowai</option>
+<option>Madan Automobiles Lad Sutnga</option>
+<option>Mahesh Automobile Keating Road</option>
+<option>Man I Auto Lad Thalaboh</option>
+<option>Mawkynrew Indane Gramin Vitrak Mawkynrew</option>
+<option>MBDC Auto Part Jowai</option>
+<option>Meban Automobile Jowai</option>
+<option>Meghalaya Motors Khlieh Iew</option>
+<option>Merilin Automobiles Keating Road</option>
+<option>Mjnu Water Pump Khliehriat</option>
+<option>Mohit automobile Iewduh</option>
+<option>Motilal Sharma Mookhu</option>
+<option>Motor Spare Parts Nongrim Hills</option>
+<option>N C Auto Sutnga</option>
+<option>N L Automobile Khliehriat</option>
+<option>N Lyngkhoi Nongstoin</option>
+<option>N M Automobile Nongmynsong</option>
+<option>Naphi L Mawlong Store Iewduh</option>
+<option>NAS Automobile Nongmynsong</option>
+<option>Nasan Automobiles Mih Myntdu</option>
+<option>NBDC Auto Parts 8th Thadmuthlong</option>
+<option>New Hope Automobile Jowai</option>
+<option>OM Automotive Keating Road</option>
+<option>Omkar Motor PartsNongpoh</option>
+<option>P C Automobiles Iewduh</option>
+<option>P L L Auto Mawlai</option>
+<option>P L N Automobiles Laitkor</option>
+<option>P Malniang Lad Umlyngka</option>
+<option>P P Automobile Ladrymbai</option>
+<option>P S Auto Amlarem</option>
+<option>Paieid Automobile Mawlai</option>
+<option>Pankaj Singh Auto Wapung</option>
+<option>Pipalwa Iewduh</option>
+<option>Prakash Automobile Iewduh</option>
+<option>Priya Motor Keating Road</option>
+<option>R B S Automobile Jowai</option>
+<option>R D Automobile Demseiniong</option>
+<option>R D Automobile Mookhu</option>
+<option>R K Automobile Mawlai</option>
+<option>R K L Automobile Laitlyngkot</option>
+<option>R Laskar Automobile</option>              
+<option>R Lyngdoh Automobile Namdong (Jowai)</option>
+<option>R Phawa Automobile Mukhla</option>
+<option>R S Automobile Jowai</option>
+<option>R S Automobile Mawlai</option>
+<option>R Suting Workshop Nongmynsong</option>
+<option>Rabales Auto Mawlai</option>
+<option>Rainbow Automobile 3 mile Uppershillong</option>
+<option>Rajdhani Motors Motphran</option>
+<option>Ram Singh Automobile Lad Rymbai</option>
+<option>Roma Auto Centre Nongpoh</option>
+<option>Roy and Sharma Keating Road</option>
+<option>Royal Automobile Mookhu</option>
+<option>Royal Accessories &amp; Part Keating Road</option>
+<option>S S Auto Khliehriat</option>
+<option>S S Automobile FireBrigade Nongthymmai</option>
+<option>S S Automobile Lad Rymbai</option>
+<option>S S Motor Khliehriat</option>
+<option>Saha Engineering Work Laststop</option>
+<option>Saha Motor Laststop</option>
+<option>Sam Automobiles Spare Part Ummulong</option>
+<option>Sanika Auto Spare Parts Ummulong</option>
+<option>Sanje Singh Auto Khliehriat</option>
+<option>Sanjiv Automobile Lad Sutnga</option>
+<option>Shekhawat AutomobileUn</option>
+<option>Shillong Automobile Demseiniong</option>
+<option>Shreebawani Auto Jowai</option>
+<option>Sibanas Pala Sympli Automobile</option>
+<option>Singh Automobile Jowai</option>
+<option>Singhania Automobile Iewduh</option>
+<option>Standard Accessories Keating Road</option>
+<option>Star Auto Spares Keating Road</option>
+<option>Star Auto Spares Umsning</option>
+<option>Suchiang Motor Mih Myntdu</option>
+<option>Sun Servo Automobile Nongpoh</option>
+<option>Swastik Motors Keating Road</option>
+<option>Swer Auto Accessories Jowai</option>
+<option>Syiem Automobiles Lad Mukla</option>
+<option>T J S Automobiles Mawlai</option>
+<option>T M Automobile Laimer</option>
+<option>T Rymbai Lad Rymbai</option>
+<option>Tanisha Automobile Polo</option>
+<option>Three Es Sohiong</option>
+<option>Twins Automobile Lad Rymbai</option>
+<option>V K Automobile Banuin</option>
+<option>Velyne's Spare Part &amp; Accessories3 mile Uppershillong</option>
+<option>Vinay Automobiles Garikhana</option>
+<option>Vishal Automobiles (d_t) Demthring</option>
+<option>W C K  Motor Lad Rymbai</option>
+<option>W G Auto Wapung</option>
+<option>Wanshan Centre Mawlai</option>
+<option>Wansynropborlang Sunn Mawngap</option>
+<option>Yoomitre Madan Riting</option>
+<option>Abigail Service Station</option>
+<option>Alta Filling Station</option>
+<option>Arkiwan Service Station</option>
+<option>Ashok Auto Service (B)</option>
+<option>Ashok Auto Service (S)</option>
+<option>Assam auto (J)</option>
+<option>Assam auto Agencies(L_M)</option>
+<option>Auto Fuel Service Centre</option>
+<option>B Shylla Filling Station</option>
+<option>Ba-Man Service Station</option>
+<option>Bamon Filling</option>
+<option>Bamon Service Station</option>
+<option>Banalari Fuel Station</option>
+<option>Bhollangunj Refill Centre</option>
+<option>Black Diamond Refill Centre</option>
+<option>Burnihat Service Station</option>
+<option>Byrnihat A warjri Fuel Stop</option>
+<option>Cherra Midway Filling Station</option>
+<option>D Mercy Refill Centre</option>
+<option>Dhar Service Station</option>
+<option>Dkhiah Service Station</option>
+<option>Donbok Service Station</option>
+<option>East Jaintia Filling Center</option>
+<option>Eastern Border Service Station</option>
+<option>Green Hills Service Station</option>
+<option>Harlie V Service Station</option>
+<option>Heimon Filling Station</option>
+<option>Highland Service Station</option>
+<option>Highway Carrier Refilling</option>
+<option>Highway Plaza Filling centre</option>
+<option>Highway Refill Centre</option>
+<option>Hoslin Service Station</option>
+<option>J Marbaniang</option>
+<option>Jaintia Auto Agencies</option>
+<option>Jaintia Service Station</option>
+<option>JIRANG FILLING STATION</option>
+<option>K Langbai Fuel Station</option>
+<option>K Rymbai &amp; Co</option>
+<option>Kargil Martyr's Service Station</option>
+<option>Kharnairi Service Centre</option>
+<option>Khasi Hills Petroleum Supply Co</option>
+<option>Khongwir Service Station</option>
+<option>Kurbah Service Station</option>
+<option>Laityrke Service  Station</option>
+<option>LMPL Enterprice (ESSAR)</option>
+<option>Lumshnong Service Station</option>
+<option>Lyngdoh Pahsyntiew Service Station</option>
+<option>Mahari &amp; Sons</option>
+<option>Mahavir &amp; Co</option>
+<option>Mairang Service Station</option>
+<option>Marwet Oil Services pvt.ltd</option>
+<option>Marwet Petroleum Agency</option>
+<option>Mawkhanu Service Station</option>
+<option>Mawlai Aibor Roy</option>
+<option>Mawlai Banalari Service Station</option>
+<option>Meera Service Station</option>
+<option>Meghalaya Service Station</option>
+<option>Mihmyntdu Service Station</option>
+<option>MILDA ENERGY POINT</option>
+<option>Moolamylliang Service Station</option>
+<option>More Energy Station</option>
+<option>Morland Snootnick Filling Station</option>
+<option>Mylliem Wah Lyngdoh Refill Centre</option>
+<option>Nangkyrsoi Fuel Station</option>
+<option>Naya Bunglow Service Station</option>
+<option>Nongpluh Umroi Service Station</option>
+<option>Nongpoh Filling Centre</option>
+<option>Nongpoh Highway Service Station</option>
+<option>Nongrum Energy Station</option>
+<option>Nongstoin Highway Service Station</option>
+<option>Nongtdu Filling Station</option>
+<option>Nongtdu Service Station</option>
+<option>Peak Service Station L_K</option>
+<option>Peak Service Station L_M</option>
+<option>Perfect Service Station</option>
+<option>Petrol and Auto Diesel Filling Station</option>
+<option>Pnar Service Station L_R</option>
+<option>Pnar Service Station M_K</option>
+<option>PNAR SERVICE STATION MUKHLA (AD HOC</option>
+<option>Polo Service Station</option>
+<option>Pynbianglang Refilling Station</option>
+<option>Pyngrope Service Station</option>
+<option>Raj Filling Centre</option>
+<option>Raja Fuel Service</option>
+<option>Raliang Fuels</option>
+<option>Rani Service Station</option>
+<option>Ri Lyngngam Service Station</option>
+<option>Rida Langrin Filling Centre</option>
+<option>River Kynshi BKS Service Station</option>
+<option>River Umtrew Service Station</option>
+<option>Roibha Fuel Station</option>
+<option>Shallam Syngkon Jowai</option>
+<option>Shallam Syngkon Wapung</option>
+<option>Shallang Lynmer Fuel Station</option>
+<option>Shangpung Service Station</option>
+<option>Shangpung Service Station  (ESSAR)</option>
+<option>Shibai Shiboo Service Station</option>
+<option>SOUTHERN HILLS SERVICE STATION</option>
+<option>Star Energy Point</option>
+<option>Swer Service Station</option>
+<option>Tuber Auto Agencies Service Station</option>
+<option>Tyrshi Filling Station</option>
+<option>Umkrukru service Station</option>
+<option>Umran Fuels</option>
+<option>United Hills Super Service Station</option>
+<option>Upper Shillong Petrol Service Station</option>
+<option>BANALARI WORLD CAR</option>
+<option>GOENKA ENGINEERING WORK</option>
+<option>R SUMER AUTOMOBILE</option>              
+<option>RANI MOTOR GARIKHANA</option>
+<option>RANI MOTOR MAWBLEI</option>
+<option>RANI MOTOR NONGPOH</option>
+<option>RANI SPARES PARTS (Mihmyntdu)</option>
+<option>RANI SPARES PARTS (Mookhu)</option>
+<option>RANI SPARES PARTS (Mawlai)</option>              
+<option>RANI SPARES PARTS (Laitkor)</option>
+<option>RANI SPARES PARTS (Mawblei)</option>               
+<option>SHILLONG HYUNDAI</option>
+                         </datalist>
+                          </div>
+
+                           <div class="input-group mb-3">
+                            <span class="input-group-text">Class Type</span>
+                            <input class="form-control text-start" list="class_ty" name="class_ty" required="" width="300px" />
+            <datalist id="class_ty">
+<option>BAZAAR</option>
+<option>R/O</option>
+<option>OEM</option>
+</datalist>
+</div>
+                          
+
+                        
+                      <div class="input-group mb-3">
+                            <span class="input-group-text">District</span>
+                            <input class="form-control text-start" list="dst_nm" name="dst_nm" required="" width="300px" />
+            <datalist id="dst_nm">
+<option>EAST KHASI HILLS</option>
+<option>WEST KHASI HILLS</option>
+<option>JAINTIA HILLS</option>
+<option>RIBHOI</option>
+</datalist>
+</div>
+
+                            <div class="input-group mb-3">
+                            <span class="input-group-text">Status</span>
+                            <input class="form-control text-start" list="st_nm" name="st_nm" required="" width="300px" />
+            <datalist id="st_nm">
+<option>PENDING PAYMENT</option>
+<option>RELEASE ORDER</option>
+</datalist>
+</div>
+            
+                      
+                
+            
+                        
+            </div>
+                        
+                    
+                  
+                  
+                    <div class="col-4">
+                    <div class="input-group mb-3" style="width:235px">
+                            <span class="input-group-text">Ord. Date</span>
+                            <input class="form-control" name="ord_dt" placeholder="Enter Ord. Date" required="" type="date" value="" />
+                        </div>
+
+                        
+                     
+                         </div>
+          </div>
+          
+          
+            <table class="table table-bordered"  style="width:600px ;height:40px">
+                    <thead class="table-success">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Particular</th>
+                        <th class="text-start" scope="col">Qty</th>
+                        <th class="NoPrint" scope="col">                         
+                            <button class="btn btn-sm btn-success" onclick="BtnAdd()" type="button">+</button>
+                          
+                        </th>
+
+                      </tr>
+                    </thead>
+                    <tbody id="TBody">
+                      <tr class="d-none" id="TRow">
+                        <th scope="row">1</th>
+                        
+                       <td>
+                        
+                           
+            <input Type="item_nm" list="item_nm" name="item_nm" style="width:400px ;height:40px">
+            <datalist id="item_nm">
+<option>ECSTAR DIESEL 5W-30-210 L  **7428401**</option>
+<option>ECSTAR PETROL 0W-20-210 L  **7427401**</option>
+<option>ECSTAR PETROL 0W-20-4 X 3.5 L  **7427213**</option>
+<option>HY SERVO PETROL EO SN PLUS-210 L  **7420401**</option>
+<option>HY SERVO PETROL EO SN PLUS-4 X 3.5 L LUBE  **7420213**</option>
+<option>HY SERVO PETROL EO SN PLUS-4 X 4 L LUBE  **7420222**</option>
+<option>HY.SERVO ENGINE OIL 5W-30-210 L BRL  **2968401**</option>
+<option>HY.SERVO ENGINE OIL 5W-30-4x3.5L  **2968213**</option>
+<option>HY.SERVO PRM.EO SM 5W-30-210 L BRL  **7477401**</option>
+<option>HY.SERVO PRM.EO SM 5W-30-4X3 L  **7477203**</option>
+<option>HY.SERVO SYNTH PLUS 5W-30-4x3.5L HDPE  **2953213**</option>
+<option>HYUNDAI S.GEAR OIL 75W-85-4X2.5L-HDPE  **2557195**</option>
+<option>HYUNDAI SERVO BRAKE OIL - 20x1/2L - HDPE  **2918175**</option>
+<option>HYUNDAI SERVO COOLANT LL-20 X 1 L  **7481184**</option>
+<option>HYUNDAI SERVO CRDi PREM.ENG.OIL 4X5L-HDP  **7638234**</option>
+<option>HYUNDAI SERVO DEO ACEA C5-210 L  **7421401**</option>
+<option>HYUNDAI SERVO DEO ACEA C5-4 X 5 L LUBE  **7421234**</option>
+<option>IOC CLEARBLUE-10 L  **7330242**</option>
+<option>IOC CLEARBLUE-20 L  **7330265**</option>
+<option>IOC CLEARBLUE-210 L HD  **7330403**</option>
+<option>MAHINDRA MAXIM SYNTEC F2-20 X 1 L  **2554184**</option>
+<option>MAHINDRA MAXIM SYNTEC F2-40X1/4L  **2554164**</option>
+<option>MAHINDRA MAXIMILE ELITE-10x1.8 L  **2486190**</option>
+<option>MAHINDRA MAXIMILE ELITE-20 X 1 L  **2486184**</option>
+<option>MAHINDRA MAXIMILE ELITE-40X1/4L  **2486164**</option>
+<option>MAHINDRA MAXIMILE FEO V2-20 X 1 L  **7469184**</option>
+<option>MAHINDRA MAXIMILE FEO V2-4 x 6L  **7469244**</option>
+<option>MAHINDRA MAXIMILE FEO V2-4x3.5L HDPE  **7469213**</option>
+<option>MAHINDRA MAXIMILE FEO V2-4x5L - HDPE  **7469234**</option>
+<option>MAHINDRA MAXIMILE FEO-20 X 1 L  **7690184**</option>
+<option>MAHINDRA MAXIMILE FEO-4x5L - HDPE  **7690234**</option>
+<option>MAHINDRA MAXIMILE ULTRA-20 X 1 L  **7393184**</option>
+<option>MAHINDRA MAXIMILE ULTRA-4 X 4 L  **7393222**</option>
+<option>MAHINDRA MAXIMILE ULTRA-4 X 6 L  **7393244**</option>
+<option>MAXIMILE PREMIUM ECO-20 X 1 L  **1415184**</option>
+<option>MAXIMILE PREMIUM ECO-4 x 6L  **1415244**</option>
+<option>MAXIMILE SYNCHRO UV2-10x2 L  **2560197**</option>
+<option>MGDO 15W-40 - 4 X 3.5 L  **7670213**</option>
+<option>MGDO 5W-30-4 X 3.5 L  **2964213**</option>
+<option>MGGO 80W-90 - 4 X 2.1 L  **2540199**</option>
+<option>MGO 0W-20-20 X 1 L  **7475184**</option>
+<option>MGO 0W-20-4x3.5L HDPE  **7475213**</option>
+<option>MGO 20W-40 - 20 X 1 L  **7600184**</option>
+<option>MGO 20W-40 - 4 X 3 L  **7600203**</option>
+<option>MGO 5W-30-210 L BRL  **7688401**</option>
+<option>MGO 5W-30-4 X 3 L LUBE  **7688203**</option>
+<option>MGO 5W-30-4x3.5L HDPE  **7688213**</option>
+<option>S FLEET SUPREME CI4PLUS 15W-40-7.5 L LUBE  **7470251**</option>
+<option>SERVO 2T SUPREME (JFC) - 200X60ML - POU  **2900145**</option>
+<option>SERVO 2T SUPREME(JFC)-300x40ML - POU  **2900125**</option>
+<option>SERVO 2T SUPREME-20 X 1 L  **2900184**</option>
+<option>SERVO 2T SUPREME-20X1/2 L  **2900175**</option>
+<option>SERVO 2T SUPREME-20X1/4 L  **2900165**</option>
+<option>SERVO 2T SUPREME-40X1/2L  **2900174**</option>
+<option>SERVO 2T SUPREME-600 X 20 ML  **2900103**</option>
+<option>SERVO 4T - 20 X 1 L HDPE PROMO  **2924229**</option>
+<option>SERVO 4T 20W-50-20 X 1 L  **2931184**</option>
+<option>SERVO 4T 20W-50-20 X 1 L PROMO  **2931229**</option>
+<option>SERVO 4T BULLET 15W-50-4 X 2.5 L  **2966195**</option>
+<option>SERVO 4T HD-20 X 1.2 L  **2971225**</option>
+<option>SERVO 4T HD-4 X 2.5 L  **2971195**</option>
+<option>SERVO 4T SYNTH-10 X 1 L HDPE  **2949185**</option>
+<option>SERVO 4T XTRA 10W-30-20 X 0.9 L PROMO  **2829230**</option>
+<option>SERVO 4T XTRA-20 X 0.9 L PROMO  **2828230**</option>
+<option>SERVO 4T XTRA-20 X 1 L PROMO  **2828229**</option>
+<option>SERVO 4T ZOOM 10W-30 - 20 X 0.9 L HDPE  **2936152**</option>
+<option>SERVO 4T ZOOM 10W-30-20X0.9 L HDPE PROMO  **2936230**</option>
+<option>SERVO 4T-20X1L-HDPE  **2924184**</option>
+<option>SERVO BRAKE FLUID DOT 4-20 X 1/2 L LUBE  **2914175**</option>
+<option>SERVO BRAKE FLUID DOT 4-20 X 1/4 L LUBE  **2914165**</option>
+<option>SERVO BRAKE FLUID SUPER HD - 20X1/4L-HDP  **2909165**</option>
+<option>SERVO BRAKE FLUID SUPER HD -20X1/2L-HDPE  **2909175**</option>
+<option>SERVO EXCAVATOR TH 46 20 L  **3057265**</option>
+<option>SERVO FLEET CF4 15W-40 - 20 X 1 L  **7472184**</option>
+<option>SERVO FLEET SUPREME CI4 PLUS 15W-40-15 L LUBE  **7470256**</option>
+<option>SERVO FLT CF4 15W-40-15 L  **7472256**</option>
+<option>SERVO FUTURA D-4 x 4 L  **7660222**</option>
+<option>SERVO FUTURA G PLUS 5W-30-20 X 1 L  **2967184**</option>
+<option>SERVO FUTURA G PLUS 5W-30-4 X 3.5 L  **2967213**</option>
+<option>SERVO FUTURA G PLUS 5W-30-4X3.5 L PROMO  **2967111**</option>
+<option>SERVO FUTURA NXT 0W-16-4X3.5 L PROMO LUBE  **7271111**</option>
+<option>SERVO GEAR HP 140-210L BRL  **2503401**</option>
+<option>SERVO GEAR HP 90 - 210L BRL  **2502401**</option>
+<option>SERVO GEAR HP 90 - 4x5L - HDPE  **2502234**</option>
+<option>SERVO GEAR HP 90-20L BUC  **2502265**</option>
+<option>SERVO GEAR HP 90-20X1L-HDPE  **2502184**</option>
+<option>SERVO GEAR HP 90-40X1/2L-HDPE  **2502174**</option>
+<option>SERVO GEAR SUPER 80W-90 - 20 L BUC  **7511265**</option>
+<option>SERVO GEAR SUPER 80W-90 - 20 X 1 L HDPE  **7511184**</option>
+<option>SERVO GEAR SUPER 80W-90 - 4 X 5 L HDPE  **7511234**</option>
+<option>SERVO GEAR SUPER 80W-90-20 L PROMO  **7511269**</option>
+<option>SERVO GEAR SUPER 80W-90-4 X 5 L PROMO  **7511240**</option>
+<option>SERVO GEAR SUPER 85W-140 - 20 X 1 L HDPE  **7515184**</option>
+<option>SERVO GEAR SUPER 85W-140-20 L BUC  **7515265**</option>
+<option>SERVO GEAR SUPER 85W-140-210L BRL  **7515401**</option>
+<option>SERVO GEAR SUPER 85W-140-4 X 5 L PROMO  **7515240**</option>
+<option>SERVO GEM RR 3 - 10 X 1 KG CTN  **7727313**</option>
+<option>SERVO GEM RR 3-6X2 KG TUB  **7727327**</option>
+<option>SERVO GREASE MP - 10 X 1 KG CTN  **7701313**</option>
+<option>SERVO GREASE MP 3 - 10 X 1 KG CTN  **7705313**</option>
+<option>SERVO GREASE MP 3 - 20 X 1/2 KG CTN  **7705303**</option>
+<option>SERVO GREASE MP-182 KG DRM  **7701451**</option>
+<option>SERVO GREASE MP-20 KG BUC  **7701341**</option>
+<option>SERVO GREENMILE-4 X 3.5 L LUBE  **7211213**</option>
+<option>SERVO HONDA JOSH-20 X 0.9 L  **2927152**</option>
+<option>SERVO HONDA SCOOTONXT-20 X 0.8 L  **2933156**</option>
+<option>SERVO HYPERSPORT F5-1 L PROMO LUBE  **2825181**</option>
+<option>SERVO HYPERSPORT F5-10 X 1 L PROMO LUBE  **2825258**</option>
+<option>SERVO KOOL PLUS -210L BRL  **7584401**</option>
+<option>SERVO KOOL PLUS-10X1L-HDPE  **7584185**</option>
+<option>SERVO KOOL PLUS-20X1/2L-HDPE  **7584175**</option>
+<option>SERVO KOOL PLUS-20X1L-HDPE  **7584184**</option>
+<option>SERVO LONG LIFE GREASE-10X1 KG TUB  **7849313**</option>
+<option>SERVO LONG LIFE GREASE-2 X 5 KG  **7849340**</option>
+<option>SERVO LONG LIFE GREASE-20 X 1/2 KG  **7849303**</option>
+<option>SERVO LONG LIFE GREASE-6X2 KG TUB  **7849327**</option>
+<option>SERVO OIB OIL-4x5L - HDPE  **4950234**</option>
+<option>SERVO PREMIUM CF 4 15W 40-20L BUC  **7577265**</option>
+<option>SERVO PREMIUM CF-4 15W-40 - 210L BRL  **7577401**</option>
+<option>SERVO PREMIUM CF-4 15W-40-10L BUC  **7577242**</option>
+<option>SERVO PREMIUM CF-4 15W-40-15 L  **7577256**</option>
+<option>SERVO PREMIUM CF-4 15W-40-20X1L-HDPE  **7577184**</option>
+<option>SERVO PREMIUM CF-4 15W-40-40X1/2L-HDPE  **7577174**</option>
+<option>SERVO PREMIUM CF-4 15W-40-4X5L-HDPE  **7577234**</option>
+<option>SERVO PREMIUM CF-4 15W-40-7.5 L  **7577251**</option>
+<option>SERVO PREMIUM TM 15W-40-10 L  **7552242**</option>
+<option>SERVO PRIDE 40 - 10L BUC  **1404242**</option>
+<option>SERVO PRIDE 40 - 20x1L - HDPE  **1404184**</option>
+<option>SERVO PRIDE 40 - 4x5L - HDPE  **1404234**</option>
+<option>SERVO PRIDE 40-20L BUC  **1404265**</option>
+<option>SERVO PRIDE NXT CK4 10W-30-15 L  **7434256**</option>
+<option>SERVO PRIDE NXT CK4 15W-40-15 L PROMO LUBE  **7436253**</option>
+<option>SERVO PRIDE NXT CK4 15W-40-20 X 1 L  **7436184**</option>
+<option>SERVO PRIDE TC 15W40 - 20L BUC  **7556265**</option>
+<option>SERVO PRIDE TC 15W40 - 20X1L-HDPE  **7556184**</option>
+<option>SERVO PRIDE TC 15W-40 - 4 X 3 L HDPE  **7556203**</option>
+<option>SERVO PRIDE TC 15W40-10L PROMO  **7556241**</option>
+<option>SERVO PRIDE TC 15W40-15L PROMO  **7556253**</option>
+<option>SERVO PRIDE TC 15W40-4X3 L PROMO  **7556204**</option>
+<option>SERVO PRIDE TC 15W40-7.5L PROMO  **7556250**</option>
+<option>SERVO PRIDE XL PLUS 15W40-10L PROMO  **7489241**</option>
+<option>SERVO PRIDE XL PLUS 15W40-15L PROMO  **7489253**</option>
+<option>SERVO PRIDE XL PLUS 15W40-20 L  **7489265**</option>
+<option>SERVO PRIDE XL PLUS 15W40-20 X 1 L  **7489184**</option>
+<option>SERVO PRIDE XL PLUS 15W40-210 L BRL  **7489401**</option>
+<option>SERVO PRIDE XL PLUS 15W40-4x5L - HDPE  **7489234**</option>
+<option>SERVO PRIDE XL PLUS 15W40-7.5L PROMO  **7489250**</option>
+<option>SERVO PRIDENXT 15W40-20 X 1 L PROMO LUBE  **7436229**</option>
+<option>SERVO S.MC 4ST10W30-20X0.8 L PROMO  **2889133**</option>
+<option>SERVO SCOOTOMATIC 4ST 10W-30-20 X 0.8 L  **2889156**</option>
+<option>SERVO SUP.MULT.GRD 20W-40-20 L  **7494265**</option>
+<option>SERVO SUP.MULT.GRD 20W-40-20 X 1 L  **7494184**</option>
+<option>SERVO SUP.MULT.GRD 20W-40-210 L BRL  **7494401**</option>
+<option>SERVO SUP.MULT.GRD 20W-40-40X1/2L  **7494174**</option>
+<option>SERVO SUP.MULT.GRD 20W-40-4x5L - HDPE  **7494234**</option>
+<option>SERVO SUP.MULT.GRD 20W-40-7.5 L  **7494251**</option>
+<option>SERVO SUPER 20W-40 MG-10 L  **7485242**</option>
+<option>SERVO SUPER 20W-40 MG-20 L  **7485265**</option>
+<option>SERVO SUPER 20W-40 MG-20 X 1 L  **7485184**</option>
+<option>SERVO SUPER 20W-40 MG-40X1/2L  **7485174**</option>
+<option>SERVO SUPER 20W-40 MG-4x5L - HDPE  **7485234**</option>
+<option>SERVO SUPER 20W-40 MG-7.5 L  **7485251**</option>
+<option>SERVO SUPER PUMP SO 40-4x3.5L HDPE  **3725213**</option>
+<option>SERVO SUPERIOR EO 0W30 ACEA C2-210 L  **7202401**</option>
+<option>SERVO SUPERMILE 10W-30-20 X 1 L  **7429184**</option>
+<option>SERVO SUPERMILE 10W-30-4 X 5 L PROMO  **7429240**</option>
+<option>SERVO SUPERMILE 10W-30-7 L PROMO  **7429297**</option>
+<option>SERVO SUPERMILE PLUS 5W-30-4 X 5 L PROMO  **7430240**</option>
+<option>SERVO SUPERMILE PLUS 5W-30-7 L PROMO  **7430297**</option>
+<option>SERVO TRANSFLUID A-20X1/2 L  **4906175**</option>
+<option>SERVO TRANSFLUID A-20X1L-HDPE  **4906184**</option>
+<option>SERVO TRANSFLUID A-4X5L-HDPE  **4906234**</option>
+<option>SERVOCUT S - 210L BRL  **4501401**</option>
+<option>SERVOELECTRA - 210L BRL  **7403401**</option>
+<option>SERVOGEM EP 2-182 KG DRM  **7742451**</option>
+<option>SERVOGREASE MP 3 - 182 KG DRM  **7705451**</option>
+<option>SERVOGREASE MP 3 - 5 KG BUC  **7705339**</option>
+<option>SERVOGREASE MP 3 -20 KG BUC  **7705341**</option>
+<option>SERVOGREASE MP 3-2 X 5 KG  **7705340**</option>
+<option>SERVOGREASE MP 3-4X3 KG  **7705337**</option>
+<option>SERVOGREASE MP 3-60X200 GM CAR  **7705308**</option>
+<option>SERVOHYDRASHAKTI 68-20 L  **3040265**</option>
+<option>SERVOMESH SP 320 - 210L BRL  **3614401**</option>
+<option>SERVOSYSTEM 32-20L BUC  **3001265**</option>
+<option>SERVOSYSTEM 46 - 20L BUC  **3002265**</option>
+<option>SERVOSYSTEM 46 - 210L BRL  **3002401**</option>
+<option>SERVOSYSTEM 68 - 210L BRL  **3006401**</option>
+<option>SERVOSYSTEM 68-20L BUC  **3006265**</option>
+<option>SERVOSYSTEM 68-210 L HD  **3006403**</option>
+<option>SERVOSYSTEM 68-4x5L - HDPE  **3006234**</option>
+<option>SERVOSYSTEM HLP 68 - 210L BRL  **3084401**</option>
+<option>SERVOTHERM SPECIAL-210L BRL  **4803401**</option>
+<option>TRU4 KRAAFT-10 X 0.9 L  **2896150**</option>
+<option>TRU4 KRAAFT-10 X 1 L  **2896185**</option>
+</datalist>
+</td>
+
+                     <!-- edit onchange or disabled or readonly -->
+               
+                        <td><input name="qty" onchange="Calc(this);" type="number" style="width:60px ; height:40px" /></td>
+                       
+                      </tr>
+                    </tbody>
+                  </table>
+          
+                    
+                    <!-- edit onchange or disabled or readonly -->
+
+          
+
+             
+         <button class="btn btn-primary" onclick="GetPrint()" type="button">Print</button>
+         <button class="btn btn-primary" type="Reset" value="RESET">Reset</button>
+         <button class="btn btn-primary" type="submit">submit</button>
+            
+          
+        
+  
+ 
+ </form> 
+ </div>   
+      
+      
+      
+    <script>
+      
+      .btn , .NoPrint 
+{
+    display: none;
+}
+
+.form-control
+{
+    border: 0px;
+}
+
+.input-group-text
+{
+    border: 0px;
+    background-color: white;
+}
+
+table 
+{
+    border : 1px solid black;
+}
+    </script>
+    
+    
+    
+    
+    
+    <script>
+      function GetPrint()
+{
+    /*For Print*/
+    window.print();
+}
+
+function BtnAdd()
+{
+    /*Add Button*/
+    var v = $("#TRow").clone().appendTo("#TBody") ;
+    $(v).find("input").val('');
+    $(v).removeClass("d-none");
+    $(v).find("th").first().html($('#TBody tr').length - 1);
+}
+
+function BtnDel(v)
+{
+    /*Delete Button*/
+       $(v).parent().parent().remove(); 
+       GetTotal();
+
+        $("#TBody").find("tr").each(
+        function(index)
+        {
+           $(this).find("th").first().html(index);
+        }
+
+       );
+}
+
+
+function GetTotal()
+{
+    /*Footer Calculation*/   
+
+    var sum= 0;
+    var amts =  document.getElementsByName("amt");
+
+    for (let index = 0; index < amts.length; index++)
+    {
+        var amt = amts[index].value;
+        sum = +(sum) +  +(amt) ; 
+    }
+
+    document.getElementById("FTotal").value = sum;
+
+    var gst =  document.getElementById("FGST").value;
+    var net = +(sum) + +(gst);
+    document.getElementById("FNet").value = net;
+
+}
+     
+ 
+    </script>
+  
+
+    <!-- Bootstrap Bundle JS -->
+    <script crossorigin="anonymous" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+  
+  
+   </head>
+  
+  
+  
+  
+</body></html>

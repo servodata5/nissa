@@ -1,0 +1,324 @@
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+  <link href="./portal_files/css2" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+ <link href="./portal_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./portal_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="./portal_files/glightbox.min.css" rel="stylesheet">
+  <link href="./portal_files/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Main CSS File -->
+    <link href="./portal_files/style1.css" rel="stylesheet">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roled</title>
+    <link rel="stylesheet" href="style.css">    
+
+
+<body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+    <nav>
+        <div class="logo">
+            <h1>R/O ACCOUNT STATEMENT</h1>
+        </div>
+        <ul id="menuList">
+		<button class="btn btn-primary" onclick="oemled.html" type="button">
+		<li><a href="oemled.html">OEM</a></li>
+		
+		<button class="btn btn-primary" onclick="baled.html" type="button">
+		<li><a href="baled.html">Bazaar</a></li>
+		
+		<button class="btn btn-primary" onclick="portal.html" type="button">
+            <li><a href="portal.html">Home</a></li>
+            
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+	
+	
+	<style>
+table, th, td {
+  border: 1px solid black; /* Sets border for table, headers, and data cells */
+  border-collapse: collapse; /* Collapses borders to avoid double borders */
+  padding: 5px; /* Adds padding inside cells */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.header-row th { /* Style header row cells differently */
+  background-color: #f2f2f2;
+  font-weight: bold;
+} 
+
+table {
+  width: 60%; /* Or a specific width like 300px */
+  margin: 0 auto; /* Centers the table horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 4px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+ #ForSearchTable {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Set font size */
+	
+  }
+
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+
+  #myTable tr {
+    /* Add a bottom border to each table row */
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myTable tr:hover {
+    /* Add a hover effect to the table rows */
+    background-color: #FFB6C1;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon */
+    width: 100%; /* Full-width input */
+    font-size: 16px; /* Set font size */
+    padding: 12px 20px 12px 40px; /* Add padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+  }
+
+.search-container {
+    /* Container for better layout control */
+    width: 620px; /* Example width */
+    margin: 20px auto; /* Center the container */
+  }
+
+  .search-input {
+    width: 100%; /* Occupy full width of container */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+</style>
+
+
+<div class="search-container">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..." >
+</div>
+
+ <table id="myTable">
+ <thead>  
+<tr>
+	  <th>SL No </th>
+      <th>Customer Name </th>
+      <th>View/Download</th>
+    </tr>
+</thead>
+
+  <tbody>
+<tr> <td>159829</td><td>Abigail Service Station</td><td><a href="report/ledgers/Abigail Service Station.pdf">Click here&nbsp;to Download </a></td></tr>
+<tr> <td>182060</td><td>Alta Filling Station</td><td><a href="report/ledgers/Alta Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>207870</td><td>Arkiwan Service Station</td><td><a href="report/ledgers/Arkiwan Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>525024</td><td>Ashok Auto Service (B)</td><td><a href="report/ledgers/Ashok Auto Service (B).pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159828</td><td>Ashok Auto Service (S)</td><td><a href="report/ledgers/Ashok Auto Service (S).pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>161557</td><td>Assam auto (J)</td><td><a href="report/ledgers/Assam auto (J).pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>161558</td><td>Assam auto Agencies(L_M)</td><td><a href="report/ledgers/Assam auto Agencies(L_M).pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160683</td><td>Auto Fuel Service Centre</td><td><a href="report/ledgers/Auto Fuel Service Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>354421</td><td>B M S Fuel station</td><td><a href="report/ledgers/B M S Fuel station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>190726</td><td>B Shylla Filling Station</td><td><a href="report/ledgers/B Shylla Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>273383</td><td>Ba-Man Service Station</td><td><a href="report/ledgers/Ba-Man Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>347327</td><td>Bamon Filling</td><td><a href="report/ledgers/Bamon Filling.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>220249</td><td>Bamon Service Station</td><td><a href="report/ledgers/Bamon Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160684</td><td>Banalari Fuel Station</td><td><a href="report/ledgers/Banalari Fuel Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>292421</td><td>Bhollangunj Refill Centre</td><td><a href="report/ledgers/Bhollangunj Refill Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>183469</td><td>Black Diamond Refill Centre</td><td><a href="report/ledgers/Black Diamond Refill Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159605</td><td>Burnihat Service Station</td><td><a href="report/ledgers/Burnihat Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>285724</td><td>Byrnihat A warjri Fuel Stop</td><td><a href="report/ledgers/Byrnihat A warjri Fuel Stop.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>344248</td><td>Cherra Midway Filling Station</td><td><a href="report/ledgers/Cherra Midway Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>231175</td><td>D Mercy Refill Centre</td><td><a href="report/ledgers/D Mercy Refill Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>190724</td><td>Dhar Service Station</td><td><a href="report/ledgers/Dhar Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>354419</td><td>Didram Fuel Station</td><td><a href="report/ledgers/Didram Fuel Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>220203</td><td>Dkhiah Service Station</td><td><a href="report/ledgers/Dkhiah Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160680</td><td>Donbok Service Station</td><td><a href="report/ledgers/Donbok Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>292383</td><td>East Jaintia Filling Center</td><td><a href="report/ledgers/East Jaintia Filling Center.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>205986</td><td>Eastern Border Service Station</td><td><a href="report/ledgers/Eastern Border Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>190728</td><td>Genesis Service Station</td><td><a href="report/ledgers/Genesis Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160685</td><td>Green Hills Service Station</td><td><a href="report/ledgers/Green Hills Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>224759</td><td>Harlie V Service Station</td><td><a href="report/ledgers/Harlie V Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>204762</td><td>Heimon Filling Station</td><td><a href="report/ledgers/Heimon Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>185003</td><td>Highland Service Station</td><td><a href="report/ledgers/Highland Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>265943</td><td>Highway Carrier Refilling</td><td><a href="report/ledgers/Highway Carrier Refilling.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>323675</td><td>Highway Plaza Filling centre</td><td><a href="report/ledgers/Highway Plaza Filling centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160386</td><td>Highway Refill Centre</td><td><a href="report/ledgers/Highway Refill Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>278340</td><td>Hoslin Service Station</td><td><a href="report/ledgers/Hoslin Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159653</td><td>J Marbaniang</td><td><a href="report/ledgers/J Marbaniang.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159834</td><td>Jaintia Auto Agencies</td><td><a href="report/ledgers/Jaintia Auto Agencies.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160670</td><td>Jaintia Service Station</td><td><a href="report/ledgers/Jaintia Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>346930</td><td>JIRANG FILLING STATION</td><td><a href="report/ledgers/JIRANG FILLING STATION.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>339074</td><td>K Langbai Fuel Station</td><td><a href="report/ledgers/K Langbai Fuel Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160671</td><td>K Rymbai & Co</td><td><a href="report/ledgers/K Rymbai & Co.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>165966</td><td>Kargil Martyr's Service Station</td><td><a href="report/ledgers/Kargil Martyr's Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>207872</td><td>Kharnairi Service Centre</td><td><a href="report/ledgers/Kharnairi Service Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160668</td><td>Khasi Hills Petroleum Supply Co</td><td><a href="report/ledgers/Khasi Hills Petroleum Supply Co.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159668</td><td>Khongwir Service Station</td><td><a href="report/ledgers/Khongwir Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159664</td><td>Kurbah Service Station</td><td><a href="report/ledgers/Kurbah Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>295652</td><td>Laityrke Service  Station</td><td><a href="report/ledgers/Laityrke Service  Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>??????</td><td>LMPL Enterprice (ESSAR)</td><td><a href="report/ledgers/LMPL Enterprice (ESSAR).pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>356753</td><td>LUMSHNONG FUELS</td><td><a href="report/ledgers/LUMSHNONG FUELS.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160677</td><td>Lumshnong Service Station</td><td><a href="report/ledgers/Lumshnong Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159835</td><td>Lyngdoh Pahsyntiew Service Station</td><td><a href="report/ledgers/Lyngdoh Pahsyntiew Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159836</td><td>Mahari & Sons</td><td><a href="report/ledgers/Mahari & Sons.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160672</td><td>Mahavir & Co</td><td><a href="report/ledgers/Mahavir & Co.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>345026</td><td>Mairang Service Station</td><td><a href="report/ledgers/Mairang Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>356774</td><td>MAN-TEI SERVICE STATION</td><td><a href="report/ledgers/MAN-TEI SERVICE STATION.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>234341</td><td>Marwet Oil Services pvt.ltd</td><td><a href="report/ledgers/Marwet Oil Services pvt.ltd.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160342</td><td>Marwet Petroleum Agency</td><td><a href="report/ledgers/Marwet Petroleum Agency.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>356670</td><td>MATTI I PA ENERGY</td><td><a href="report/ledgers/MATTI I PA ENERGY.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>292180</td><td>Mawkhanu Service Station</td><td><a href="report/ledgers/Mawkhanu Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>292412</td><td>Mawlai Aibor Roy</td><td><a href="report/ledgers/Mawlai Aibor Roy.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159830</td><td>Mawlai Banalari Service Station</td><td><a href="report/ledgers/Mawlai Banalari Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160360</td><td>Meera Service Station</td><td><a href="report/ledgers/Meera Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159685</td><td>Meghalaya Service Station</td><td><a href="report/ledgers/Meghalaya Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>205988</td><td>Mihmyntdu Service Station</td><td><a href="report/ledgers/Mihmyntdu Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>345624</td><td>MILDA ENERGY POINT</td><td><a href="report/ledgers/MILDA ENERGY POINT.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>295145</td><td>Moolamylliang Service Station</td><td><a href="report/ledgers/Moolamylliang Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>198914</td><td>More Energy Station</td><td><a href="report/ledgers/More Energy Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>198914</td><td>More Energy Station</td><td><a href="report/ledgers/More Energy Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159837</td><td>Morland Snootnick Filling Station</td><td><a href="report/ledgers/Morland Snootnick Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>296129</td><td>Mylliem Wah Lyngdoh Refill Centre</td><td><a href="report/ledgers/Mylliem Wah Lyngdoh Refill Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>274397</td><td>Nangkyrsoi Fuel Station</td><td><a href="report/ledgers/Nangkyrsoi Fuel Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159693</td><td>Naya Bunglow Service Station</td><td><a href="report/ledgers/Naya Bunglow Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>288093</td><td>Nongpluh Umroi Service Station</td><td><a href="report/ledgers/Nongpluh Umroi Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159695</td><td>Nongpoh Filling Centre</td><td><a href="report/ledgers/Nongpoh Filling Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>324328</td><td>Nongpoh Highway Service Station</td><td><a href="report/ledgers/Nongpoh Highway Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>325536</td><td>Nongrum Energy Station</td><td><a href="report/ledgers/Nongrum Energy Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>360879</td><td>NONGSHILLONG SERVICE STATION</td><td><a href="report/ledgers/NONGSHILLONG SERVICE STATION.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>279567</td><td>Nongstoin Highway Service Station</td><td><a href="report/ledgers/Nongstoin Highway Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>190725</td><td>Nongtdu Filling Station</td><td><a href="report/ledgers/Nongtdu Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>183237</td><td>Nongtdu Service Station</td><td><a href="report/ledgers/Nongtdu Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>0</td><td>NONGTLUH MATHAN PETROL PUMP</td><td><a href="report/ledgers/NONGTLUH MATHAN PETROL PUMP.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>220492</td><td>Peak Service Station L_K</td><td><a href="report/ledgers/Peak Service Station L_K.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>525030</td><td>Peak Service Station L_M</td><td><a href="report/ledgers/Peak Service Station L_M.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>183032</td><td>Perfect Service Station</td><td><a href="report/ledgers/Perfect Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>220250</td><td>Petrol and Auto Diesel Filling Station</td><td><a href="report/ledgers/Petrol and Auto Diesel Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160678</td><td>Pnar Service Station L_R</td><td><a href="report/ledgers/Pnar Service Station L_R.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159838</td><td>Pnar Service Station M_K</td><td><a href="report/ledgers/Pnar Service Station M_K.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>344512</td><td>PNAR SERVICE STATION MUKHLA (AD HOC</td><td><a href="report/ledgers/PNAR SERVICE STATION MUKHLA (AD HOC.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>195028</td><td>Polo Service Station</td><td><a href="report/ledgers/Polo Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>190723</td><td>Pynbianglang Refilling Station</td><td><a href="report/ledgers/Pynbianglang Refilling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>197704</td><td>Pyngrope Service Station</td><td><a href="report/ledgers/Pyngrope Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160368</td><td>Raj Filling Centre</td><td><a href="report/ledgers/Raj Filling Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>197703</td><td>Raja Fuel Service</td><td><a href="report/ledgers/Raja Fuel Service.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>347353</td><td>Raliang Fuels</td><td><a href="report/ledgers/Raliang Fuels.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>161569</td><td>Rani Service Station</td><td><a href="report/ledgers/Rani Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>372030</td><td>RI BHOI SERVICE STATION</td><td><a href="report/ledgers/RI BHOI SERVICE STATION.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160365</td><td>Ri Lyngngam Service Station</td><td><a href="report/ledgers/Ri Lyngngam Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>268475</td><td>Rida Langrin Filling Centre</td><td><a href="report/ledgers/Rida Langrin Filling Centre.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>345654</td><td>River Kynshi BKS Service Station</td><td><a href="report/ledgers/River Kynshi BKS Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>180730</td><td>River Umtrew Service Station</td><td><a href="report/ledgers/River Umtrew Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>225749</td><td>Roibha Fuel Station</td><td><a href="report/ledgers/Roibha Fuel Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159839</td><td>Shallam Syngkon Jowai</td><td><a href="report/ledgers/Shallam Syngkon Jowai.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>525025</td><td>Shallam Syngkon Wapung</td><td><a href="report/ledgers/Shallam Syngkon Wapung.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>282690</td><td>Shallang Lynmer Fuel Station</td><td><a href="report/ledgers/Shallang Lynmer Fuel Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>198493</td><td>Shangpung Service Station</td><td><a href="report/ledgers/Shangpung Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>??????</td><td>Shangpung Service Station  (ESSAR)</td><td><a href="report/ledgers/Shangpung Service Station  (ESSAR).pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>217541</td><td>Shibai Shiboo Service Station</td><td><a href="report/ledgers/Shibai Shiboo Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159837</td><td>SOHRA REFILLING CENTRE</td><td><a href="report/ledgers/SOHRA REFILLING CENTRE.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>183194</td><td>SOUTHERN HILLS SERVICE STATION</td><td><a href="report/ledgers/SOUTHERN HILLS SERVICE STATION.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>269675</td><td>Star Energy Point</td><td><a href="report/ledgers/Star Energy Point.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>190727</td><td>Swer Service Station</td><td><a href="report/ledgers/Swer Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>224005</td><td>Tuber Auto Agencies Service Station</td><td><a href="report/ledgers/Tuber Auto Agencies Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>362530</td><td>TUBER SERVICE STATION</td><td><a href="report/ledgers/TUBER SERVICE STATION.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>328716</td><td>Tyrshi Filling Station</td><td><a href="report/ledgers/Tyrshi Filling Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>279044</td><td>Umkrukru service Station</td><td><a href="report/ledgers/Umkrukru service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>292212</td><td>Umran Fuels</td><td><a href="report/ledgers/Umran Fuels.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>356735</td><td>UMSNING FUEL STATION</td><td><a href="report/ledgers/UMSNING FUEL STATION.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>159842</td><td>United Hills Super Service Station</td><td><a href="report/ledgers/United Hills Super Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>160660</td><td>Upper Shillong Petrol Service Station</td><td><a href="report/ledgers/Upper Shillong Petrol Service Station.pdf">Click here&nbsp;to Download</a></td></tr>
+<tr> <td>0</td><td>WEST JAINTIA FILLING POINT</td><td><a href="report/ledgers/WEST JAINTIA FILLING POINT.pdf">Click here&nbsp;to Download</a></td></tr>
+
+
+</tbody>
+</table>  
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td");
+    let rowMatchesFilter = false; // Flag to track if any cell in the row matches
+    for (let j = 0; j < td.length; j++) { // Iterate through all columns in the row
+      if (td[j]) {
+        txtValue = td[j].textContent || td[j].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          rowMatchesFilter = true; // Set flag to true if a cell matches
+          break; // No need to check other cells in this row if one matches
+        }
+      }
+    }
+    if (rowMatchesFilter) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+</script>
+    </body>
+	</head>
+</html>
+	  
+
