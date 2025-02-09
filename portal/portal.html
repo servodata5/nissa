@@ -23,6 +23,10 @@
 
 <head>
 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10"> <!-- Refresh every 10 seconds -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8" />
@@ -69,7 +73,14 @@
     </script>
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 	
-
+<script>
+        // Function to update the time display
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').textContent = now.toLocaleTimeString();
+        }
+        updateTime(); // Call the function to display the initial time
+    </script>
 	
 <main class="main">
 

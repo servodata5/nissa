@@ -70,6 +70,16 @@
         }
         
     </script>
+	
+	<script>
+        // Function to update the time display
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').textContent = now.toLocaleTimeString();
+        }
+        updateTime(); // Call the function to display the initial time
+    </script>
+	
 	 <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 
   <main class="main">
