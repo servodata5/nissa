@@ -2,6 +2,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./obrareq_files/login_Css.css">
 <link rel="stylesheet" href="./obrareq_files/all.css">
+
+
+<!-- inactivity -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30;url=../index.html">  <!-- Refresh every seconds if 30 sec is "30" -->
+	
+	<!-- update while open --> 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content=""> <!-- Refresh every seconds if 1 sec is "1" -->
+
 <script>
       function validateForm() {
   var username = document.forms["loginForm"]["username"].value;
@@ -52,6 +64,16 @@
 		
 	  
 </div></form>
+
+<!-- update while open -->
+	  <script>
+        // Function to update the time display
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').textContent = now.toLocaleTimeString();
+        }
+        updateTime(); // Call the function to display the initial time
+    </script>
 
 
 
