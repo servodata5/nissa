@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Compression Tool</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body >
+  <div class="container">
+    <h1>Image Compression Tool</h1>
+    <div class="upload-section">
+      <input type="file" id="image-upload" accept="image/*" />
+      <label for="image-upload" class="upload-label">Choose an Image</label>
+	  <button class="btn btn-primary" onclick="portal.html" type="button">
+           <label> <li> <a href="../../portal.html" class="">Home</a> </li> </label>
+    </div>
+    <div class="preview-section hidden">
+      <img id="preview-image" src="#" alt="Preview" />
+    </div>
+    <div class="controls hidden">
+      <label for="quality-slider">Compression Quality: <span id="quality-value">100</span>%</label>
+      <input type="range" id="quality-slider" min="1" max="100" value="100" />
+      <button id="compress-btn">Compress Image</button>
+	  
+	   
+    </div>
+    <div class="download-section hidden">
+      <a id="download-link" download="compressed-image.jpg">Download Compressed Image</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
