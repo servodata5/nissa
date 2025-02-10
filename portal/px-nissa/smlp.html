@@ -32,6 +32,8 @@
     <title>Small Pack Pricelist</title>
     <link rel="stylesheet" href="../portal_files/style2.css">  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>	
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 
 <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
@@ -39,13 +41,14 @@
         <div class="logo">
             <h1>Small Pack Price List</h1>
        </div>
-        	 <ul id="menuList">	
+        	 <ul id="menuList">
 		<p></p>
 		<li><a href="brlp.html">Barrel Price</a></li>
 		
 		<button class="btn btn-primary" onclick="portal.html" type="button">
     <li><a href="../portal.html">Home</a></li>
             
+			 <button class="btn btn-primary" onclick="downloadPDF()">PDF</button>
         </ul>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
@@ -468,6 +471,27 @@ function myFunction() {
   }
 }
 </script>
+
+<script>
+        function downloadPDF() {
+            // Get the table element
+            const table = document.getElementById('myTable');
+
+            // Use html2canvas to convert the table to an image
+            html2canvas(table).then((canvas) => {
+                const imgData = canvas.toDataURL('image/png'); // Convert canvas to image data
+                const pdf = new jspdf.jsPDF('p', 'mm', 'a4'); // Create a new PDF
+
+                // Add the image to the PDF
+                const imgWidth = 190; // Width of the image in the PDF
+                const imgHeight = (canvas.height * imgWidth) / canvas.width; // Calculate height to maintain aspect ratio
+                pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+
+                // Save the PDF
+                pdf.save('table.pdf');
+            });
+        }
+    </script>
 
 </body>
 </head>

@@ -32,7 +32,8 @@
     <title>Barrel Price</title>
     <link rel="stylesheet" href="../portal_files/style2.css">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>	
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 
 <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
@@ -47,7 +48,7 @@
 		
 		<button class="btn btn-primary" onclick="portal.html" type="button">
             <li><a href="../portal.html">Home</a></li>
-            
+            <button class="btn btn-primary" onclick="downloadPDF()">PDF</button> 
         </ul>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
