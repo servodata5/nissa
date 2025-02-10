@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="30;url=https://servodata5.github.io/nissa/">  <!-- Refresh every seconds if 2 min is "120" -->
 	
+	<!-- update while open --> 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30"> <!-- Refresh every seconds if 30 sec is "30" -->
+
 	
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -323,6 +328,16 @@ function myFunction() {
   }
 }
 </script>
+
+<!-- update while open -->	
+<script>
+        // Function to update the time display
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').textContent = now.toLocaleTimeString();
+        }
+        updateTime(); // Call the function to display the initial time
+    </script>
     </body>
 	</head>
 </html>
