@@ -280,7 +280,7 @@ function myFunction() {
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
+  for (i = 1; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td");
     let rowMatchesFilter = false; // Flag to track if any cell in the row matches
     for (let j = 0; j < td.length; j++) { // Iterate through all columns in the row

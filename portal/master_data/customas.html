@@ -1,0 +1,515 @@
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<!-- inactivity -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30;url=https://servodata5.github.io/nissa/">  <!-- Refresh every seconds if 2 min is "120" -->
+	
+	<!-- update while open --> 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30"> <!-- Refresh every 10 seconds -->
+	
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+  <link href="../portal_files/css2" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+ <link href="../portal_files/bootstrap.min.css" rel="stylesheet">
+  <link href="../portal_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="../portal_files/glightbox.min.css" rel="stylesheet">
+  <link href="../portal_files/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Main CSS File -->
+    <link href="../portal_files/style1.css" rel="stylesheet">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>master_bazaar-</title>
+    <link rel="stylesheet" href="./style.css">    
+
+
+<body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+    <nav>
+        <div class="logo">
+            <h1>Customer_Master</h1>
+       </div>
+        <ul id="menuList">
+		
+		
+		<button class="btn btn-primary" onclick="portal.html" type="button">
+            <li><a href="../portal.html">Home</a></li>
+            
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script><script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+
+	<style>
+table, th, td {
+  border: 1px solid black; /* Sets border for table, headers, and data cells */
+  border-collapse: collapse; /* Collapses borders to avoid double borders */
+  padding: 5px; /* Adds padding inside cells */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.header-row th { /* Style header row cells differently */
+  background-color: #f2f2f2;
+  font-weight: bold;
+} 
+
+table {
+  width: 60%; /* Or a specific width like 300px */
+  margin: 0 auto; /* Centers the table horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 4px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+ #ForSearchTable {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Set font size */
+  }
+
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+
+  #myTable tr {
+    /* Add a bottom border to each table row */
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myTable tr:hover {
+    /* Add a hover effect to the table rows */
+    background-color: #FFB6C1;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon */
+    width: 100%; /* Full-width input */
+    font-size: 16px; /* Set font size */
+    padding: 12px 20px 12px 40px; /* Add padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+  }
+
+.search-container {
+    /* Container for better layout control */
+    width: 620px; /* Example width */
+    margin: 20px auto; /* Center the container */
+  }
+
+  .search-input {
+    width: 100%; /* Occupy full width of container */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+</style>
+
+
+
+<div class="search-container">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..." >
+</div>
+
+ <table id="myTable">
+ <thead>  
+<tr>
+ <th>Customer Id</th>
+<th>Customer Name</th>
+<th>District</th>
+<th>Address</th>
+<th>Phone Number</th>
+    </tr> 
+	
+</thead>
+  <tbody>
+  
+<tr><td>7200000005218680</td><td>Choudhury Auto Spares</td><td>EAST KHASI HILLS</td><td>Keating Road Shillong</td><td>9436103964</td></tr>
+<tr><td>7200000039642230</td><td>EM KURBAH (MAIRANG)</td><td>EASTNWEST KHASI HILLS</td><td>C/O BISHWA NATH ROY</td><td>9366918451</td></tr>
+<tr><td>7200000005859600</td><td>A B Motor</td><td>WEST JAINTIA HILLS</td><td>8th Mile, Jaintia</td><td>9436116212</td></tr>
+<tr><td>7200000007444740</td><td>A B Motor L/M</td><td>WEST JAINTIA HILLS</td><td>Shiehruphi, Lumshnong</td><td>9954925881</td></tr>
+<tr><td>7200000027095830</td><td>A D Automobile</td><td>WEST JAINTIA HILLS</td><td>Amlarem</td><td>8837080497</td></tr>
+<tr><td>7200000019182410</td><td>A L Automobile</td><td>EAST KHASI HILLS</td><td>Laitkor</td><td>7642014842</td></tr>
+<tr><td>7200000006279290</td><td>A M Store</td><td>WEST JAINTIA HILLS</td><td>8th Mile Jowai</td><td>7005067878</td></tr>
+<tr><td>7200000005859640</td><td>A S Auto</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>9612215184</td></tr>
+<tr><td>7200000039651500</td><td>A THONGNI AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>UPPER SHILLONG</td><td>9774449472</td></tr>
+<tr><td>7200000038744070</td><td>A.S MOTORS (KHLIEHRIAT)</td><td>EAST JAINTIA HILLS</td><td>KHLIEHRIAT</td><td>7004501295</td></tr>
+<tr><td>7200000031447170</td><td>ALN AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>MAWLAI</td><td>8787364587</td></tr>
+<tr><td>7200000029807310</td><td>ARBANKITBOK MAWLONG</td><td>EAST KHASI HILLS</td><td>BANIUN</td><td>8414031322</td></tr>
+<tr><td>7200000035568140</td><td>ASHISH AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>LADRYMBAI</td><td>8731061637</td></tr>
+<tr><td>7200000035567320</td><td>AUTO SPARE HOUSE</td><td>EAST KHASI HILLS</td><td>Iewduh</td><td>9402134892</td></tr>
+<tr><td>7200000004809180</td><td>Agustine Automobile</td><td>EAST JAINTIA HILLS</td><td>Amlarem</td><td>8837080497</td></tr>
+<tr><td>7200000007364090</td><td>Aiom Auto</td><td>WEST JAINTIA HILLS</td><td>Lumshnong</td><td>7002705035</td></tr>
+<tr><td>7200000005331390</td><td>Ali Motor</td><td>WEST JAINTIA HILLS</td><td>7 Miles Jowai</td><td>8787574809</td></tr>
+<tr><td>7200000017855560</td><td>Ali Workshop</td><td>EAST KHASI HILLS</td><td>4th Furlong</td><td>9862438243</td></tr>
+<tr><td>7200000027999240</td><td>Aman Automobile</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>9402550413</td></tr>
+<tr><td>7200000021895940</td><td>Anwar Automobile</td><td>WEST JAINTIA HILLS</td><td>Mookhla</td><td>8837287103</td></tr>
+<tr><td>7200000027999280</td><td>Ashok Singh Automobile</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>7005110080</td></tr>
+<tr><td>7200000006676400</td><td>Assam Motor</td><td>EAST KHASI HILLS</td><td>Motphram</td><td>9863021188</td></tr>
+<tr><td>7200000038858050</td><td>Atul Automobile</td><td>WEST JAINTIA HILLS</td><td>Wapung</td><td>9862461132</td></tr>
+<tr><td>7200000006898330</td><td>Atul Automobiles</td><td>EAST JAINTIA HILLS</td><td>Ladrymbai, Rymbai Road</td><td>9862461132</td></tr>
+<tr><td>7200000004256700</td><td>Auto Parts Company</td><td>EAST KHASI HILLS</td><td>Iewduh</td><td>9436101563</td></tr>
+<tr><td>7200000022316140</td><td>Azriel Automobile</td><td>EAST KHASI HILLS</td><td>Mawnianglah, Mylliem</td><td>6909089331</td></tr>
+<tr><td>7200000004809190</td><td>B K Auto</td><td>WEST JAINTIA HILLS</td><td>Mookhu</td><td>8729910791</td></tr>
+<tr><td>7200000018111470</td><td>B M S Automobile</td><td>RI BHOI</td><td>Nongpoh</td><td>8794332711</td></tr>
+<tr><td>7200000041310350</td><td>B N AUTO NONGSTOIN</td><td>WEST KHASI HILLS</td><td>NEW NONGSTOIN</td><td>7005761986</td></tr>
+<tr><td>7200000004014840</td><td>B.M Auto Accessories</td><td>WEST JAINTIA HILLS</td><td>Mihmyntdu, Jowai</td><td>8258883616</td></tr>
+<tr><td>7200000038512330</td><td>BALAJI AUTOMOBILE (MOOWAKHU)</td><td>EAST JAINTIA HILLS</td><td>MOOWAKHU</td><td>7987545654</td></tr>
+<tr><td>7200000039284900</td><td>BARNE STONE KHONGMALAI</td><td>EAST KHASI HILLS</td><td>MAWLAI -SHILLONG</td><td>8132960673</td></tr>
+<tr><td>7200000035564700</td><td>BARNES STONE KHARMULOI</td><td>EAST KHASI HILLS</td><td>MAWLAI IEWRYNGHEP</td><td>8132960673</td></tr>
+<tr><td>7200000035562980</td><td>BOK AUTO SPARE</td><td>EAST KHASI HILLS</td><td>DEMSEINIONG</td><td>8415005981</td></tr>
+<tr><td>7200000020689740</td><td>Bajrang Automobiles</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>9862613100</td></tr>
+<tr><td>7200000020687650</td><td>Balaji Automobile</td><td>EAST KHASI HILLS</td><td>Band Stand Demthring</td><td>9402548365</td></tr>
+<tr><td>7200000018100230</td><td>Balaji Motors</td><td>EAST KHASI HILLS</td><td>Parking Lot Barra Bazaar</td><td>9863066510</td></tr>
+<tr><td>7200000006229410</td><td>Bamon Tyre Auto</td><td>WEST JAINTIA HILLS</td><td>New Hill</td><td>9774223907</td></tr>
+<tr><td>7200000004185120</td><td>Barley Auto</td><td>WEST JAINTIA HILLS</td><td>Khliehriat Jowai</td><td>7085901244</td></tr>
+<tr><td>7200000005216000</td><td>Batlee Automobile</td><td>EAST KHASI HILLS</td><td>G S Road</td><td>9862204664</td></tr>
+<tr><td>7200000013485210</td><td>Bharat Automobile</td><td>EAST KHASI HILLS</td><td>Iewduh Bus Stand</td><td>9089569870</td></tr>
+<tr><td>7200000004610930</td><td>Bharat Automobiles Company</td><td>EAST KHASI HILLS</td><td>Iewduh Bus Stand</td><td>9089569870</td></tr>
+<tr><td>7200000015512000</td><td>Biswajit Chanda</td><td>EAST KHASI HILLS</td><td>Demseiniong</td><td>9862401513</td></tr>
+<tr><td>7200000023025540</td><td>Brimca Enterprise</td><td>EAST KHASI HILLS</td><td>Mawlai Nonglum</td><td>9863083412</td></tr>
+<tr><td>7200000004657900</td><td>C M Auto Parts</td><td>EAST KHASI HILLS</td><td>Nongthymmai Nongshilliang</td><td>9612646620</td></tr>
+<tr><td>7200000004007400</td><td>C M W Automobile Spare Parts</td><td>EAST KHASI HILLS</td><td>Last Stop, Bishnupur</td><td>9615957790</td></tr>
+<tr><td>7200000004809230</td><td>C.P Automobiles Dkhiah</td><td>WEST JAINTIA HILLS</td><td>Mookhu</td><td>8794946043</td></tr>
+<tr><td>7200000041188240</td><td>CAR-KY'S AUTOMOBILES</td><td>EAST KHASI HILLS</td><td>DEMTHRING</td><td>9362804496</td></tr>
+<tr><td>7200000004125570</td><td>Chachan Traders</td><td>EAST KHASI HILLS</td><td>Iewduh, Motphran</td><td>9862230647</td></tr>
+<tr><td>7200000004091860</td><td>Chalang Auto</td><td>EAST JAINTIA HILLS</td><td>Wapung</td><td>9862440570</td></tr>
+<tr><td>7200000021873660</td><td>Chalcedony Automative</td><td>WEST JAINTIA HILLS</td><td>Soomer</td><td>8257076268</td></tr>
+<tr><td>7200000006668950</td><td>D Automobile</td><td>RI BHOI</td><td>Nongpoh</td><td>8132001256</td></tr>
+<tr><td>7200000018894310</td><td>D D Motor</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9436586016</td></tr>
+<tr><td>7200000036845540</td><td>D S AUTOMOBILES</td><td>EAST KHASI HILLS</td><td>DEMSEINIONG</td><td>9774071978</td></tr>
+<tr><td>7200000004002590</td><td>D S Automobile</td><td>EAST KHASI HILLS</td><td>3rd Mile Upper Shillong</td><td>9856486990</td></tr>
+<tr><td>7200000039987970</td><td>D.SYIEMLIEH AUTOMOBILE</td><td>SOUTHWEST KHASI HILS</td><td>SOHIONG-MAWMARAM</td><td>8131855574</td></tr>
+<tr><td>7200000032247510</td><td>DELIBAIAR ENTERPRISE</td><td>EAST KHASI HILLS</td><td>PYNURSLA</td><td>8638807500</td></tr>
+<tr><td>7200000041250460</td><td>DHANRAJ MOOWAKHU</td><td>EAST JAINTIA HILLS</td><td>MOOWAKHU</td><td>7005028202</td></tr>
+<tr><td>7200000032233640</td><td>DINESH AGARWALA HILLS MOTORS</td><td>EAST KHASI HILLS</td><td>UPPER SHILLONG</td><td>7086009861</td></tr>
+<tr><td>7200000032233500</td><td>DINESH AGARWAR HILLS MOTORS</td><td>EAST KHASI HILLS</td><td>UPPER SHILLONG</td><td>9809788867</td></tr>
+<tr><td>7200000038045620</td><td>DIRA ENTERPRSE</td><td>EAST KHASI HILLS</td><td>MAWLAI</td><td>8730857479</td></tr>
+<tr><td>7200000040872340</td><td>DLS Jewel</td><td>WEST JAINTIA HILLS</td><td>THADLASKEIN</td><td>9366238194</td></tr>
+<tr><td>7200000016835570</td><td>Dabisharsuklang Nongsiej</td><td>SOUTHWEST KHASI HILS</td><td>Lumsohkhlur Mairang</td><td>9874561221</td></tr>
+<tr><td>7200000005289390</td><td>Daminot Auto Center</td><td>EAST KHASI HILLS</td><td>Demseiniong,Shillong</td><td>9436917525</td></tr>
+<tr><td>7200000005216200</td><td>Daplang Centre</td><td>EAST KHASI HILLS</td><td>Mawlai Nonglum</td><td>8414950625</td></tr>
+<tr><td>7200000005968820</td><td>Deendayal Auto</td><td>EAST JAINTIA HILLS</td><td>Sutnga</td><td></td></tr>
+<tr><td>7200000040433000</td><td>Doque Automobile</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9774006939</td></tr>
+<tr><td>7200000022026190</td><td>E Lyngdoh Automobile</td><td>EAST JAINTIA HILLS</td><td>Khliehriat East</td><td>9366397345</td></tr>
+<tr><td>7200000037825190</td><td>E NONGSIEJ AUTOMOBILES</td><td>EAST KHASI HILLS</td><td>MAWDATBAKI PDENG SHNONG</td><td>8792340345</td></tr>
+<tr><td>7200000017844980</td><td>E P Mawlong</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9856701439</td></tr>
+<tr><td>7200000039642430</td><td>EM KURBAH (MAIRANG)</td><td>WEST KHASI HILLS</td><td>MAIRANG</td><td>9366918451</td></tr>
+<tr><td>7200000006439500</td><td>Eastern Auto</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>6909026626</td></tr>
+<tr><td>7200000004809240</td><td>Emi Passah</td><td>WEST JAINTIA HILLS</td><td>8th Mile Jowai</td><td>9612338171</td></tr>
+<tr><td>7200000027986110</td><td>Endrina Motor Parts</td><td>WEST JAINTIA HILLS</td><td>7th Mile</td><td>9366064339</td></tr>
+<tr><td>7200000003878630</td><td>F K Accessories Spares</td><td>EAST KHASI HILLS</td><td>Mawlai Nongkwar Block 9</td><td>9863110403</td></tr>
+<tr><td>7200000035600100</td><td>F LYNGKHOI AUTOMOBILE</td><td>WEST KHASI HILLS</td><td>UPPER NEW NONGSTOIN</td><td>6009120264</td></tr>
+<tr><td>7200000029880980</td><td>FRANCIS XAVIER PLAIN SHOP</td><td>WEST JAINTIA HILLS</td><td>MOOKYRDUP</td><td>9869866489</td></tr>
+<tr><td>7200000041235710</td><td>FRANK AUTOMOBILES</td><td>WEST KHASI HILLS</td><td>MAIRANG</td><td>8787306588</td></tr>
+<tr><td>7200000006331540</td><td>Freky Bikerz Motors Parts</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>3245610789</td></tr>
+<tr><td>7200000003983170</td><td>G D Automobile (7th Mile)</td><td>EAST KHASI HILLS</td><td>7th Mile Upper Shillong</td><td>8837447347</td></tr>
+<tr><td>7200000006094490</td><td>G D Automobile(Rynjah)</td><td>EAST KHASI HILLS</td><td>Rynjah</td><td>9436705484</td></tr>
+<tr><td>7200000027554270</td><td>G D Passah Enterprise</td><td>EAST KHASI HILLS</td><td>Lumshngain, Rynjah</td><td>9662157950</td></tr>
+<tr><td>7200000004657860</td><td>G M Auto Spare Shop</td><td>EAST KHASI HILLS</td><td>Demthring</td><td>8131996692</td></tr>
+<tr><td>7200000004657810</td><td>G P Motor</td><td>WEST KHASI HILLS</td><td>New Nongstoin</td><td>7005735384</td></tr>
+<tr><td>7200000004018780</td><td>G S Motor</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>9612368443</td></tr>
+<tr><td>7200000038783140</td><td>G.D.PASSAH ENTERPRISE</td><td>EAST KHASI HILLS</td><td>NONGMYNSONG</td><td>9366878135</td></tr>
+<tr><td>7200000004809240</td><td>Gaurav Automobiles</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>8974723013</td></tr>
+<tr><td>7200000015722170</td><td>Genesis Maruti Spare Part</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>8731034922</td></tr>
+<tr><td>7200000018361080</td><td>Great Automobile</td><td>EAST KHASI HILLS</td><td>Mawlai Nonglum</td><td>9774668073</td></tr>
+<tr><td>7200000004256900</td><td>H T Auto</td><td>EAST KHASI HILLS</td><td>Jellyshop Nongthymmai Shillong</td><td>7005519203</td></tr>
+<tr><td>7200000035294050</td><td>HANUMAN AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>DEMTHRING</td><td>6009039800</td></tr>
+<tr><td>7200000035562770</td><td>HRISHIKA AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>DEMSEINIONG</td><td>9436105042</td></tr>
+<tr><td>7200000004369380</td><td>I Marbaniang Automobile</td><td>EAST KHASI HILLS</td><td>Mawlai Nongkwar</td><td>8794667960</td></tr>
+<tr><td>7200000004423140</td><td>I R Accessories Spare Part</td><td>EAST KHASI HILLS</td><td>Mawlai Shillong</td><td>7005780078</td></tr>
+<tr><td>7200000018100330</td><td>I Rani</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9436302547</td></tr>
+<tr><td>7200000037735100</td><td>IDEAL DIESEL</td><td>EAST KHASI HILLS</td><td>D/O SAKHIAT PAIA LALOO</td><td>9863065802</td></tr>
+<tr><td>7200000006254330</td><td>Ivahaka Spare Parts</td><td>WEST JAINTIA HILLS</td><td>Moodymmai Ummulong</td><td>8259898480</td></tr>
+<tr><td>7200000035567880</td><td>J D AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>LUMSHNONG</td><td>8296973073</td></tr>
+<tr><td>7200000039782270</td><td>J K AUTO</td><td>WEST KHASI HILLS</td><td>Nongstoin</td><td>8837488143</td></tr>
+<tr><td>7200000032014250</td><td>J L M AUTOMOBILE</td><td>EASTNWEST KHASI HILLS</td><td>MAIRANG</td><td>7005492501</td></tr>
+<tr><td>7200000006668800</td><td>J Lyngdoh</td><td>RI BHOI</td><td>Nongpoh</td><td>9612688862</td></tr>
+<tr><td>7200000032016700</td><td>J N SUZUKI</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>8837212509</td></tr>
+<tr><td>7200000035559700</td><td>JAISWAL AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>LADRYMBAI</td><td>9862023712</td></tr>
+<tr><td>7200000040445730</td><td>JCB CARE CENTER</td><td>EAST JAINTIA HILLS</td><td>KHLIEHRIAT</td><td>9862918680</td></tr>
+<tr><td>7200000036075090</td><td>JONG SNI AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>SAITSOHPEN</td><td>9366526881</td></tr>
+<tr><td>7200000004261550</td><td>Jaintia Automobiles Eng.</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>6909941313</td></tr>
+<tr><td>7200000021939230</td><td>Jaintia Industrial</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9436103222</td></tr>
+<tr><td>7200000004015190</td><td>Jowai Automobile</td><td>WEST JAINTIA HILLS</td><td>Ladthadlaboh, Jowai</td><td>8787600925</td></tr>
+<tr><td>7200000038329090</td><td>Jyrwa Auto Spare Parts & Accessories</td><td>EAST KHASI HILLS</td><td>NONGRAH MARBOH</td><td>8257892912</td></tr>
+<tr><td>7200000004090930</td><td>K B S Automobile</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>6001724429</td></tr>
+<tr><td>7200000004419730</td><td>K BR Automobile</td><td>EAST KHASI HILLS</td><td>Mawlais</td><td>8787420410</td></tr>
+<tr><td>7200000004531750</td><td>K D Automobile</td><td>EAST KHASI HILLS</td><td>Polo</td><td>3642228398</td></tr>
+<tr><td>7200000027387420</td><td>K J Auto</td><td>EAST KHASI HILLS</td><td>Mawlai,</td><td>8259964403</td></tr>
+<tr><td>7200000029807270</td><td>K KHARBINA AUTOMOBILE</td><td>WEST JAINTIA HILLS</td><td>LADTHALABOH</td><td>8257842793</td></tr>
+<tr><td>7200000022119390</td><td>K Khyriem</td><td>EAST KHASI HILLS</td><td>Sadew</td><td>8729855442</td></tr>
+<tr><td>7200000013459970</td><td>K P Automobile</td><td>WEST KHASI HILLS</td><td>Nongstoin</td><td>9378004178</td></tr>
+<tr><td>7200000019264850</td><td>K S Spare Parts and Accessories</td><td>EAST KHASI HILLS</td><td>Mawlai Nonglum</td><td>8414805737</td></tr>
+<tr><td>7200000022340240</td><td>K Sheilachandra Singh</td><td>RI BHOI</td><td>Umsning, Patarim</td><td>6002936935</td></tr>
+<tr><td>7200000019182940</td><td>K Thabah</td><td>EAST KHASI HILLS</td><td>Laitpynter</td><td>9862390095</td></tr>
+<tr><td>7200000038757630</td><td>KANAK TRADERS (MIHMYNTDU)</td><td>WEST JAINTIA HILLS</td><td>MIHMYNTDU</td><td>7568745981</td></tr>
+<tr><td>7200000036909310</td><td>KIKI KURBAH ACCESSORIES</td><td>EAST KHASI HILLS</td><td>UMMYLLE</td><td>8414973985</td></tr>
+<tr><td>7200000011925240</td><td>Karni Automobile</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>8131015289</td></tr>
+<tr><td>7200000019732600</td><td>Karow Traders</td><td>RI BHOI</td><td>Nongpoh</td><td>8779480788</td></tr>
+<tr><td>7200000004289400</td><td>Khan Motor</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>9862700136</td></tr>
+<tr><td>7200000004289410</td><td>Khan Motor Parts (D/J)</td><td>EAST JAINTIA HILLS</td><td>Dkhai</td><td>6001752341</td></tr>
+<tr><td>7200000004323860</td><td>Kharmawlong Automobiles Spare Parts</td><td>EAST KHASI HILLS</td><td>Laitpynter</td><td>7005103110</td></tr>
+<tr><td>7200000004657880</td><td>Kordor Warjri</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9862366769</td></tr>
+<tr><td>7200000028293910</td><td>L D Automobile</td><td>RI BHOI</td><td>Byrnihat</td><td>8798531252</td></tr>
+<tr><td>7200000018099970</td><td>L M Automobile</td><td>EAST KHASI HILLS</td><td>Madanrting</td><td>9612731025</td></tr>
+<tr><td>7200000004018590</td><td>L Phawa Automobile</td><td>WEST JAINTIA HILLS</td><td>Lumpyrtuh Mihmyntdu, Jowai</td><td>7005547436</td></tr>
+<tr><td>7200000029880170</td><td>L RYNGKHLEM AUTOMOBILE</td><td>JAINTIA HILLS</td><td>MOODYMMAI</td><td>8415830840</td></tr>
+<tr><td>7200000026915490</td><td>L T Automobile Spare</td><td>WEST JAINTIA HILLS</td><td>Ummulong</td><td>7005570789</td></tr>
+<tr><td>7200000029881130</td><td>LASU AUTOMOBILE</td><td>WEST JAINTIA HILLS</td><td>MYNTHONG</td><td>9257842793</td></tr>
+<tr><td>7200000038821890</td><td>LAXMI MOTOR (Lumshnong)</td><td>JAINTIA HILLS</td><td>Lumshnong</td><td>8415871413</td></tr>
+<tr><td>7200000039584520</td><td>Lafarge Umiam Mining Pvt. Ltd.</td><td>EAST KHASI HILLS</td><td>SHELLA</td><td>9612770110</td></tr>
+<tr><td>7200000006093370</td><td>Lalit Automobiles</td><td>EAST KHASI HILLS</td><td>Demthring, Sawlad</td><td>9436701197</td></tr>
+<tr><td>7200000016486980</td><td>Laloo Automobile</td><td>WEST JAINTIA HILLS</td><td>Lad Moodymmai, Umulong</td><td>7005263341</td></tr>
+<tr><td>7200000004809230</td><td>Lamare Automobile</td><td>EAST JAINTIA HILLS</td><td>Lamrymbai</td><td>7005725861</td></tr>
+<tr><td>7200000017857150</td><td>Lana's Automobile</td><td>EAST KHASI HILLS</td><td>Rynjah Main Road</td><td>9366050156</td></tr>
+<tr><td>7200000018441990</td><td>Loukas Dkhar Auto</td><td>WEST JAINTIA HILLS</td><td>Amlarem</td><td>9366278818</td></tr>
+<tr><td>7200000020142300</td><td>Lyngdoh Automobile</td><td>RI BHOI</td><td>Umsning</td><td>7085958472</td></tr>
+<tr><td>7200000004015480</td><td>Lytan Automobiles</td><td>WEST JAINTIA HILLS</td><td>Ladthadlaboh, Jowai</td><td>8875130482</td></tr>
+<tr><td>7200000022533720</td><td>M D Javed</td><td>EAST KHASI HILLS</td><td>Pynthor</td><td>7005734954</td></tr>
+<tr><td>7200000007626870</td><td>M D Motor</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>7896838869</td></tr>
+<tr><td>7200000027999360</td><td>M H & Sons Auto</td><td>WEST JAINTIA HILLS</td><td>8th Mile Jowai</td><td>8769783759</td></tr>
+<tr><td>7200000006062420</td><td>M H Auto</td><td>EAST KHASI HILLS</td><td>Umkaliar, Demseiniong</td><td>9856621000</td></tr>
+<tr><td>7200000039383480</td><td>M K TRUST AUTO</td><td>EAST KHASI HILLS</td><td>MAWLAI</td><td>9863036597</td></tr>
+<tr><td>7200000011913500</td><td>M R Automobile</td><td>EAST KHASI HILLS</td><td>Polo</td><td>9856789541</td></tr>
+<tr><td>7200000021243490</td><td>M Simpli Automobile</td><td>EAST JAINTIA HILLS</td><td>Chiehruphi</td><td>8415869752</td></tr>
+<tr><td>7200000005631150</td><td>M. Kharkrang Automobile</td><td>EAST KHASI HILLS</td><td>Mawlai Nongkwar</td><td>9402149844</td></tr>
+<tr><td>7200000004669860</td><td>M.K. Automobile</td><td>EAST KHASI HILLS</td><td>Demthring</td><td>8257973804</td></tr>
+<tr><td>7200000004185560</td><td>M.S Dkhar Workshop</td><td>WEST JAINTIA HILLS</td><td>Mihmyntdu,Jowai</td><td>9402550217</td></tr>
+<tr><td>7200000037750130</td><td>M/S AUTO ELECTRICALS SERVICE</td><td>EAST KHASI HILLS</td><td>KENCHES TRACE</td><td>9774362095</td></tr>
+<tr><td>7200000004657920</td><td>M/S Meghalaya Motors</td><td>EAST KHASI HILLS</td><td>Anjelee</td><td>8974833528</td></tr>
+<tr><td>7200000038861620</td><td>M/S. SUBHASH MOTORS</td><td>EAST JAINTIA HILLS</td><td>KHLIEHRIAT</td><td>8837416260</td></tr>
+<tr><td>7200000041253990</td><td>MAA KAMAKHYA AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>CHIEHRUPHI</td><td>9798043654</td></tr>
+<tr><td>7200000037807120</td><td>MADAN AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>SUTNGA</td><td>9759483722</td></tr>
+<tr><td>7200000035293640</td><td>MADAN MOHAN & CO</td><td>EAST KHASI HILLS</td><td>IEWDUH</td><td>9862230266</td></tr>
+<tr><td>7200000035568410</td><td>MARWEIN AUTO SPARE</td><td>WEST KHASI HILLS</td><td>Mairang</td><td>7005024614</td></tr>
+<tr><td>7200000035558650</td><td>MEBAN AUTOMOBILE</td><td>WEST JAINTIA HILLS</td><td>MUKHLA</td><td>6009695177</td></tr>
+<tr><td>7200000022517450</td><td>MJs Two Wheelers Accessories and Spare Parts</td><td>WEST KHASI HILLS</td><td>Mairang</td><td>7005598128</td></tr>
+<tr><td>7200000038366730</td><td>MULTITECH ENGINEERS</td><td>WEST JAINTIA HILLS</td><td>MIHMYNTDU</td><td>9436995321</td></tr>
+<tr><td>7200000021479490</td><td>Madan Automobiles</td><td>JAINTIA HILLS</td><td>L Kilo Ladsutnga</td><td>9089302186</td></tr>
+<tr><td>7200000006546110</td><td>Mahesh Automobile</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>6239278049</td></tr>
+<tr><td>7200000005331790</td><td>Man I Auto</td><td>WEST JAINTIA HILLS</td><td>Ladthalaboh,Jowai</td><td>7005861880</td></tr>
+<tr><td>7200000039662440</td><td>Meghalaya treading co.</td><td>EAST KHASI HILLS</td><td>Fire brigade ground</td><td>9089040096</td></tr>
+<tr><td>7200000038454280</td><td>Memory Timung Biki Bike Centre (Ladrymai)</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>9862473896</td></tr>
+<tr><td>7200000004270160</td><td>Merilin Automobile</td><td>EAST KHASI HILLS</td><td>Thembijoy Shillong</td><td>8119969699</td></tr>
+<tr><td>7200000020690810</td><td>Mjnu Water Pump</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>7005047765</td></tr>
+<tr><td>7200000006665440</td><td>Mohit Automobile</td><td>EAST KHASI HILLS</td><td>Iewduh</td><td>9863066696</td></tr>
+<tr><td>7200000004014120</td><td>Motilal Sharma</td><td>EAST JAINTIA HILLS</td><td>Mookhu, Khliehriat</td><td>7005437426</td></tr>
+<tr><td>7200000004657840</td><td>Motor Spare Parts</td><td>EAST KHASI HILLS</td><td>Lower Nongrim Hills</td><td></td></tr>
+<tr><td>7200000027999330</td><td>Ms Jaiswal Automobiles</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>9862341968</td></tr>
+<tr><td>7200000006665670</td><td>N C Auto</td><td>WEST JAINTIA HILLS</td><td>Sutnga</td><td>6002410630</td></tr>
+<tr><td>7200000016557050</td><td>N Kharkongor & Sons Auto Spare Parts</td><td>EAST KHASI HILLS</td><td>Mylliem 12th Mile</td><td>9402308338</td></tr>
+<tr><td>7200000004018070</td><td>N L Automobile</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>7005442149</td></tr>
+<tr><td>7200000013459830</td><td>N Lyngkhoi</td><td>WEST KHASI HILLS</td><td>Nongstoin</td><td>9366968840</td></tr>
+<tr><td>7200000018450800</td><td>N M Auto</td><td>EAST KHASI HILLS</td><td>Nongmynsong</td><td>9862511794</td></tr>
+<tr><td>7200000035561550</td><td>NA I PA</td><td>EAST KHASI HILLS</td><td>LAITLYNGKOT</td><td>8787506264</td></tr>
+<tr><td>7200000017845940</td><td>NAS Automobile</td><td>EAST KHASI HILLS</td><td>Nongmynsong</td><td>7005274892</td></tr>
+<tr><td>7200000025208350</td><td>NBDC Auto Parts</td><td>WEST JAINTIA HILLS</td><td>Phramer Thadmuthlong</td><td>8787433962</td></tr>
+<tr><td>7200000035564360</td><td>NISHAN KUMAR RAI</td><td>WEST JAINTIA HILLS</td><td>WEST JAINTIA HILLS</td><td>8541089654</td></tr>
+<tr><td>7200000035294910</td><td>NONGBRI AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>LAITKOR</td><td>9774277164</td></tr>
+<tr><td>7200000003874210</td><td>Nangkiew Irat Indane Gas Agency</td><td>EAST KHASI HILLS</td><td>Mawklot, Upper Shillong, 5th Mile</td><td>8974590946</td></tr>
+<tr><td>7200000022675270</td><td>Naphi L Mawlong Store</td><td>EAST KHASI HILLS</td><td>3 Khlieh Iew Parking Lot</td><td>8294078935</td></tr>
+<tr><td>7200000004809220</td><td>Nasan Automobiles</td><td>WEST JAINTIA HILLS</td><td>Mitmyntdu</td><td>9089670169</td></tr>
+<tr><td>7200000005123320</td><td>New Hope Automobile</td><td>EAST JAINTIA HILLS</td><td>Amlarem</td><td>8787882133</td></tr>
+<tr><td>7200000020686610</td><td>O M Automobile</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>3642502477</td></tr>
+<tr><td>7200000026916430</td><td>O M Automotive</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>3642502477</td></tr>
+<tr><td>7200000019731920</td><td>Omkar Motor Parts</td><td>RI BHOI</td><td>G.S. Road Tamulikuchi</td><td>9774221949</td></tr>
+<tr><td>7200000040586040</td><td>P D AUTOMOBILE</td><td>WEST JAINTIA HILLS</td><td>WAHIAJER</td><td>7005597092</td></tr>
+<tr><td>7200000021232950</td><td>P Malngiang</td><td>EAST KHASI HILLS</td><td>3 Lad Umlyngka</td><td>9862230718</td></tr>
+<tr><td>7200000021623270</td><td>P P Automobile</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>6909112138</td></tr>
+<tr><td>7200000004809210</td><td>P S Auto</td><td>WEST JAINTIA HILLS</td><td>Amlarem, Krang Pamtdong</td><td>9615957791</td></tr>
+<tr><td>7200000039457290</td><td>P S Automobile (Mawkasiang)</td><td>EAST KHASI HILLS</td><td>MAWKASIANG NEW SHILLONG -NEIGRIHMS</td><td>7005185807</td></tr>
+<tr><td>7200000040267120</td><td>P kharmuti workshop</td><td>EAST KHASI HILLS</td><td>Sohiong Nongstoin road</td><td>9612932985</td></tr>
+<tr><td>7200000004289400</td><td>P.C Automobile</td><td>EAST KHASI HILLS</td><td>Iew Mawlong</td><td>9774333842</td></tr>
+<tr><td>7200000004257010</td><td>P.L.L. Auto</td><td>EAST KHASI HILLS</td><td>Mawlai Nongkwar</td><td>8837332367</td></tr>
+<tr><td>7200000006798970</td><td>PLN Automobile</td><td>EAST KHASI HILLS</td><td>Laitkor Nongdaneng</td><td>9774247164</td></tr>
+<tr><td>7200000018100440</td><td>Paieid Automobile</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9774924675</td></tr>
+<tr><td>7200000006229200</td><td>Pankaj Singh Auto</td><td>WEST JAINTIA HILLS</td><td>Wapung</td><td>9612928165</td></tr>
+<tr><td>7200000007363980</td><td>Pipal Wa Automobiles</td><td>EAST KHASI HILLS</td><td>Iewduh Bara Bazar</td><td>3642243315</td></tr>
+<tr><td>7200000004125350</td><td>Prakash Automobiles</td><td>EAST KHASI HILLS</td><td>Iewduh Motphran</td><td>9436101437</td></tr>
+<tr><td>7200000006331280</td><td>Priya Motors</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>3214567890</td></tr>
+<tr><td>7200000004285070</td><td>R B S Automobiles</td><td>WEST JAINTIA HILLS</td><td>Ladsutnga</td><td>8415871413</td></tr>
+<tr><td>7200000022189300</td><td>R D Automobile</td><td>EAST JAINTIA HILLS</td><td>Moowakhu Dkhiah</td><td>6375445338</td></tr>
+<tr><td>7200000004531820</td><td>R D Automobile(Demseiniong)</td><td>EAST KHASI HILLS</td><td>Demseiniong</td><td>9615143742</td></tr>
+<tr><td>7200000035563520</td><td>R K AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>LAITLYNGKOT</td><td>9774725179</td></tr>
+<tr><td>7200000007170480</td><td>R K Automobile</td><td>EAST KHASI HILLS</td><td>Mawlai Nongkwar</td><td>9862388332</td></tr>
+<tr><td>7200000036074830</td><td>R K MOTORS</td><td>EAST KHASI HILLS</td><td>SAITSOHPEN</td><td>9366285499</td></tr>
+<tr><td>7200000035563230</td><td>R L K AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>LAITLYNGKOT</td><td>8787674226</td></tr>
+<tr><td>7200000030016830</td><td>R LASKAR AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>JALYIAH</td><td>8276376002</td></tr>
+<tr><td>7200000013432310</td><td>R Lyngdoh Automobile</td><td>WEST JAINTIA HILLS</td><td>Namdong B</td><td>7005448973</td></tr>
+<tr><td>7200000030016560</td><td>R NONGBRI AUTOMOBILE</td><td>RI BHOI</td><td>UMSNING</td><td>8788912002</td></tr>
+<tr><td>7200000017395280</td><td>R Phawa Automobile</td><td>WEST JAINTIA HILLS</td><td>Mookhu</td><td>8257807689</td></tr>
+<tr><td>7200000038179760</td><td>R R AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>MOOWAKHU</td><td>6767283232</td></tr>
+<tr><td>7200000035567660</td><td>R S AUTOMOBILE</td><td>WEST JAINTIA HILLS</td><td>11 THADSNING</td><td>8258976364</td></tr>
+<tr><td>7200000003964730</td><td>R S Automobile</td><td>EAST KHASI HILLS</td><td>Mawlai Nongkwar</td><td>7005219867</td></tr>
+<tr><td>7200000035563800</td><td>R SUMER AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>UMIAM</td><td>6009103435</td></tr>
+<tr><td>7200000017845490</td><td>R Suting Workshop</td><td>EAST KHASI HILLS</td><td>Nongmynsong, Mawpat</td><td>9863672842</td></tr>
+<tr><td>7200000012400890</td><td>RKL Automobile</td><td>EAST KHASI HILLS</td><td>Laitlyngkot</td><td>6547893215</td></tr>
+<tr><td>7200000035566850</td><td>ROYAL AUTOMOBILE</td><td>EAST JAINTIA HILLS</td><td>MOOKHU</td><td>7290468059</td></tr>
+<tr><td>7200000004257140</td><td>Rabales Auto</td><td>EAST KHASI HILLS</td><td>Mawlai</td><td>9774655980</td></tr>
+<tr><td>7200000004125240</td><td>Rajdhani Motors</td><td>EAST KHASI HILLS</td><td>Iewduh, Motphran</td><td>3642226389</td></tr>
+<tr><td>7200000018360390</td><td>Ram Singh Automobile</td><td>EAST JAINTIA HILLS</td><td>Lad Rymbai</td><td>9450190551</td></tr>
+<tr><td>7200000017401030</td><td>Ranibow Automobile</td><td>EAST KHASI HILLS</td><td>3rd Mile Upper Shillong</td><td>8794177258</td></tr>
+<tr><td>7200000019732300</td><td>Roma</td><td>RI BHOI</td><td>G.S. Road 15th Mile</td><td>7005282368</td></tr>
+<tr><td>7200000017844190</td><td>Roy and Sharma</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>9774015081</td></tr>
+<tr><td>7200000005216370</td><td>Royal Accessories & Parts</td><td>EAST KHASI HILLS</td><td>Keating Road, Shillong</td><td>8974512345</td></tr>
+<tr><td>7200000027321980</td><td>Royal Automobile</td><td>WEST JAINTIA HILLS</td><td>Moowakhu</td><td>8290468059</td></tr>
+<tr><td>7200000033634860</td><td>S S AUTOMOBILE BYNDIHATI</td><td>EAST JAINTIA HILLS</td><td>BYNDIHATI</td><td>9233324428</td></tr>
+<tr><td>7200000022189280</td><td>S S Auto</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>9612212174</td></tr>
+<tr><td>7200000018100060</td><td>S S Automobile</td><td>EAST KHASI HILLS</td><td>Fire Brigade</td><td>9366709046</td></tr>
+<tr><td>7200000004809200</td><td>S S Automobile (L/R)</td><td>EAST JAINTIA HILLS</td><td>Ladrymbai</td><td>7423944372</td></tr>
+<tr><td>7200000020928930</td><td>S S Motor</td><td>EAST JAINTIA HILLS</td><td>Khliehriat</td><td>8729883350</td></tr>
+<tr><td>7200000029268870</td><td>SARDA AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>CHOUDHURY AUTO SPARES</td><td>8974514013</td></tr>
+<tr><td>7200000036555400</td><td>SARKAR AUTOMOBILE</td><td>WEST JAINTIA HILLS</td><td>AMLAREM</td><td>9863080497</td></tr>
+<tr><td>7200000032235360</td><td>SHALAM AUTOMOBILE WORKSHOP</td><td>EAST KHASI HILLS</td><td>PYNURSLA</td><td>9731012401</td></tr>
+<tr><td>7200000029881420</td><td>SHINING BIKE SERVICE CENTRE</td><td>EAST JAINTIA HILLS</td><td>DKHIAH</td><td>9487904328</td></tr>
+<tr><td>7200000029881740</td><td>SILBANAS P SYMPLI</td><td>EAST JAINTIA HILLS</td><td>MOOKHU</td><td>9877753334</td></tr>
+<tr><td>7200000029617720</td><td>SINGH AUTOMOBILE</td><td>WEST JAINTIA HILLS</td><td>106 UMMULONG</td><td>9765678965</td></tr>
+<tr><td>7200000040154560</td><td>SKBANI ENTERPRISE</td><td>EAST KHASI HILLS</td><td>BUVANNAPALE</td><td>8014214126</td></tr>
+<tr><td>7200000022120450</td><td>Saha Engineering Works</td><td>EAST KHASI HILLS</td><td>Lastop</td><td>7005606505</td></tr>
+<tr><td>7200000004092230</td><td>Saha Motor</td><td>EAST KHASI HILLS</td><td>Laststop, Laban</td><td>8974905860</td></tr>
+<tr><td>7200000004256340</td><td>Sam's Automobiles Spare Part</td><td>WEST JAINTIA HILLS</td><td>Ummulong,Jowai</td><td>7005295337</td></tr>
+<tr><td>7200000004185790</td><td>Sanika Auto Spare Parts</td><td>WEST JAINTIA HILLS</td><td>Jowai,Ksehlakiang Ummulong</td><td>8787867066</td></tr>
+<tr><td>7200000006560820</td><td>Sanje Singh</td><td>WEST JAINTIA HILLS</td><td>Khliehriat</td><td>8413017680</td></tr>
+<tr><td>7200000004256600</td><td>Sanjiv Automobiles</td><td>WEST JAINTIA HILLS</td><td>Lad Sutnga,Jowai</td><td>9862590725</td></tr>
+<tr><td>7200000018100140</td><td>Shekhawat Automobile</td><td>EAST KHASI HILLS</td><td>Un</td><td>8787591164</td></tr>
+<tr><td>7200000004423380</td><td>Shillong Automobile (Demseiniong)</td><td>EAST KHASI HILLS</td><td>Demseiniong</td><td>9774590625</td></tr>
+<tr><td>7200000027321870</td><td>Shining Bike Service</td><td>WEST JAINTIA HILLS</td><td>Moowakhu</td><td>8575355050</td></tr>
+<tr><td>7200000020689070</td><td>Shreebhawani Auto</td><td>WEST JAINTIA HILLS</td><td>7th Mile Jowai</td><td>9436107191</td></tr>
+<tr><td>7200000023716130</td><td>Shylla Automobile</td><td>WEST JAINTIA HILLS</td><td>Mukhla</td><td>8837068587</td></tr>
+<tr><td>7200000004125460</td><td>Singhania Automobiles</td><td>EAST KHASI HILLS</td><td>Iewduh, Motphran</td><td>6009187434</td></tr>
+<tr><td>7200000004758820</td><td>Standard Accessories</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>8259090665</td></tr>
+<tr><td>7200000005216510</td><td>Star Auto Spares</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>9802210425</td></tr>
+<tr><td>7200000027181680</td><td>Star Auto Spares (Umsning)</td><td>RI BHOI</td><td>Patarim Umsning</td><td>6002936935</td></tr>
+<tr><td>7200000004091690</td><td>Suchiang Motor</td><td>WEST JAINTIA HILLS</td><td>Mihmyntdu</td><td>9402135214</td></tr>
+<tr><td>7200000018122430</td><td>Sun Servo Automobile</td><td>RI BHOI</td><td>Paham Syiem Nongpoh</td><td>9612760908</td></tr>
+<tr><td>7200000005214980</td><td>Swastik motors</td><td>EAST KHASI HILLS</td><td>Keating Road</td><td>9615957792</td></tr>
+<tr><td>7200000027986210</td><td>Swer Auto Accessories</td><td>WEST JAINTIA HILLS</td><td>Jowai</td><td>6025987456</td></tr>
+<tr><td>7200000012441820</td><td>Syiem Auto</td><td>WEST JAINTIA HILLS</td><td>Ladmukhla</td><td>9366126837</td></tr>
+<tr><td>7200000016557500</td><td>T Kharpan Motor Spare Parts</td><td>EAST KHASI HILLS</td><td>Mylliem</td><td>7005907203</td></tr>
+<tr><td>7200000007664130</td><td>T M Automobile</td><td>EAST KHASI HILLS</td><td>7th Mile</td><td>8415079708</td></tr>
+<tr><td>7200000006439380</td><td>T Rymbai Auto</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>9165957780</td></tr>
+<tr><td>7200000004289040</td><td>T.J.S Automobiles</td><td>EAST KHASI HILLS</td><td>Mawlai Lad Umjaiur</td><td>9615967482</td></tr>
+<tr><td>7200000039079010</td><td>TBERSON AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>PYNURSLA</td><td>9774212232</td></tr>
+<tr><td>7200000039079210</td><td>TEBERSON AUTOMOBILE</td><td>EAST KHASI HILLS</td><td>PYNURSLA</td><td>9774199226</td></tr>
+<tr><td>7200000032230680</td><td>TRABI AUTO WORKSHOP</td><td>EAST KHASI HILLS</td><td>TRAW</td><td>8794575291</td></tr>
+<tr><td>7200000035567050</td><td>TRAIBI AUTO WORKSHOP</td><td>EAST KHASI HILLS</td><td>TRAW SAITKHLIEH</td><td>9794575291</td></tr>
+<tr><td>7200000015421120</td><td>Tanisha Automobile</td><td>EAST KHASI HILLS</td><td>Polo</td><td>8974902368</td></tr>
+<tr><td>7200000005906190</td><td>Three E'S Automobile</td><td>EAST KHASI HILLS</td><td>Sohiong</td><td>8787795201</td></tr>
+<tr><td>7200000004091430</td><td>Twins Automobiles</td><td>WEST JAINTIA HILLS</td><td>Ladrymbai</td><td>8974383911</td></tr>
+<tr><td>7200000022357530</td><td>V K Automobile</td><td>EAST KHASI HILLS</td><td>Banuin, 7th Mile</td><td>8258976364</td></tr>
+<tr><td>7200000025986420</td><td>Velyne's Spare Parts & Accessories</td><td>EAST KHASI HILLS</td><td>3 1/2 Mile Upper Shillong</td><td>8787583374</td></tr>
+<tr><td>7200000004289390</td><td>Vinay Automobile</td><td>EAST KHASI HILLS</td><td>Garikhana</td><td>9436732919</td></tr>
+<tr><td>7200000006669080</td><td>Vinod Singh</td><td>WEST JAINTIA HILLS</td><td>8Th Mile Main Road</td><td>6009413843</td></tr>
+<tr><td>7200000004172630</td><td>Vishal Automobiles (D/T)</td><td>EAST KHASI HILLS</td><td>Demthring, Shillong</td><td>9436307811</td></tr>
+<tr><td>7200000004256790</td><td>Wanshan Centre</td><td>EAST KHASI HILLS</td><td>Mawlai Nongkwar shillong</td><td>8118993472</td></tr>
+<tr><td>7200000015985520</td><td>Yoomitre Automobile</td><td>EAST KHASI HILLS</td><td>Madanrting</td><td>9089131164</td></tr>
+
+
+</tbody>
+</table> 
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 1; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td");
+    let rowMatchesFilter = false; // Flag to track if any cell in the row matches
+    for (let j = 0; j < td.length; j++) { // Iterate through all columns in the row
+      if (td[j]) {
+        txtValue = td[j].textContent || td[j].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          rowMatchesFilter = true; // Set flag to true if a cell matches
+          break; // No need to check other cells in this row if one matches
+        }
+      }
+    }
+    if (rowMatchesFilter) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<!-- update while open -->	
+	<script>
+        // Function to update the time display
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').textContent = now.toLocaleTimeString();
+        }
+        updateTime(); // Call the function to display the initial time
+    </script>
+
+</body>
+</head>
+</html>
