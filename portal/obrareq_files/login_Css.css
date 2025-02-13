@@ -5,6 +5,12 @@
   padding: 3% 0 0;
   margin: auto;
 }
+
+ .button-container button.home {
+            background-color: #008CBA; /* Blue for Home */
+            color: white;
+}
+
 .form {
   position: relative;
   z-index: 1;
@@ -14,7 +20,9 @@
   padding: 20px 45px;
   text-align: center;
   border: 1px solid #95989a;
+
 }
+        .
 .form_Header{
   font-size: 22px;
   color: #00164e;
@@ -106,6 +114,7 @@
     border: 1px solid #f2f0f0;
     padding: 20px 25px;
 }
+
 .form .message a {
   font-size: 20px; color: #f37021; font-weight: 500;padding-left: 5%;
   text-decoration: none;

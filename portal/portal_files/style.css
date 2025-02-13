@@ -21,6 +21,10 @@ nav{
     height: 70px;
 }
 
+        .button-container button.home {
+            background-color: #008CBA; /* Blue for Home */
+            color: white;
+}
 .logo{
     color: #fff;
 }

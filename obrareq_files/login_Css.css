@@ -5,6 +5,12 @@
   padding: 3% 0 0;
   margin: auto;
 }
+
+ .button-container button.home {
+            background-color: #008CBA; /* Blue for Home */
+            color: white;
+}
+
 .form {
   position: relative;
   z-index: 1;
