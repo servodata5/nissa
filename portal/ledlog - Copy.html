@@ -1,86 +1,89 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./obrareq_files/login_Css.css">
-<link rel="stylesheet" href="./obrareq_files/all.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
-<!-- inactivity -->
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="500;url=https://servodata5.github.io/nissa/">  <!-- Refresh every seconds if 30 sec is "30" -->
-	
-	<!-- update while open --> 
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content=""> <!-- Refresh every seconds if 1 sec is "1" -->
-
-<script>
-      function validateForm() {
-  var username = document.forms["loginForm"]["username"].value;
-  var password = document.forms["loginForm"]["password"].value;
-
-  // Basic client-side validation (improve this for production)
-  if (username == "" || password == "") {
-    alert("Username and password must be filled out");
-    return false;  // Prevent form submission
-  }
-
-  // Simulate server-side validation (replace with actual server-side check)
-  if (username == "324046" && password == "1551") {
-    // Redirect to portal.html if credentials are correct
-    window.location.href = "ledindex.html";  // Or a relative path like "./html2.html" if in the same directory
-    return false; // Prevent default form submission
-  } else {
-    alert("Incorrect username or password");
-    return false; // Prevent form submission
-  }
-}
-    </script>
-
-</head>
-
-<body style="font-family:Verdana;">
-<form name="loginForm" action="#" onsubmit="return validateForm()" method="post"> 
-    <div class="login-page">
-	  <div class="form">
-		
-		  <img src="./obrareq_files/ico_new_logo-final.gif" alt="Iocl">
-		  <p class="form_Header">Login for Ledger's <span style="color:#fc0303;"></span></p>
-                   <p> </p>
-		          <label>Login ID<span style="color:#fc0303;">*</span></label>
-		          <input Username: <input type="text" name="username">
-  
-                  <i class="fa fa-user iconStyleClass" aria-hidden="true"></i>
-                  <input Password: <input type="password" name="password">
-                  <i class="fa fa-lock iconStyleClass" aria-hidden="true"></i>
-                  
-		  <!--<input type="password" placeholder="password"/>-->
-		  <button id="submitid" onsubmit="return validateForm()";">Continue</button>
-		   
-		<!--  <p class="social_LoginHeader">Or use your social accounts to login:</p> -->
-		<!--  <p>Social icons Box</p> -->
-                <p>     </p>
-                <p>    </p>
-		
-		<a  class="btn-getstarted" href="portal.html" class="">Home</a></a>
-	  
-</div></form>
-
-
-
-
-<!-- update while open -->
-	  <script>
-        // Function to update the time display
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('time').textContent = now.toLocaleTimeString();
+    <link rel="stylesheet" href="./obrareq_files/login_Css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Login</title>
+    <style>
+        /* Add custom CSS for the icons */
+        .input-container {
+            position: relative;
+            margin-bottom: 15px;
         }
-        updateTime(); // Call the function to display the initial time
+        .input-container i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+        .input-container input {
+            padding-left: 30px; /* Add padding to make space for the icon */
+        }
+
+        /* Style for buttons */
+        .button-container {
+            display: flex;
+            gap: 10px; /* Space between buttons */
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button-container button.continue {
+            background-color: #4CAF50; /* Green for Continue */
+            color: white;
+        }
+        .button-container button.home {
+            background-color: #008CBA; /* Blue for Home */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form name="loginForm" onsubmit="return validateForm()">
+        <div class="input-container">
+            <i class="fas fa-user"></i> <!-- User icon -->
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+        <div class="input-container">
+            <i class="fas fa-lock"></i> <!-- Password icon -->
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="button-container">
+            <button type="submit" class="continue">Continue</button>
+            <button type="button" class="home" onclick="redirectToHome()">Home</button>
+        </div>
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.forms["loginForm"]["username"].value;
+            var password = document.forms["loginForm"]["password"].value;
+
+            if (username == "" || password == "") {
+                alert("Username and password must be filled out");
+                return false;
+            }
+
+            if (username == "324046" && password == "1551") {
+                window.location.href = "ledindex.html";
+                return false;
+            } else {
+                alert("Incorrect username or password");
+                return false;
+            }
+        }
+
+        // Function to redirect to portal.html
+        function redirectToHome() {
+            window.location.href = "portal.html";
+        }
     </script>
-
-
-
-
-</body></html>
+</body>
+</html>

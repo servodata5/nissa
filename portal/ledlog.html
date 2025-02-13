@@ -36,6 +36,12 @@
     return false; // Prevent form submission
   }
 }
+
+ // Function to redirect to portal.html
+        function redirectToHome() {
+            window.location.href = "portal.html";
+        }
+
     </script>
 
 </head>
@@ -57,13 +63,14 @@
                   
 		  <!--<input type="password" placeholder="password"/>-->
 		  <button id="submitid" onsubmit="return validateForm()";">Continue</button>
+		   <p>     </p>
+		  <button type="button" class="home" onclick="redirectToHome()">Home</button>
 		   
 		<!--  <p class="social_LoginHeader">Or use your social accounts to login:</p> -->
 		<!--  <p>Social icons Box</p> -->
                 <p>     </p>
                 <p>    </p>
 		
-		<a  class="btn-getstarted" href="portal.html" class="">Home</a></a>
 	  
 </div></form>
 
