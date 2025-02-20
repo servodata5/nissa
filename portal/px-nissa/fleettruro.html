@@ -240,6 +240,27 @@ function myFunction() {
 }
 </script>
 
+<script>
+        function downloadPDF() {
+            // Get the table element
+            const table = document.getElementById('myTable');
+
+            // Use html2canvas to convert the table to an image
+            html2canvas(table).then((canvas) => {
+                const imgData = canvas.toDataURL('image/png'); // Convert canvas to image data
+                const pdf = new jspdf.jsPDF('p', 'mm', 'a4'); // Create a new PDF
+
+                // Add the image to the PDF
+                const imgWidth = 190; // Width of the image in the PDF
+                const imgHeight = (canvas.height * imgWidth) / canvas.width; // Calculate height to maintain aspect ratio
+                pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+
+                // Save the PDF
+                pdf.save('table.pdf');
+            });
+        }
+    </script>
+
 </body>
 </head>
 </html>
