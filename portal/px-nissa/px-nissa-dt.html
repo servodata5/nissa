@@ -1,4 +1,79 @@
 <html lang="en">
+
+<style>
+html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevent scrolling */
+        }
+		
+
+         .menu-bar {
+            width: 100%;
+            background-color: #333; /* Example background color */
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between; /* Space between logo and nav */
+            align-items: center; /* Vertically center items */
+       
+        }
+
+        .menu-bar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .menu-bar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-bar ul li {
+            position: relative;
+        }
+
+        .menu-bar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-bar ul li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .hero {
+            height: calc(100% - 60px); /* Full height minus menu bar height */
+            width: 100%;
+            background-color: #f0f0f0; /* Example background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #time {
+            font-size: 2em;
+            font-weight: bold;
+        }
+		
+		</style>
   <head>
   
   <!-- inactivity -->
