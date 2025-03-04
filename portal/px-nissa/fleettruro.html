@@ -1,0 +1,266 @@
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<!-- inactivity -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5000;url=https://servodata5.github.io/nissa/">  <!-- Refresh every seconds if 2 min is "120" -->
+	
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+  <link href="../portal_files/css2" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+ <link href="../portal_files/bootstrap.min.css" rel="stylesheet">
+  <link href="../portal_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="../portal_files/glightbox.min.css" rel="stylesheet">
+  <link href="../portal_files/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Main CSS File -->
+    <link href="../portal_files/style2.css" rel="stylesheet">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Discount</title>
+    <link rel="stylesheet" href="../portal_files/style2.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+<body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+    <nav>
+        <div class="logo">
+            <h1>Fleet Through RO</h1>
+       </div>
+        	 <ul id="menuList">	
+		<p></p>
+	
+		<li><a href="smlp.html">Small Pack</a></li>
+		<li><a href="brlp.html">Barrel Price</a></li>
+		 <button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button> 
+		<button class="btn btn-primary" onclick="portal.html" type="button">
+            <li><a href="../portal.html">Home</a></li>
+          
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script><script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+
+	<style>
+table, th, td {
+  border: 1px solid black; /* Sets border for table, headers, and data cells */
+  border-collapse: collapse; /* Collapses borders to avoid double borders */
+  padding: 5px; /* Adds padding inside cells */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.header-row th { /* Style header row cells differently */
+  background-color: #FFFF00;
+  font-weight: bold;
+} 
+
+table {
+  width: 60%; /* Or a specific width like 300px */
+  margin: 0 auto; /* Centers the table horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 4px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+ #ForSearchTable {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Set font size */
+  }
+
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+
+  #myTable tr {
+    /* Add a bottom border to each table row */
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myTable tr:hover {
+    /* Add a hover effect to the table rows */
+    background-color: #FFB6C1;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon */
+    width: 100%; /* Full-width input */
+    font-size: 16px; /* Set font size */
+    padding: 12px 20px 12px 40px; /* Add padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+  }
+
+.search-container {
+    /* Container for better layout control */
+    width: 620px; /* Example width */
+    margin: 20px auto; /* Center the container */
+  }
+
+  .search-input {
+    width: 100%; /* Occupy full width of container */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+</style>
+
+
+<div class="search-container">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..." >
+</div>
+
+ <table id="myTable">
+ <thead>  
+<tr>
+<th>MAT CODE</th>
+<th>Material Name</th>
+<th>RSP( PER L )</th>
+<th>PROPOSED FLEET THROUGH RO DISCOUNT /L</th>
+<th>PER BRL COSTING INC.GST</th>
+<th>RESELLER DISCOUNT-Q4</th>
+<th>DISCOUNT TO BE UPLAODED IN SDMS</th>
+
+</tr>
+  
+</thead>
+  <tbody>
+  
+<tr> <td>2502401</td><td>SERVO GEAR HP 90</td><td>229</td><td>71</td><td>39152</td><td>28</td><td>43</td></tr>
+<tr> <td>2503401</td><td>SERVO GEAR HP 140</td><td>245</td><td>77</td><td>41630</td><td>28</td><td>49</td></tr>
+<tr> <td>7436401</td><td>SERVO PRIDE NXT CK4 15W-40</td><td>255</td><td>79</td><td>43613</td><td>30</td><td>49</td></tr>
+<tr> <td>7470401</td><td>SERVO FLEET SUPREME CI4 PLUS 15W-40</td><td>199</td><td>44</td><td>38409</td><td>15</td><td>29</td></tr>
+<tr> <td>7472401</td><td>SERVO FLEET CF4 15W-40</td><td>195</td><td>50</td><td>35931</td><td>15</td><td>35</td></tr>
+<tr> <td>7485401</td><td>SERVO SUPER 20W-40 MG</td><td>192</td><td>41</td><td>37418</td><td>25</td><td>16</td></tr>
+<tr> <td>7489401</td><td>SERVO PRIDE XL PLUS 15W-40</td><td>249</td><td>85</td><td>40639</td><td>35</td><td>50</td></tr>
+<tr> <td>7511401</td><td>SERVO GEAR SUPER 80W-90</td><td>238</td><td>72</td><td>41135</td><td>33</td><td>39</td></tr>
+<tr> <td>7515401</td><td>SERVO GEAR SUPER 85W-140</td><td>251</td><td>79</td><td>42622</td><td>33</td><td>46</td></tr>
+<tr> <td>7577401</td><td>SERVO PREMIUM CF-4 15W-40</td><td>217</td><td>68</td><td>36922</td><td>25</td><td>43</td></tr>
+<tr> <td>7705451</td><td>SERVO GREASE MP 3</td><td>330</td><td>107</td><td>47891</td><td>50</td><td>57</td></tr>
+<tr> <td>7727451</td><td>SERVO GEM RR 3</td><td>400</td><td>137</td><td>56482</td><td>50</td><td>87</td></tr>
+<tr> <td>7701451</td><td>SERVO GREASE MP</td><td>280</td><td>68</td><td>45529</td><td>40</td><td>28</td></tr>
+<tr> <td>4925401</td><td>SERVO TRANSMISSION C4 SAE 30</td><td>200</td><td>45</td><td>38409</td><td>8</td><td>37</td></tr>
+<tr> <td>7903451</td><td>SERVOGREASE MIRACLE 3</td><td>355</td><td>102</td><td>62693</td><td>50</td><td>52</td></tr>
+
+
+
+
+</tbody>
+</table> 
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 1; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td");
+    let rowMatchesFilter = false; // Flag to track if any cell in the row matches
+    for (let j = 0; j < td.length; j++) { // Iterate through all columns in the row
+      if (td[j]) {
+        txtValue = td[j].textContent || td[j].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          rowMatchesFilter = true; // Set flag to true if a cell matches
+          break; // No need to check other cells in this row if one matches
+        }
+      }
+    }
+    if (rowMatchesFilter) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<script>
+        function downloadPDF() {
+            // Get the table element
+            const table = document.getElementById('myTable');
+
+            // Use html2canvas to convert the table to an image
+            html2canvas(table).then((canvas) => {
+                const imgData = canvas.toDataURL('image/png'); // Convert canvas to image data
+                const pdf = new jspdf.jsPDF('p', 'mm', 'a4'); // Create a new PDF
+
+                // Add the image to the PDF
+                const imgWidth = 190; // Width of the image in the PDF
+                const imgHeight = (canvas.height * imgWidth) / canvas.width; // Calculate height to maintain aspect ratio
+                pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+
+                // Save the PDF
+                pdf.save('table.pdf');
+            });
+        }
+    </script>
+
+</body>
+</head>
+</html>
