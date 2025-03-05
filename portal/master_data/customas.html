@@ -35,7 +35,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>master_bazaar-</title>
-    <link rel="stylesheet" href="./style.css">    
+    <link rel="stylesheet" href="./style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>	
 
 
 <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
@@ -46,7 +49,8 @@
         <ul id="menuList">
 		
 		
-		<button class="btn btn-primary" onclick="portal.html" type="button">
+	
+		<li><button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button></li>
             <li><a href="../portal.html">Home</a></li>
             
         </ul>
@@ -472,6 +476,44 @@ th, td {
 
 </tbody>
 </table> 
+
+<script>
+    function downloadPDF() {
+        // Get the table element
+        const table = document.getElementById('myTable');
+
+        // Use html2canvas to convert the table to an image
+        html2canvas(table, {
+            scale: 2, // Increase scale for better quality
+            logging: true, // Enable logging for debugging
+            useCORS: true, // Enable CORS for external resources
+        }).then((canvas) => {
+            const imgData = canvas.toDataURL('image/png'); // Convert canvas to image data
+            const pdf = new jspdf.jsPDF('p', 'mm', 'a4'); // Create a new PDF in portrait mode
+
+            // Calculate the dimensions of the image to fit the PDF
+            const imgWidth = 190; // Width of the image in the PDF (A4 width is 210mm)
+            const imgHeight = (canvas.height * imgWidth) / canvas.width; // Maintain aspect ratio
+
+            // Add the image to the PDF
+            pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+
+            // Save the PDF
+            pdf.save('Customer_Master.pdf');
+        }).catch((error) => {
+            console.error('Error generating PDF:', error);
+            alert('Failed to generate PDF. Please try again.');
+        });
+    }
+
+    // Function to toggle the menu on smaller screens
+    function toggleMenu() {
+        const menuList = document.getElementById('menuList');
+        menuList.style.display = menuList.style.display === 'flex' ? 'none' : 'flex';
+    }
+</script>
+
+
 <script>
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
