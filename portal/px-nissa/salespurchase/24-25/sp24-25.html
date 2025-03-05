@@ -23,7 +23,7 @@
     <!-- Main CSS File -->
     <link href="../../../portal_files/style2.css" rel="stylesheet">
 
-    <title>Sales Purchase 23-24</title>
+    <title>Sales Purchase 24-25</title>
     <link rel="stylesheet" href="../../../portal_files/style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -139,11 +139,11 @@
 
 <nav>
     <div class="logo">
-        <h1>Sales Purchase 23-24</h1>
+        <h1>Sales Purchase 24-25</h1>
     </div>
     <ul id="menuList">
-        <li><a href="../24-25/sp24-25.html">Sales Purchase 24-25</a></li>
-        <li><a href="tga23-24.html">Achoieve Target 23-24</a></li>
+        <li><a href="../23-24/sp23-24.html">Sales Purchase 23-24</a></li>
+        <li><a href="sa24-25.html">Sales Analys 24-25</a></li>
         <li><button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button></li>
         <li><a href="../../../portal.html">Home</a></li>
     </ul>
@@ -163,69 +163,84 @@
             <tr>
                 <th>Select</th>
                 <th>Month</th>
+				<th>Target</th>
+				<th>Base</th>
                 <th>Sales 23-24</th>
                 <th>Primary 23-24</th>
             </tr>
         </thead>
         <tbody>
            
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>April</td><td>13204.8</td><td>14378</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>May</td><td>22102</td><td>22927.5</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>June</td><td>22434.7</td><td>26195.5</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>July</td><td>19635.8</td><td>21591</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>August</td><td>18938.4</td><td>27014</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>September</td><td>20168.5</td><td>25202</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>October</td><td>16336.4</td><td>17628</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>November</td><td>30014.4</td><td>21008.5</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>December</td><td>25332.9</td><td>24010.5</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>January</td><td>19370</td><td>22599</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>February</td><td>31608.6</td><td>31814</td></tr>
-<tr><td><input type="checkbox" class="rowCheckbox"></td><td>March</td><td>51645.5</td><td>48629</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>April</td><td>15500</td><td>14.4</td><td>18515.5</td><td>16049.1</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>May</td><td>24000</td><td>22.9</td><td>24035.7</td><td>24843.5</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>June</td><td>28000</td><td>26.2</td><td>15425.4</td><td>28030</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>July</td><td>22000</td><td>21.6</td><td>23328.5</td><td>22053.2</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>August</td><td>27000</td><td>27</td><td>22941.4</td><td>23103.5</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>September</td><td>30000</td><td>25.2</td><td>25552.1</td><td>15492</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>October</td><td>22000</td><td>17.6</td><td>18310.7</td><td>16150</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>November</td><td>23000</td><td>21</td><td>26235.8</td><td>23334</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>December</td><td>35000</td><td>24</td><td>29498.4</td><td>29840.5</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>January</td><td>25000</td><td>22.5</td><td>26457.3</td><td>25250.5</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>February</td><td>29500</td><td>31</td><td>34777.1</td><td>30104.5</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>March</td><td>49000</td><td>48</td><td></td><td></td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>Total Target</td><td>330000</td><td>301.4</td><td>265077.9</td><td>254250.8</td></tr>
+
+
 
 
             <tr class="subtotal">
-                <td colspan="2">Total</td>
-                <td id="subtotalSales">0</td>
-                <td id="subtotalPrimary">0</td>
-            </tr>
+    <td colspan="2">SubTotal</td>
+    <td id="subtotalTarget">0</td> <!-- Subtotal for Target -->
+    <td id="subtotalBase">0</td> <!-- Subtotal for Base -->
+    <td id="subtotalSales">0</td> <!-- Subtotal for Sales 23-24 -->
+    <td id="subtotalPrimary">0</td> <!-- Subtotal for Primary 23-24 -->
+</tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    // Function to filter the table rows and calculate the subtotal
-    function filterTable() {
-        const searchBox = document.getElementById('searchBox');
-        const filter = searchBox.value.toUpperCase();
-        const table = document.getElementById('dataTable');
-        const rows = table.getElementsByTagName('tr');
-        let subtotalSales = 0;
-        let subtotalPrimary = 0;
+ function filterTable() {
+    const searchBox = document.getElementById('searchBox');
+    const filter = searchBox.value.toUpperCase();
+    const table = document.getElementById('dataTable');
+    const rows = table.getElementsByTagName('tr');
+    let subtotalTarget = 0;
+    let subtotalBase = 0;
+    let subtotalSales = 0;
+    let subtotalPrimary = 0;
 
-        // Loop through all table rows (except the header and subtotal row)
-        for (let i = 1; i < rows.length - 1; i++) {
-            const cellA = rows[i].getElementsByTagName('td')[1]; // Column A
-            const cellB = rows[i].getElementsByTagName('td')[2]; // Column B (Sales 23-24 Liters)
-            const cellC = rows[i].getElementsByTagName('td')[3]; // Column C (Primary 23-24)
-            const checkbox = rows[i].querySelector('.rowCheckbox'); // Checkbox
-            if (cellA && cellB && cellC) {
-                const textValue = cellA.textContent || cellA.innerText;
-                if (textValue.toUpperCase().indexOf(filter) > -1) {
-                    rows[i].style.display = ''; // Show the row
-                    if (checkbox.checked) {
-                        subtotalSales += parseFloat(cellB.textContent || cellB.innerText); // Add to subtotal for Sales
-                        subtotalPrimary += parseFloat(cellC.textContent || cellC.innerText); // Add to subtotal for Primary
-                    }
-                } else {
-                    rows[i].style.display = 'none'; // Hide the row
+    // Loop through all table rows (except the header and subtotal row)
+    for (let i = 1; i < rows.length - 1; i++) {
+        const cellA = rows[i].getElementsByTagName('td')[1]; // Column A (Month)
+        const cellB = rows[i].getElementsByTagName('td')[2]; // Column B (Target)
+        const cellC = rows[i].getElementsByTagName('td')[3]; // Column C (Base)
+        const cellD = rows[i].getElementsByTagName('td')[4]; // Column D (Sales 23-24)
+        const cellE = rows[i].getElementsByTagName('td')[5]; // Column E (Primary 23-24)
+        const checkbox = rows[i].querySelector('.rowCheckbox'); // Checkbox
+
+        if (cellA && cellB && cellC && cellD && cellE) {
+            const textValue = cellA.textContent || cellA.innerText;
+            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                rows[i].style.display = ''; // Show the row
+                if (checkbox.checked) {
+                    subtotalTarget += parseFloat(cellB.textContent || cellB.innerText) || 0; // Add to subtotal for Target
+                    subtotalBase += parseFloat(cellC.textContent || cellC.innerText) || 0; // Add to subtotal for Base
+                    subtotalSales += parseFloat(cellD.textContent || cellD.innerText) || 0; // Add to subtotal for Sales
+                    subtotalPrimary += parseFloat(cellE.textContent || cellE.innerText) || 0; // Add to subtotal for Primary
                 }
+            } else {
+                rows[i].style.display = 'none'; // Hide the row
             }
         }
-
-        // Update the subtotal values
-        document.getElementById('subtotalSales').textContent = subtotalSales.toFixed(2);
-        document.getElementById('subtotalPrimary').textContent = subtotalPrimary.toFixed(2);
     }
+
+    // Update the subtotal values
+    document.getElementById('subtotalTarget').textContent = subtotalTarget.toFixed(2);
+    document.getElementById('subtotalBase').textContent = subtotalBase.toFixed(2);
+    document.getElementById('subtotalSales').textContent = subtotalSales.toFixed(2);
+    document.getElementById('subtotalPrimary').textContent = subtotalPrimary.toFixed(2);
+}
 
     // Function to handle checkbox clicks
     function handleCheckboxClick() {
