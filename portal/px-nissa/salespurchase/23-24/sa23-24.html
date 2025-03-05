@@ -1,250 +1,314 @@
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-<!-- inactivity -->
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5000;url=https://servodata5.github.io/nissa/">  <!-- Refresh every seconds if 2 min is "120" -->
-	
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-<!-- Fonts -->
-  <link href="https://fonts.googleapis.com/" rel="preconnect">
-  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
-  <link href="../../../portal_files/css2" rel="stylesheet">
-
-<!-- Vendor CSS Files -->
- <link href="../../../portal_files/bootstrap.min.css" rel="stylesheet">
-  <link href="../../../portal_files/bootstrap-icons.css" rel="stylesheet">
-  <link href="../../../portal_files/glightbox.min.css" rel="stylesheet">
-  <link href="../../../portal_files/swiper-bundle.min.css" rel="stylesheet">
-  
-  <!-- Main CSS File -->
-    <link href="../../../portal_files/style2.css" rel="stylesheet">
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Inactivity -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5000;url=https://servodata5.github.io/nissa/">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+    <link href="../../../portal_files/css2" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../../portal_files/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../portal_files/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../../portal_files/glightbox.min.css" rel="stylesheet">
+    <link href="../../../portal_files/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../../../portal_files/style2.css" rel="stylesheet">
+
     <title>Sales Analys 23-24</title>
-    <link rel="stylesheet" href="../../../portal_files/style2.css">  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="../../../portal_files/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
+    <style>
+        /* Body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-<body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
-    <nav>
-        <div class="logo">
-            <h1>Sales Analys 23-24</h1>
-       </div>
-        	 <ul id="menuList">	
-		<p></p>
-	
-		<li><a href="sp23-24.html">Sales Purchase 23-24</a></li>
-		<li><a href="#">N</a></li>
-		 <button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button> 
-		<button class="btn btn-primary" onclick="portal.html" type="button">
-            <li><a href="../../../portal.html">Home</a></li>
-          
-        </ul>
-        <div class="menu-icon">
-            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-        </div>
-    </nav>
+        /* Navbar styling */
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
 
-
-
-    <script>
-        let menuList = document.getElementById("menuList")
-        menuList.style.maxHeight = "0px";
-
-        function toggleMenu(){
-            if(menuList.style.maxHeight == "0px")
-            {
-                menuList.style.maxHeight = "300px";
+        /* Responsive navbar */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
             }
-            else{
-                menuList.style.maxHeight = "0px";
+            nav ul li {
+                margin: 10px 0;
+            }
+            nav .menu-icon {
+                display: block;
             }
         }
-        
-    </script><script>
-        let menuList = document.getElementById("menuList")
-        menuList.style.maxHeight = "0px";
 
-        function toggleMenu(){
-            if(menuList.style.maxHeight == "0px")
-            {
-                menuList.style.maxHeight = "300px";
+        /* Center-align the search box and table */
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Search box styling */
+        #searchBox {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 50%;
+            max-width: 300px; /* Limit search box width */
+        }
+
+        /* Table styling */
+        table {
+            width: auto; /* Auto-fit to content */
+            max-width: 100%; /* Ensure it doesn't overflow the screen */
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .subtotal {
+            font-weight: bold;
+            background-color: #e0e0e0;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            #searchBox {
+                width: 100%; /* Full width on small screens */
+                max-width: none;
             }
-            else{
-                menuList.style.maxHeight = "0px";
+            table {
+                font-size: 14px; /* Smaller font for small screens */
             }
         }
-        
-    </script>
+    </style>
+</head>
+<body>
 
-	<style>
-table, th, td {
-  border: 1px solid black; /* Sets border for table, headers, and data cells */
-  border-collapse: collapse; /* Collapses borders to avoid double borders */
-  padding: 5px; /* Adds padding inside cells */
-}
+<nav>
+    <div class="logo">
+        <h1>Sales Analys 23-24</h1>
+    </div>
+    <ul id="menuList">
+        <li><a href="sp23-24.html">Sales Purchase 23-24</a></li>
+        <li><a href="#">N</a></li>
+        <li><button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button></li>
+        <li><a href="../../../portal.html">Home</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
+<!-- Center container for search box and table -->
+<div class="center-container">
+    <!-- Search Box -->
+    <input type="text" id="searchBox" placeholder="Search...">
 
-th, td {
-  border: 1px solid #000000;
-  padding: 8px;
-  text-align: left;
-}
-
-.header-row th { /* Style header row cells differently */
-  background-color: #FFFF00;
-  font-weight: bold;
-} 
-
-table {
-  width: 60%; /* Or a specific width like 300px */
-  margin: 0 auto; /* Centers the table horizontally */
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 4px solid black;
-  padding: 8px;
-  text-align: left;
-}
-
- #ForSearchTable {
-    border-collapse: collapse; /* Collapse table borders */
-    width: 100%; /* Full width */
-    border: 1px solid #ddd; /* Add a grey border */
-    font-size: 18px; /* Set font size */
-  }
-
-  #myTable th, #myTable td {
-    text-align: left; /* Left-align text */
-    padding: 12px; /* Add padding */
-  }
-
-  #myTable tr {
-    /* Add a bottom border to each table row */
-    border-bottom: 1px solid #ddd;
-  }
-
-  #myTable tr:hover {
-    /* Add a hover effect to the table rows */
-    background-color: #FFB6C1;
-  }
-
-  #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon */
-    width: 100%; /* Full-width input */
-    font-size: 16px; /* Set font size */
-    padding: 12px 20px 12px 40px; /* Add padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-  }
-
-.search-container {
-    /* Container for better layout control */
-    width: 620px; /* Example width */
-    margin: 20px auto; /* Center the container */
-  }
-
-  .search-input {
-    width: 100%; /* Occupy full width of container */
-    padding: 10px;
-    box-sizing: border-box; /* Include padding in width calculation */
-  }
-</style>
-
-
-<div class="search-container">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..." >
-</div>
-
- <table id="myTable">
- <thead>  
-<tr>
+    <!-- Table -->
+    <table id="dataTable">
+        <thead>
+            <tr>
+<th>Select</th>
 <th>Month</th>
-<th>RO</th>
 <th>Bazaar</th>
-<th>Oem</th>
+<th>RO</th>
+<th>OEM</th>
+<th>Fleet</th>
 <th>Others</th>
+<th>Defense</th>
 <th>Total</th>
 
+
+            </tr>
+        </thead>
+        <tbody>
+           
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>April</td><td>6783.8</td><td>2639</td><td>3782</td><td>0</td><td>0</td><td>0</td><td>13204.8</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>May</td><td>7736.6</td><td>10705.5</td><td>3322.4</td><td>0</td><td>337.5</td><td>0</td><td>22102</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>June</td><td>7769.5</td><td>9599</td><td>5066.2</td><td>0</td><td>0</td><td>0</td><td>22434.7</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>July</td><td>6554.9</td><td>8308.5</td><td>3696.4</td><td>630</td><td>116</td><td>330</td><td>19635.8</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>August</td><td>5480.4</td><td>9147</td><td>4311</td><td>0</td><td>0</td><td>0</td><td>18938.4</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>September</td><td>3885.5</td><td>13589</td><td>2694</td><td>0</td><td>0</td><td>0</td><td>20168.5</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>October</td><td>3921.8</td><td>7813</td><td>4201.6</td><td>0</td><td>300</td><td>100</td><td>16336.4</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>November</td><td>10172.4</td><td>16344</td><td>3498</td><td>0</td><td>0</td><td>0</td><td>30014.4</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>December</td><td>7036.9</td><td>13922</td><td>4374</td><td>0</td><td>0</td><td>0</td><td>25332.9</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>January</td><td>7555</td><td>8422</td><td>2958</td><td>420</td><td>15</td><td>0</td><td>19370</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>February</td><td>10489.8</td><td>15694</td><td>5424.8</td><td>0</td><td>0</td><td>0</td><td>31608.6</td></tr>
+<tr><td><input type="checkbox" class="rowCheckbox"></td><td>March</td><td>12596</td><td>32862.5</td><td>5522</td><td>0</td><td>665</td><td>0</td><td>51645.5</td></tr>
+
+
+
+
+
+
+
+
+            <tr class="subtotal">
+    <td colspan="2">SubTotal</td>
+    <td id="subtotalBazaar">0</td> <!-- Subtotal for Target -->
+    <td id="subtotalRO">0</td> <!-- Subtotal for Base -->
+    <td id="subtotalOEM">0</td> <!-- Subtotal for Sales 23-24 -->
+    <td id="subtotalFleet">0</td> <!-- Subtotal for Primary 23-24 -->
+	<td id="subtotalOthers">0</td> <!-- Subtotal for Primary 23-24 -->
+	<td id="subtotalDefense">0</td> <!-- Subtotal for Primary 23-24 -->
+	<td id="subtotalTotal">0</td> <!-- Subtotal for Primary 23-24 -->
 </tr>
-  
-</thead>
-  <tbody>
-  
-<tr><td>FEB 23-24</td><td>15694</td><td>10489.8</td><td>5424.8</td><td>0</td><td>31608.6</td></tr>
-<tr><td>MARCH 23-24</td><td>32862.5</td><td>12596</td><td>5522</td><td>665</td><td>51645.5</td></tr>
+        </tbody>
+    </table>
+</div>
 
-
-</tbody>
-</table> 
 <script>
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 1; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td");
-    let rowMatchesFilter = false; // Flag to track if any cell in the row matches
-    for (let j = 0; j < td.length; j++) { // Iterate through all columns in the row
-      if (td[j]) {
-        txtValue = td[j].textContent || td[j].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          rowMatchesFilter = true; // Set flag to true if a cell matches
-          break; // No need to check other cells in this row if one matches
+ function filterTable() {
+    const searchBox = document.getElementById('searchBox');
+    const filter = searchBox.value.toUpperCase();
+    const table = document.getElementById('dataTable');
+    const rows = table.getElementsByTagName('tr');
+    let subtotalBazaar = 0;
+    let subtotalRO = 0;
+    let subtotalOEM = 0;
+    let subtotalFleet = 0;
+	let subtotalOthers = 0;
+	let subtotalDefense = 0;
+	let subtotalTotal = 0;
+
+    // Loop through all table rows (except the header and subtotal row)
+    for (let i = 1; i < rows.length - 1; i++) {
+        const cellA = rows[i].getElementsByTagName('td')[1]; // Column A (Month)
+        const cellB = rows[i].getElementsByTagName('td')[2]; // Column B (Target)
+        const cellC = rows[i].getElementsByTagName('td')[3]; // Column C (Base)
+        const cellD = rows[i].getElementsByTagName('td')[4]; // Column D (Sales 23-24)
+        const cellE = rows[i].getElementsByTagName('td')[5]; // Column E (Primary 23-24)
+	    const cellF = rows[i].getElementsByTagName('td')[6]; // Column F (Primary 23-24)
+		const cellG = rows[i].getElementsByTagName('td')[7]; // Column G (Primary 23-24)
+		const cellH = rows[i].getElementsByTagName('td')[8]; // Column G (Primary 23-24)
+        const checkbox = rows[i].querySelector('.rowCheckbox'); // Checkbox
+
+        if (cellA && cellB && cellC && cellD && cellE && cellF && cellG && cellH) {
+            const textValue = cellA.textContent || cellA.innerText;
+            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                rows[i].style.display = ''; // Show the row
+                if (checkbox.checked) {
+                    subtotalBazaar += parseFloat(cellB.textContent || cellB.innerText) || 0; // Add to subtotal for Target
+                    subtotalRO += parseFloat(cellC.textContent || cellC.innerText) || 0; // Add to subtotal for Base
+                    subtotalOEM += parseFloat(cellD.textContent || cellD.innerText) || 0; // Add to subtotal for Sales
+                    subtotalFleet += parseFloat(cellE.textContent || cellE.innerText) || 0; // Add to subtotal for Primary
+					subtotalOthers += parseFloat(cellF.textContent || cellF.innerText) || 0; // Add to subtotal for Primary
+					subtotalDefense += parseFloat(cellG.textContent || cellG.innerText) || 0; // Add to subtotal for Primary
+				    subtotalTotal += parseFloat(cellH.textContent || cellH.innerText) || 0; // Add to subtotal for Primary
+                }
+            } else {
+                rows[i].style.display = 'none'; // Hide the row
+            }
         }
-      }
     }
-    if (rowMatchesFilter) {
-      tr[i].style.display = "";
-    } else {
-      tr[i].style.display = "none";
-    }
-  }
+
+    // Update the subtotal values
+    document.getElementById('subtotalBazaar').textContent = subtotalBazaar.toFixed(2);
+    document.getElementById('subtotalRO').textContent = subtotalRO.toFixed(2);
+    document.getElementById('subtotalOEM').textContent = subtotalOEM.toFixed(2);
+    document.getElementById('subtotalFleet').textContent = subtotalFleet.toFixed(2);
+	document.getElementById('subtotalOthers').textContent = subtotalOthers.toFixed(2);
+	document.getElementById('subtotalDefense').textContent = subtotalDefense.toFixed(2);
+	document.getElementById('subtotalTotal').textContent = subtotalTotal.toFixed(2);
 }
+
+    // Function to handle checkbox clicks
+    function handleCheckboxClick() {
+        filterTable(); // Recalculate subtotal when a checkbox is clicked
+    }
+
+    // Add event listeners
+    document.getElementById('searchBox').addEventListener('input', filterTable);
+
+    // Add event listeners to all checkboxes
+    const checkboxes = document.querySelectorAll('.rowCheckbox');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', handleCheckboxClick);
+    });
+
+    // Initial calculation
+    filterTable();
 </script>
 
 <script>
-        function downloadPDF() {
-            // Get the table element
-            const table = document.getElementById('myTable');
+    function downloadPDF() {
+        // Get the table element
+        const table = document.getElementById('dataTable');
 
-            // Use html2canvas to convert the table to an image
-            html2canvas(table).then((canvas) => {
-                const imgData = canvas.toDataURL('image/png'); // Convert canvas to image data
-                const pdf = new jspdf.jsPDF('p', 'mm', 'a4'); // Create a new PDF
+        // Use html2canvas to convert the table to an image
+        html2canvas(table).then((canvas) => {
+            const imgData = canvas.toDataURL('image/png'); // Convert canvas to image data
+            const pdf = new jspdf.jsPDF('p', 'mm', 'a4'); // Create a new PDF
 
-                // Add the image to the PDF
-                const imgWidth = 190; // Width of the image in the PDF
-                const imgHeight = (canvas.height * imgWidth) / canvas.width; // Calculate height to maintain aspect ratio
-                pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+            // Add the image to the PDF
+            const imgWidth = 190; // Width of the image in the PDF
+            const imgHeight = (canvas.height * imgWidth) / canvas.width; // Calculate height to maintain aspect ratio
+            pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
 
-                // Save the PDF
-                pdf.save('table.pdf');
-            });
-        }
-    </script>
+            // Save the PDF
+            pdf.save('table.pdf');
+        });
+    }
+
+    // Function to toggle the menu on smaller screens
+    function toggleMenu() {
+        const menuList = document.getElementById('menuList');
+        menuList.style.display = menuList.style.display === 'flex' ? 'none' : 'flex';
+    }
+</script>
 
 </body>
-</head>
 </html>
