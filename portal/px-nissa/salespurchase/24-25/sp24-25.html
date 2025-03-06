@@ -161,7 +161,7 @@
     <table id="dataTable">
         <thead>
             <tr>
-                <th>Select</th>
+                <th><input type="checkbox" id="selectAll"></th>
                 <th>Month</th>
 				<th>Target</th>
 				<th>Base</th>
@@ -200,6 +200,25 @@
 </div>
 
 <script>
+
+// Function to handle "Select All" checkbox
+function handleSelectAll() {
+    const selectAllCheckbox = document.getElementById('selectAll');
+    const rowCheckboxes = document.querySelectorAll('.rowCheckbox');
+
+    // Loop through all row checkboxes and set their checked state to match the "Select All" checkbox
+    rowCheckboxes.forEach(checkbox => {
+        checkbox.checked = selectAllCheckbox.checked;
+    });
+
+    // Recalculate subtotals after selecting/deselecting all rows
+    filterTable();
+}
+
+// Add event listener to the "Select All" checkbox
+document.getElementById('selectAll').addEventListener('click', handleSelectAll);
+
+
  function filterTable() {
     const searchBox = document.getElementById('searchBox');
     const filter = searchBox.value.toUpperCase();
