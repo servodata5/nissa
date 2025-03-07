@@ -1,104 +1,207 @@
 Sl No,Customer Name,Last Year,April,May,June,July,August,September,October,November,December,January,February,March,Total,Action
 
-1,Black Diamond Refill Centre,0,0,0,0,0,0,0,0,0,-4136,0,0,0,-4136,Remove
+1,undefined,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
 2,Byrnihat A warjri Fuel Stop,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-3,Cherra Midway Filling Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-4,D Mercy Refill Centre,0,0,0,0,0,0,0,0,0,314935,0,0,0,314935,Remove
-5,Dhar Service Station,0,0,0,0,0,0,0,0,0,117794,0,0,0,117794,Remove
-6,Didram Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-7,Dkhiah Service Station,0,0,0,0,0,0,0,0,0,0,22899,0,0,22899,Remove
-8,Donbok Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-9,East Jaintia Filling Center,0,0,0,0,0,0,0,0,53704,0,0,192808,0,246512,Remove
-10,Eastern Border Service Station,0,0,0,0,0,0,0,0,0,109248,184859,48981,0,343088,Remove
-11,Genesis Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-12,Green Hills Service Station,0,0,0,0,0,0,0,0,52321,0,0,113954,0,166275,Remove
-13,Harlie V Service Station,0,0,0,0,0,0,0,0,0,0,0,73714,17238,90952,Remove
-14,Heimon Filling Station,0,0,0,0,0,0,0,0,0,16340,0,0,0,16340,Remove
-15,Highland Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-16,Highway Carrier Refilling,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-17,Highway Plaza Filling centre,0,0,0,0,0,0,0,0,0,0,-531,0,0,-531,Remove
-18,Highway Refill Centre,0,0,0,0,0,0,0,0,286019,363013,0,0,0,649032,Remove
-19,Hoslin Service Station,0,0,0,0,0,0,0,0,3475,23100,0,0,0,26575,Remove
-20,J Marbaniang,0,0,0,0,0,0,0,0,0,0,0,-3415,0,-3415,Remove
-21,Jaintia Auto Agencies,0,0,0,0,0,0,0,0,0,-765,0,0,0,-765,Remove
-22,Jaintia Service Station,0,0,0,0,0,0,0,0,0,-490,0,0,0,-490,Remove
-23,JIRANG FILLING STATION,0,0,0,0,0,-300,0,0,0,0,0,0,0,-300,Remove
-24,K Langbai Fuel Station,0,0,0,0,0,0,0,0,0,-1123,0,0,0,-1123,Remove
-25,K Rymbai & Co,0,0,0,0,0,72129,75000,0,0,65061,0,34493,0,246683,Remove
-26,Kargil Martyr's Service Station,0,0,0,0,0,0,0,0,0,0,131310,0,0,131310,Remove
-27,Kharnairi Service Centre,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-28,Khasi Hills Petroleum Supply Co,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-29,Khongwir Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-30,Kurbah Service Station,0,0,0,0,0,0,0,0,0,0,-379,0,0,-379,Remove
-31,Laityrke Service  Station,0,0,0,0,0,0,0,0,0,19343,53273,200195,0,272811,Remove
-32,LMPL Enterprice (ESSAR),0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-33,Lumshnong Fuel,0,0,0,0,0,0,0,0,0,0,0,163677,0,163677,Remove
-34,Lumshnong Service Station,0,0,0,0,0,0,0,0,0,0,-4375,0,0,-4375,Remove
-35,Lyngdoh Pahsyntiew Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-36,Mahari & Sons,0,0,0,0,-870,0,0,0,0,0,0,0,0,-870,Remove
-37,Mahavir & Co,0,0,0,0,0,0,0,0,0,11376,0,0,0,11376,Remove
-38,Mairang Service Station,0,0,0,0,0,0,0,0,0,16106,207674,0,0,223780,Remove
-39,Mantei Service Station,0,0,0,0,0,0,0,0,0,-560,0,0,0,-560,Remove
-40,Matti I Pa Nongstoin,0,0,0,0,0,0,0,0,0,0,15801,93297,0,109098,Remove
-41,Marwet Oil Services pvt.ltd,0,0,0,0,0,0,0,5753,24060,0,0,0,0,29813,Remove
-42,Marwet Petroleum Agency,0,0,0,0,0,0,0,0,0,0,259364,0,0,259364,Remove
-43,Mawkhanu Service Station,0,0,0,0,0,0,0,0,0,0,270,0,0,270,Remove
-44,Mawlai Aibor Roy,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-45,Mawlai Banalari Service Station,0,0,0,0,0,0,0,0,0,0,78095,0,0,78095,Remove
-46,Meera Service Station,0,0,0,0,0,0,0,0,0,0,-330,0,0,-330,Remove
-47,Meghalaya Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-48,Mihmyntdu Service Station,0,0,0,0,0,0,0,-842,0,0,0,0,0,-842,Remove
-49,MILDA ENERGY POINT,0,0,0,0,0,0,0,48808,0,0,0,0,0,48808,Remove
-50,Moolamylliang Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-51,More Energy Station,0,0,0,0,0,0,0,0,0,75388,0,0,0,75388,Remove
-52,Morland Snootnick Filling Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-53,Mylliem Wah Lyngdoh Refill Centre,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-54,Nangkyrsoi Fuel Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-55,Naya Bunglow Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-56,Nongpluh Umroi Service Station,0,0,0,0,0,0,0,0,0,0,23414,0,0,23414,Remove
-57,Nongpoh Filling Centre,0,0,0,0,0,0,0,0,0,-6624,0,0,0,-6624,Remove
-58,Nongpoh Highway Service Station,0,0,0,0,0,0,0,52650,0,0,0,0,0,52650,Remove
-59,Nongrum Energy Station,0,0,0,0,0,0,0,32848,0,0,0,0,0,32848,Remove
-60,Nongstoin Highway Service Station,0,0,0,0,0,0,0,0,0,0,106299,0,0,106299,Remove
-61,Nongtdu Filling Station,0,0,0,0,0,30526,0,0,50489,46156,0,50000,0,177171,Remove
-62,Nongtdu Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-63,Nongshillong service station,0,0,0,0,0,0,0,0,0,0,43523,0,0,43523,Remove
-64,Nongtluh-mathan petrol,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-65,Peak Service Station L_K,0,0,0,0,0,0,0,0,0,0,0,522,0,522,Remove
-66,Peak Service Station L_M,0,0,0,0,0,0,0,0,0,0,0,91001,0,91001,Remove
-67,Perfect Service Station,0,0,0,0,0,0,0,0,0,64632,0,0,0,64632,Remove
-68,Petrol and Auto Diesel Filling Station,0,0,0,0,0,0,0,0,0,-6706,0,0,0,-6706,Remove
-69,PNAR SERVICE STATION MUKHLA (AD HOC,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-70,Polo Service Station,0,0,0,0,0,0,0,0,0,0,0,112940,28613,141553,Remove
-71,Pynbianglang Refilling Station,0,0,0,0,0,0,0,0,0,67285,0,65388,0,132673,Remove
-72,Pyngrope Service Station,0,0,0,0,0,0,0,0,0,0,-3020,0,0,-3020,Remove
-73,Raj Filling Centre,0,0,0,0,0,0,0,0,260051,126630,41630,0,0,428311,Remove
-74,Raja Fuel Service,0,0,0,0,0,0,0,0,0,0,0,57061,0,57061,Remove
-75,Raliang Fuels,0,0,0,0,46201,0,0,0,0,0,0,0,0,46201,Remove
-76,Rani Service Station,0,0,0,0,0,0,0,0,0,0,0,70595,0,70595,Remove
-77,Ri Lyngngam Service Station,0,0,0,0,0,0,0,0,0,0,79284,0,0,79284,Remove
-78,Rida Langrin Filling Centre,0,0,0,0,0,0,0,0,0,0,-41115,0,0,-41115,Remove
-79,River Kynshi BKS Service Station,0,0,0,0,0,0,0,0,0,0,-303,0,0,-303,Remove
-80,River Umtrew Service Station,0,0,0,0,0,0,0,0,0,-2120,0,0,0,-2120,Remove
-81,Roibha Fuel Station,0,0,0,0,0,0,0,0,0,-2228,0,0,0,-2228,Remove
-82,RIBHOI SERVICE STATION,0,0,0,0,0,0,0,0,0,201646,0,0,0,201646,Remove
-83,Shallam Syngkon Jowai,0,0,0,0,0,0,13106,43759,0,75558,0,0,0,132423,Remove
-84,Shallam Syngkon Wapung,0,0,0,0,0,0,0,0,0,0,325525,0,0,325525,Remove
-85,Shallang Lynmer Fuel Station,0,0,0,0,0,0,0,0,0,-1470,0,0,0,-1470,Remove
-86,Shangpung Service Station,0,0,0,0,0,41149,0,0,0,0,0,0,0,41149,Remove
-87,Shangpung Service Station  (ESSAR),0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-88,Shibai Shiboo Service Station,0,0,0,0,0,0,0,0,20002,0,144312,0,0,164314,Remove
-89,Sohra Refilling Centre,0,0,0,0,0,0,0,8794,0,0,0,0,0,8794,Remove
-90,SOUTHERN HILLS SERVICE STATION,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-91,Star Energy Point,0,0,0,0,0,0,0,0,0,43445,47247,99238,0,189930,Remove
-92,Swer Service Station,0,0,0,0,0,0,0,0,0,-636,0,126474,0,125838,Remove
-93,Tuber Auto Agencies,0,0,0,0,0,0,0,0,0,0,0,62405,0,62405,Remove
-94,Tuber Service Station ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-95,Tyrshi Filling Station,0,0,0,0,0,0,0,0,0,20085,0,162549,0,182634,Remove
-96,Umkrukru service Station,0,0,0,0,0,0,0,0,0,85526,0,106992,0,192518,Remove
-97,Umran Fuels,0,0,0,0,0,0,0,0,0,0,24396,0,0,24396,Remove
-98,Umsning Fuel Station,0,0,0,0,0,0,0,0,0,0,0,49278,0,49278,Remove
-99,United Hills Super Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
-100,Upper Shillong Petrol Service Station,0,0,0,0,0,0,0,0,0,29722,0,43695,0,73417,Remove
-101,west jaintia filling station,0,0,0,0,0,0,0,0,0,70709,0,0,0,70709,Remove
-102,Customer 117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+3,D Mercy Refill Centre,0,0,0,0,0,0,0,0,0,314935,0,0,0,314935,Remove
+4,Dhar Service Station,0,0,0,0,0,0,0,0,0,117794,0,0,0,117794,Remove
+5,Didram Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+6,Dkhiah Service Station,0,0,0,0,0,0,0,0,0,0,22899,0,0,22899,Remove
+7,Donbok Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+8,East Jaintia Filling Center,0,0,0,0,0,0,0,0,53704,0,0,192808,0,246512,Remove
+9,Eastern Border Service Station,0,0,0,0,0,0,0,0,0,109248,184859,48981,0,343088,Remove
+10,Genesis Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+11,Green Hills Service Station,0,0,0,0,0,0,0,0,52321,0,0,113954,0,166275,Remove
+12,Harlie V Service Station,0,0,0,0,0,0,0,0,0,0,0,73714,17238,90952,Remove
+13,Heimon Filling Station,0,0,0,0,0,0,0,0,0,16340,0,0,0,16340,Remove
+14,Highland Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+15,Highway Carrier Refilling,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+16,Highway Plaza Filling centre,0,0,0,0,0,0,0,0,0,0,-531,0,0,-531,Remove
+17,Highway Refill Centre,0,0,0,0,0,0,0,0,286019,363013,0,0,0,649032,Remove
+18,Hoslin Service Station,0,0,0,0,0,0,0,0,3475,23100,0,0,0,26575,Remove
+19,J Marbaniang,0,0,0,0,0,0,0,0,0,0,0,-3415,0,-3415,Remove
+20,Jaintia Auto Agencies,0,0,0,0,0,0,0,0,0,-765,0,0,0,-765,Remove
+21,Jaintia Service Station,0,0,0,0,0,0,0,0,0,-490,0,0,0,-490,Remove
+22,JIRANG FILLING STATION,0,0,0,0,0,-300,0,0,0,0,0,0,0,-300,Remove
+23,K Langbai Fuel Station,0,0,0,0,0,0,0,0,0,-1123,0,0,0,-1123,Remove
+24,K Rymbai & Co,0,0,0,0,0,72129,75000,0,0,65061,0,34493,0,246683,Remove
+25,Kargil Martyr's Service Station,0,0,0,0,0,0,0,0,0,0,131310,0,0,131310,Remove
+26,Kharnairi Service Centre,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+27,Khasi Hills Petroleum Supply Co,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+28,Khongwir Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+29,Kurbah Service Station,0,0,0,0,0,0,0,0,0,0,-379,0,0,-379,Remove
+30,Laityrke Service  Station,0,0,0,0,0,0,0,0,0,19343,53273,200195,0,272811,Remove
+31,LMPL Enterprice (ESSAR),0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+32,Lumshnong Fuel,0,0,0,0,0,0,0,0,0,0,0,163677,0,163677,Remove
+33,Lumshnong Service Station,0,0,0,0,0,0,0,0,0,0,-4375,0,0,-4375,Remove
+34,Lyngdoh Pahsyntiew Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+35,Mahari & Sons,0,0,0,0,-870,0,0,0,0,0,0,0,0,-870,Remove
+36,Mahavir & Co,0,0,0,0,0,0,0,0,0,11376,0,0,0,11376,Remove
+37,Mairang Service Station,0,0,0,0,0,0,0,0,0,16106,207674,0,0,223780,Remove
+38,Mantei Service Station,0,0,0,0,0,0,0,0,0,-560,0,0,0,-560,Remove
+39,Matti I Pa Nongstoin,0,0,0,0,0,0,0,0,0,0,15801,93297,0,109098,Remove
+40,Marwet Oil Services pvt.ltd,0,0,0,0,0,0,0,5753,24060,0,0,0,0,29813,Remove
+41,Marwet Petroleum Agency,0,0,0,0,0,0,0,0,0,0,259364,0,0,259364,Remove
+42,Mawkhanu Service Station,0,0,0,0,0,0,0,0,0,0,270,0,0,270,Remove
+43,Mawlai Aibor Roy,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+44,Mawlai Banalari Service Station,0,0,0,0,0,0,0,0,0,0,78095,0,0,78095,Remove
+45,Meera Service Station,0,0,0,0,0,0,0,0,0,0,-330,0,0,-330,Remove
+46,Meghalaya Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+47,Mihmyntdu Service Station,0,0,0,0,0,0,0,-842,0,0,0,0,0,-842,Remove
+48,MILDA ENERGY POINT,0,0,0,0,0,0,0,48808,0,0,0,0,0,48808,Remove
+49,Moolamylliang Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+50,More Energy Station,0,0,0,0,0,0,0,0,0,75388,0,0,0,75388,Remove
+51,Morland Snootnick Filling Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+52,Mylliem Wah Lyngdoh Refill Centre,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+53,Nangkyrsoi Fuel Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+54,Naya Bunglow Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+55,Nongpluh Umroi Service Station,0,0,0,0,0,0,0,0,0,0,23414,0,0,23414,Remove
+56,Nongpoh Filling Centre,0,0,0,0,0,0,0,0,0,-6624,0,0,0,-6624,Remove
+57,Nongpoh Highway Service Station,0,0,0,0,0,0,0,52650,0,0,0,0,0,52650,Remove
+58,Nongrum Energy Station,0,0,0,0,0,0,0,32848,0,0,0,0,0,32848,Remove
+59,Nongstoin Highway Service Station,0,0,0,0,0,0,0,0,0,0,106299,0,0,106299,Remove
+60,Nongtdu Filling Station,0,0,0,0,0,30526,0,0,50489,46156,0,50000,0,177171,Remove
+61,Nongtdu Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+62,Nongshillong service station,0,0,0,0,0,0,0,0,0,0,43523,0,0,43523,Remove
+63,Nongtluh-mathan petrol,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+64,Peak Service Station L_K,0,0,0,0,0,0,0,0,0,0,0,522,0,522,Remove
+65,Peak Service Station L_M,0,0,0,0,0,0,0,0,0,0,0,91001,0,91001,Remove
+66,Perfect Service Station,0,0,0,0,0,0,0,0,0,64632,0,0,0,64632,Remove
+67,Petrol and Auto Diesel Filling Station,0,0,0,0,0,0,0,0,0,-6706,0,0,0,-6706,Remove
+68,PNAR SERVICE STATION MUKHLA (AD HOC,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+69,Polo Service Station,0,0,0,0,0,0,0,0,0,0,0,112940,28613,141553,Remove
+70,Pynbianglang Refilling Station,0,0,0,0,0,0,0,0,0,67285,0,65388,0,132673,Remove
+71,Pyngrope Service Station,0,0,0,0,0,0,0,0,0,0,-3020,0,0,-3020,Remove
+72,Raj Filling Centre,0,0,0,0,0,0,0,0,260051,126630,41630,0,0,428311,Remove
+73,Raja Fuel Service,0,0,0,0,0,0,0,0,0,0,0,57061,0,57061,Remove
+74,Raliang Fuels,0,0,0,0,46201,0,0,0,0,0,0,0,0,46201,Remove
+75,Rani Service Station,0,0,0,0,0,0,0,0,0,0,0,70595,0,70595,Remove
+76,Ri Lyngngam Service Station,0,0,0,0,0,0,0,0,0,0,79284,0,0,79284,Remove
+77,Rida Langrin Filling Centre,0,0,0,0,0,0,0,0,0,0,-41115,0,0,-41115,Remove
+78,River Kynshi BKS Service Station,0,0,0,0,0,0,0,0,0,0,-303,0,0,-303,Remove
+79,River Umtrew Service Station,0,0,0,0,0,0,0,0,0,-2120,0,0,0,-2120,Remove
+80,Roibha Fuel Station,0,0,0,0,0,0,0,0,0,-2228,0,0,0,-2228,Remove
+81,RIBHOI SERVICE STATION,0,0,0,0,0,0,0,0,0,201646,0,0,0,201646,Remove
+82,Shallam Syngkon Jowai,0,0,0,0,0,0,13106,43759,0,75558,0,0,0,132423,Remove
+83,Shallam Syngkon Wapung,0,0,0,0,0,0,0,0,0,0,325525,0,0,325525,Remove
+84,Shallang Lynmer Fuel Station,0,0,0,0,0,0,0,0,0,-1470,0,0,0,-1470,Remove
+85,Shangpung Service Station,0,0,0,0,0,41149,0,0,0,0,0,0,0,41149,Remove
+86,Shangpung Service Station  (ESSAR),0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+87,Shibai Shiboo Service Station,0,0,0,0,0,0,0,0,20002,0,144312,0,0,164314,Remove
+88,Sohra Refilling Centre,0,0,0,0,0,0,0,8794,0,0,0,0,0,8794,Remove
+89,SOUTHERN HILLS SERVICE STATION,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+90,Star Energy Point,0,0,0,0,0,0,0,0,0,43445,47247,99238,0,189930,Remove
+91,Swer Service Station,0,0,0,0,0,0,0,0,0,-636,0,126474,0,125838,Remove
+92,Tuber Auto Agencies,0,0,0,0,0,0,0,0,0,0,0,62405,0,62405,Remove
+93,Tuber Service Station ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+94,Tyrshi Filling Station,0,0,0,0,0,0,0,0,0,20085,0,162549,0,182634,Remove
+95,Umkrukru service Station,0,0,0,0,0,0,0,0,0,85526,0,106992,0,192518,Remove
+96,Umran Fuels,0,0,0,0,0,0,0,0,0,0,24396,0,0,24396,Remove
+97,Umsning Fuel Station,0,0,0,0,0,0,0,0,0,0,0,49278,0,49278,Remove
+98,United Hills Super Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+99,Upper Shillong Petrol Service Station,0,0,0,0,0,0,0,0,0,29722,0,43695,0,73417,Remove
+100,west jaintia filling station,0,0,0,0,0,0,0,0,0,70709,0,0,0,70709,Remove
+101,Customer 117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+102,undefined,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+103,Black Diamond Refill Centre,0,0,0,0,0,0,0,0,0,-4136,0,0,0,-4136,Remove
+104,Byrnihat A warjri Fuel Stop,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+105,Cherra Midway Filling Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+106,D Mercy Refill Centre,0,0,0,0,0,0,0,0,0,314935,0,0,0,314935,Remove
+107,Dhar Service Station,0,0,0,0,0,0,0,0,0,117794,0,0,0,117794,Remove
+108,Didram Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+109,Dkhiah Service Station,0,0,0,0,0,0,0,0,0,0,22899,0,0,22899,Remove
+110,Donbok Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+111,East Jaintia Filling Center,0,0,0,0,0,0,0,0,53704,0,0,192808,0,246512,Remove
+112,Eastern Border Service Station,0,0,0,0,0,0,0,0,0,109248,184859,48981,0,343088,Remove
+113,Genesis Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+114,Green Hills Service Station,0,0,0,0,0,0,0,0,52321,0,0,113954,0,166275,Remove
+115,Harlie V Service Station,0,0,0,0,0,0,0,0,0,0,0,73714,17238,90952,Remove
+116,Heimon Filling Station,0,0,0,0,0,0,0,0,0,16340,0,0,0,16340,Remove
+117,Highland Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+118,Highway Carrier Refilling,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+119,Highway Plaza Filling centre,0,0,0,0,0,0,0,0,0,0,-531,0,0,-531,Remove
+120,Highway Refill Centre,0,0,0,0,0,0,0,0,286019,363013,0,0,0,649032,Remove
+121,Hoslin Service Station,0,0,0,0,0,0,0,0,3475,23100,0,0,0,26575,Remove
+122,J Marbaniang,0,0,0,0,0,0,0,0,0,0,0,-3415,0,-3415,Remove
+123,Jaintia Auto Agencies,0,0,0,0,0,0,0,0,0,-765,0,0,0,-765,Remove
+124,Jaintia Service Station,0,0,0,0,0,0,0,0,0,-490,0,0,0,-490,Remove
+125,JIRANG FILLING STATION,0,0,0,0,0,-300,0,0,0,0,0,0,0,-300,Remove
+126,K Langbai Fuel Station,0,0,0,0,0,0,0,0,0,-1123,0,0,0,-1123,Remove
+127,K Rymbai & Co,0,0,0,0,0,72129,75000,0,0,65061,0,34493,0,246683,Remove
+128,Kargil Martyr's Service Station,0,0,0,0,0,0,0,0,0,0,131310,0,0,131310,Remove
+129,Kharnairi Service Centre,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+130,Khasi Hills Petroleum Supply Co,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+131,Khongwir Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+132,Kurbah Service Station,0,0,0,0,0,0,0,0,0,0,-379,0,0,-379,Remove
+133,Laityrke Service  Station,0,0,0,0,0,0,0,0,0,19343,53273,200195,0,272811,Remove
+134,LMPL Enterprice (ESSAR),0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+135,Lumshnong Fuel,0,0,0,0,0,0,0,0,0,0,0,163677,0,163677,Remove
+136,Lumshnong Service Station,0,0,0,0,0,0,0,0,0,0,-4375,0,0,-4375,Remove
+137,Lyngdoh Pahsyntiew Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+138,Mahari & Sons,0,0,0,0,-870,0,0,0,0,0,0,0,0,-870,Remove
+139,Mahavir & Co,0,0,0,0,0,0,0,0,0,11376,0,0,0,11376,Remove
+140,Mairang Service Station,0,0,0,0,0,0,0,0,0,16106,207674,0,0,223780,Remove
+141,Mantei Service Station,0,0,0,0,0,0,0,0,0,-560,0,0,0,-560,Remove
+142,Matti I Pa Nongstoin,0,0,0,0,0,0,0,0,0,0,15801,93297,0,109098,Remove
+143,Marwet Oil Services pvt.ltd,0,0,0,0,0,0,0,5753,24060,0,0,0,0,29813,Remove
+144,Marwet Petroleum Agency,0,0,0,0,0,0,0,0,0,0,259364,0,0,259364,Remove
+145,Mawkhanu Service Station,0,0,0,0,0,0,0,0,0,0,270,0,0,270,Remove
+146,Mawlai Aibor Roy,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+147,Mawlai Banalari Service Station,0,0,0,0,0,0,0,0,0,0,78095,0,0,78095,Remove
+148,Meera Service Station,0,0,0,0,0,0,0,0,0,0,-330,0,0,-330,Remove
+149,Meghalaya Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+150,Mihmyntdu Service Station,0,0,0,0,0,0,0,-842,0,0,0,0,0,-842,Remove
+151,MILDA ENERGY POINT,0,0,0,0,0,0,0,48808,0,0,0,0,0,48808,Remove
+152,Moolamylliang Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+153,More Energy Station,0,0,0,0,0,0,0,0,0,75388,0,0,0,75388,Remove
+154,Morland Snootnick Filling Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+155,Mylliem Wah Lyngdoh Refill Centre,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+156,Nangkyrsoi Fuel Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+157,Naya Bunglow Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+158,Nongpluh Umroi Service Station,0,0,0,0,0,0,0,0,0,0,23414,0,0,23414,Remove
+159,Nongpoh Filling Centre,0,0,0,0,0,0,0,0,0,-6624,0,0,0,-6624,Remove
+160,Nongpoh Highway Service Station,0,0,0,0,0,0,0,52650,0,0,0,0,0,52650,Remove
+161,Nongrum Energy Station,0,0,0,0,0,0,0,32848,0,0,0,0,0,32848,Remove
+162,Nongstoin Highway Service Station,0,0,0,0,0,0,0,0,0,0,106299,0,0,106299,Remove
+163,Nongtdu Filling Station,0,0,0,0,0,30526,0,0,50489,46156,0,50000,0,177171,Remove
+164,Nongtdu Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+165,Nongshillong service station,0,0,0,0,0,0,0,0,0,0,43523,0,0,43523,Remove
+166,Nongtluh-mathan petrol,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+167,Peak Service Station L_K,0,0,0,0,0,0,0,0,0,0,0,522,0,522,Remove
+168,Peak Service Station L_M,0,0,0,0,0,0,0,0,0,0,0,91001,0,91001,Remove
+169,Perfect Service Station,0,0,0,0,0,0,0,0,0,64632,0,0,0,64632,Remove
+170,Petrol and Auto Diesel Filling Station,0,0,0,0,0,0,0,0,0,-6706,0,0,0,-6706,Remove
+171,PNAR SERVICE STATION MUKHLA (AD HOC,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+172,Polo Service Station,0,0,0,0,0,0,0,0,0,0,0,112940,28613,141553,Remove
+173,Pynbianglang Refilling Station,0,0,0,0,0,0,0,0,0,67285,0,65388,0,132673,Remove
+174,Pyngrope Service Station,0,0,0,0,0,0,0,0,0,0,-3020,0,0,-3020,Remove
+175,Raj Filling Centre,0,0,0,0,0,0,0,0,260051,126630,41630,0,0,428311,Remove
+176,Raja Fuel Service,0,0,0,0,0,0,0,0,0,0,0,57061,0,57061,Remove
+177,Raliang Fuels,0,0,0,0,46201,0,0,0,0,0,0,0,0,46201,Remove
+178,Rani Service Station,0,0,0,0,0,0,0,0,0,0,0,70595,0,70595,Remove
+179,Ri Lyngngam Service Station,0,0,0,0,0,0,0,0,0,0,79284,0,0,79284,Remove
+180,Rida Langrin Filling Centre,0,0,0,0,0,0,0,0,0,0,-41115,0,0,-41115,Remove
+181,River Kynshi BKS Service Station,0,0,0,0,0,0,0,0,0,0,-303,0,0,-303,Remove
+182,River Umtrew Service Station,0,0,0,0,0,0,0,0,0,-2120,0,0,0,-2120,Remove
+183,Roibha Fuel Station,0,0,0,0,0,0,0,0,0,-2228,0,0,0,-2228,Remove
+184,RIBHOI SERVICE STATION,0,0,0,0,0,0,0,0,0,201646,0,0,0,201646,Remove
+185,Shallam Syngkon Jowai,0,0,0,0,0,0,13106,43759,0,75558,0,0,0,132423,Remove
+186,Shallam Syngkon Wapung,0,0,0,0,0,0,0,0,0,0,325525,0,0,325525,Remove
+187,Shallang Lynmer Fuel Station,0,0,0,0,0,0,0,0,0,-1470,0,0,0,-1470,Remove
+188,Shangpung Service Station,0,0,0,0,0,41149,0,0,0,0,0,0,0,41149,Remove
+189,Shangpung Service Station  (ESSAR),0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+190,Shibai Shiboo Service Station,0,0,0,0,0,0,0,0,20002,0,144312,0,0,164314,Remove
+191,Sohra Refilling Centre,0,0,0,0,0,0,0,8794,0,0,0,0,0,8794,Remove
+192,SOUTHERN HILLS SERVICE STATION,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+193,Star Energy Point,0,0,0,0,0,0,0,0,0,43445,47247,99238,0,189930,Remove
+194,Swer Service Station,0,0,0,0,0,0,0,0,0,-636,0,126474,0,125838,Remove
+195,Tuber Auto Agencies,0,0,0,0,0,0,0,0,0,0,0,62405,0,62405,Remove
+196,Tuber Service Station ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+197,Tyrshi Filling Station,0,0,0,0,0,0,0,0,0,20085,0,162549,0,182634,Remove
+198,Umkrukru service Station,0,0,0,0,0,0,0,0,0,85526,0,106992,0,192518,Remove
+199,Umran Fuels,0,0,0,0,0,0,0,0,0,0,24396,0,0,24396,Remove
+200,Umsning Fuel Station,0,0,0,0,0,0,0,0,0,0,0,49278,0,49278,Remove
+201,United Hills Super Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+202,Upper Shillong Petrol Service Station,0,0,0,0,0,0,0,0,0,29722,0,43695,0,73417,Remove
+203,west jaintia filling station,0,0,0,0,0,0,0,0,0,70709,0,0,0,70709,Remove
+204,Customer 117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+205,Customer 205,,,,,,,,,,,,,,0,Remove
