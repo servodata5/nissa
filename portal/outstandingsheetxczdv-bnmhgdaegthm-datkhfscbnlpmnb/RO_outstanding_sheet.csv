@@ -1,6 +1,7 @@
 Sl No,Customer Name,Last Year,April,May,June,July,August,September,October,November,December,January,February,March,Total,Action
+
 1,Abigail Service Station,0,0,0,0,0,0,0,0,0,0,-1853,0,0,-1853,Remove
-2,Alta Filling Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
+2,Alta Filling Station,1000,0,0,0,0,0,0,0,0,0,0,0,0,1000,Remove
 3,Arkiwan Service Station,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Remove
 4,Ashok Auto Service (B),0,0,0,0,0,0,0,0,0,281513,194308,85329,0,561150,Remove
 5,Ashok Auto Service (S),0,0,0,0,0,0,8623,0,0,0,0,0,0,8623,Remove
