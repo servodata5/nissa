@@ -123,6 +123,8 @@
 <button onclick="printTable()">Print</button>
 <button onclick="exportToExcel()">Export to Excel</button>
 <input type="file" id="excelFileInput" style="width: 310px;" accept=".xlsx" onchange="handleFileUpload(this)">
+<button onclick="saveDataToGitHub()">Save Data</button>
+<button onclick="loadDataFromGitHub()">Load Data</button>
 
 <!-- Table Container -->
 <div class="table-container">
@@ -601,6 +603,88 @@
         };
 
         reader.readAsArrayBuffer(file); // Read the file as an array buffer
+    }
+
+    // Function to save data to GitHub
+    async function saveDataToGitHub() {
+        const customers = JSON.parse(localStorage.getItem('customers')) || [];
+        const data = JSON.stringify(customers, null, 2);
+
+        const repo = "servodata5/nissa"; // Replace with your GitHub repository
+        const path = "portal/outstandingsheetxczdv-bnmhgdaegthm-datkhfscbnlpmnb/data.json"; // Path to the file in the repository
+        const token = "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"; // Replace with your GitHub token
+
+        const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+
+        try {
+            // Fetch the current file to get the SHA (required for updating)
+            const response = await fetch(url, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            const fileData = await response.json();
+
+            // Create the request body
+            const body = {
+                message: "Update data.json",
+                content: btoa(data), // Base64 encode the data
+                sha: fileData.sha, // Include the SHA to update the file
+            };
+
+            // Send the PUT request to update the file
+            const updateResponse = await fetch(url, {
+                method: "PUT",
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(body),
+            });
+
+            if (updateResponse.ok) {
+                alert("Data saved to GitHub successfully!");
+            } else {
+                alert("Failed to save data to GitHub.");
+            }
+        } catch (error) {
+            console.error("Error saving data to GitHub:", error);
+            alert("An error occurred while saving data to GitHub.");
+        }
+    }
+
+    // Function to load data from GitHub
+    async function loadDataFromGitHub() {
+        const repo = "servodata5/nissa"; // Replace with your GitHub repository
+        const path = "portal/outstandingsheetxczdv-bnmhgdaegthm-datkhfscbnlpmnb/data.json"; // Path to the file in the repository
+        const token = "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"; // Replace with your GitHub token
+
+        const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+
+        try {
+            const response = await fetch(url, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            const fileData = await response.json();
+
+            // Decode the Base64 content
+            const content = atob(fileData.content);
+
+            // Parse the JSON data
+            const customers = JSON.parse(content);
+
+            // Save the data to localStorage
+            localStorage.setItem('customers', JSON.stringify(customers));
+
+            // Reload the table with the new data
+            loadSavedCustomers();
+            alert("Data loaded from GitHub successfully!");
+        } catch (error) {
+            console.error("Error loading data from GitHub:", error);
+            alert("An error occurred while loading data from GitHub.");
+        }
     }
 
     // Load saved data from localStorage when the page loads
