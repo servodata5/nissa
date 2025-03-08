@@ -537,7 +537,9 @@
         const owner = 'servodata5'; // Replace with your GitHub username
         const repo = 'nissa'; // Replace with your repository name
         const path = 'portal/outstandingsheetxczdv-bnmhgdaegthm-datkhfscbnlpmnb/RO_outstanding_sheet.csv'; // Path to the file in the repository
-        const token = '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'; // Replace with your GitHub PAT
+       
+	   require('ghp_1234567890abcdef1234567890abcdef1234').config();
+        const token = process.env.GITHUB_TOKEN;
 
         // Get the current SHA of the file (if it exists)
         let sha = null;
@@ -579,7 +581,8 @@
         const owner = 'servodata5'; // Replace with your GitHub username
         const repo = 'nissa'; // Replace with your repository name
         const path = 'portal/outstandingsheetxczdv-bnmhgdaegthm-datkhfscbnlpmnb/RO_outstanding_sheet.csv'; // Path to the file in the repository
-        const token = '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'; // Replace with your GitHub PAT
+         require('ghp_1234567890abcdef1234567890abcdef1234').config();
+        const token = process.env.GITHUB_TOKEN;
 
         try {
             // Fetch the file content from GitHub
@@ -759,8 +762,8 @@ async function saveToGitHub() {
     const owner = 'servodata5'; // Replace with your GitHub username
     const repo = 'nissa'; // Replace with your repository name
     const path = 'portal/outstandingsheetxczdv-bnmhgdaegthm-datkhfscbnlpmnb/RO_outstanding_sheet.csv'; // Path to the file in the repository
-    const token = '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'; // Replace with your GitHub PAT
-
+    require('ghp_1234567890abcdef1234567890abcdef1234').config();
+        const token = process.env.GITHUB_TOKEN;
     // Get the current SHA of the file (if it exists)
     let sha = null;
     try {
