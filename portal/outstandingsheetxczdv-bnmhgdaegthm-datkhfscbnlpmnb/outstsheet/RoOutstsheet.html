@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RO Outstanding Sheet</title>
-    <!-- Include dotenv library to load environment variables -->
-    <script src="https://cdn.jsdelivr.net/npm/dotenv@16.3.1/lib/main.min.js"></script>
     <style>
         /* Table container with fixed height and scrolling */
         .table-container {
@@ -76,6 +74,29 @@
                 display: none; /* Hide buttons when printing */
             }
         }
+
+        /* Set minimum width for specific columns */
+        th:nth-child(3), /* Last Year */
+        th:nth-child(4), /* April */
+        th:nth-child(5), /* May */
+        th:nth-child(6), /* June */
+        th:nth-child(7), /* July */
+        th:nth-child(8), /* August */
+        th:nth-child(9), /* September */
+        th:nth-child(10), /* October */
+        th:nth-child(11), /* November */
+        th:nth-child(12), /* December */
+        th:nth-child(13), /* January */
+        th:nth-child(14), /* February */
+        th:nth-child(15), /* March */
+        th:nth-child(17) { /* Action */
+            min-width: 80px; /* At least 8 letters wide */
+        }
+
+        /* Allow Total column to auto-fit */
+        th:nth-child(16) { /* Total */
+            width: auto;
+        }
     </style>
 </head>
 <body>
@@ -101,8 +122,6 @@
 <button onclick="undoLastAction()">Undo</button>
 <button onclick="printTable()">Print</button>
 <button onclick="exportToExcel()">Export to Excel</button>
-<button onclick="saveToGitHub()">Save Data</button>
-<button onclick="loadFromGitHub()">Load Data</button>
 <input type="file" id="excelFileInput" style="width: 310px;" accept=".xlsx" onchange="handleFileUpload(this)">
 
 <!-- Table Container -->
@@ -475,11 +494,23 @@
         // Add table rows
         rows.forEach(row => {
             const rowData = [];
-            row.querySelectorAll('td').forEach(cell => {
+            let isEmptyRow = true; // Assume the row is empty initially
+
+            row.querySelectorAll('td').forEach((cell, cellIndex) => {
                 const input = cell.querySelector('input');
-                rowData.push(input ? input.value : cell.textContent);
+                const value = input ? input.value.trim() : cell.textContent.trim();
+                rowData.push(value);
+
+                // Check if the cell is not empty (ignore serial number and action button columns)
+                if (cellIndex !== 0 && cellIndex !== row.children.length - 1 && value) {
+                    isEmptyRow = false;
+                }
             });
-            data.push(rowData);
+
+            // Only add the row to the data if it's not empty
+            if (!isEmptyRow) {
+                data.push(rowData);
+            }
         });
 
         // Create a worksheet
@@ -508,140 +539,6 @@
             }
         });
     }
-
-    // Function to save data to GitHub
-    async function saveToGitHub() {
-        const table = document.getElementById('customerTable');
-        const rows = table.querySelectorAll('tr');
-        const data = [];
-
-        // Add table headers
-        const headers = [];
-        table.querySelectorAll('th').forEach(header => {
-            headers.push(header.textContent);
-        });
-        data.push(headers);
-
-        // Add table rows
-        rows.forEach(row => {
-            const rowData = [];
-            row.querySelectorAll('td').forEach(cell => {
-                const input = cell.querySelector('input');
-                rowData.push(input ? input.value : cell.textContent);
-            });
-            data.push(rowData);
-        });
-
-        // Convert data to CSV format
-        const csvContent = data.map(row => row.join(',')).join('\n');
-
-        // GitHub API details
-        const owner = 'servodata5'; // Replace with your GitHub username
-        const repo = 'nissa'; // Replace with your repository name
-        const path = 'portal/outstandingsheetxczdv-bnmhgdaegthm-datkhfscbnlpmnb/RO_outstanding_sheet.csv'; // Path to the file in the repository
-        const token = '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'; // Replace with your GitHub PAT
-
-        // Get the current SHA of the file (if it exists)
-        let sha = null;
-        try {
-            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            });
-            const fileData = await response.json();
-            sha = fileData.sha;
-        } catch (error) {
-            console.log('File does not exist, creating a new one.');
-        }
-
-        // Upload the file to GitHub
-        const uploadResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-            method: 'PUT',
-            headers: {
-                Authorization: `Bearer ${token}`,
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                message: 'Update Customer Sales Data',
-                content: btoa(csvContent), // Encode content in Base64
-                sha: sha, // Include SHA if updating an existing file
-            }),
-        });
-
-        if (uploadResponse.ok) {
-            alert('Data saved successfully to GitHub!');
-        } else {
-            alert('Failed to save data to GitHub.');
-        }
-    }
-
-    // Function to load data from GitHub
-    async function loadFromGitHub() {
-        const owner = 'servodata5'; // Replace with your GitHub username
-        const repo = 'nissa'; // Replace with your repository name
-        const path = 'portal/outstandingsheetxczdv-bnmhgdaegthm-datkhfscbnlpmnb/RO_outstanding_sheet.csv'; // Path to the file in the repository
-        const token = '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'; // Replace with your GitHub PAT
-
-        try {
-            // Fetch the file content from GitHub
-            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            });
-            const fileData = await response.json();
-
-            // Decode the Base64 content
-            const csvContent = atob(fileData.content);
-
-            // Convert CSV content to JSON
-            const rows = csvContent.split('\n').map(row => row.split(','));
-
-            // Clear existing table data
-            const tableBody = document.getElementById('customerTableBody');
-            tableBody.innerHTML = '';
-
-            // Populate the table with the loaded data
-            rows.slice(1).forEach((row, index) => {
-                const newRow = document.createElement('tr');
-                newRow.innerHTML = `
-                    <td>${index + 1}</td>
-                    <td><input type="text" class="customer-name" value="${row[1]}" oninput="saveCustomers()" maxlength="30"></td>
-                    <td><input type="number" class="last-year value-input" oninput="handleInputChange(this)" value="${row[2] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[3] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[4] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[5] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[6] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[7] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[8] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[9] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[10] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[11] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[12] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[13] || 0}"></td>
-                    <td><input type="number" class="month value-input" oninput="handleInputChange(this)" value="${row[14] || 0}"></td>
-                    <td class="total">${row[15] || 0}</td>
-                    <td><button onclick="removeCustomer(this)">Remove</button></td>
-                `;
-                tableBody.appendChild(newRow);
-            });
-
-            // Save the loaded data to localStorage
-            saveCustomers();
-
-            alert('Data loaded successfully!');
-        } catch (error) {
-            alert('Failed to load data.');
-            console.error(error);
-        }
-    }
-
-    // Load saved data from localStorage when the page loads
-    document.addEventListener('DOMContentLoaded', () => {
-        loadSavedCustomers();
-        updateReportBox(); // Initialize the report box
-    });
 
     // Function to handle file upload and load data from Excel
     function handleFileUpload(input) {
@@ -705,6 +602,12 @@
 
         reader.readAsArrayBuffer(file); // Read the file as an array buffer
     }
+
+    // Load saved data from localStorage when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+        loadSavedCustomers();
+        updateReportBox(); // Initialize the report box
+    });
 </script>
 
 </body>
