@@ -34,7 +34,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
+<!-- Add this script to include the xlsx library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 
 <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
     <nav>
@@ -47,7 +48,9 @@
 		<li><a href="pursmlp.html">Purchase Small Pack</a></li>
 		<li><a href="purbrlp.html">Purchase Barrel Price</a></li>
 		 <button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button> 
+		 <button class="btn btn-primary" onclick="exportToExcel()">Export to Excel</button>
 		<button class="btn btn-primary" onclick="portal.html" type="button">
+		 
             <li><a href="../../portal.html">Home</a></li>
           
         </ul>
@@ -1319,6 +1322,24 @@ function myFunction() {
             });
         }
     </script>
+	
+	<script>
+function exportToExcel() {
+    // Get the table element
+    const table = document.getElementById('myTable');
+
+    // Convert the table to a worksheet
+    const ws = XLSX.utils.table_to_sheet(table);
+
+    // Create a new workbook
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+
+    // Export the workbook to an Excel file
+    XLSX.writeFile(wb, 'table.xlsx');
+}
+</script>
+	
 
 </body>
 </head>
